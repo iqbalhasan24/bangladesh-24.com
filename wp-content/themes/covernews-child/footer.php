@@ -125,7 +125,7 @@
         সভাপতি, ঢাকা সাংবাদিক ইউনিয়ন (ডিইউজে)<br>
         XYZ, ডি.আই.টি. রোড, ৪র্থ তলা (পশ্চিম পার্শ্বে), মালিবাগ, ঢাকা-১২১৭।<br>
         ফোন: +৮৮০-২-xxxxxxxx<br>
-        ইমেইল: info@beaconbangla.com
+        ইমেইল: info@http://bangladesh-24.com
     </div>
 
     <div class="site-info">
