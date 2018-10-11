@@ -120,18 +120,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <?php $covernews_copy_right = covernews_get_option('footer_copyright_text'); ?>
-                    <?php if (!empty($covernews_copy_right)): ?>
-                        <?php echo esc_html($covernews_copy_right); ?>
-                    <?php endif; ?>
-                    <?php $covernews_theme_credits = covernews_get_option('hide_footer_copyright_credits'); ?>
-                    <?php if ($covernews_theme_credits != 1): ?>
-                        <span class="sep"> | </span>
-                        <?php
-                        /* translators: 1: Theme name, 2: Theme author. */
-                        printf(esc_html__('%1$s by %2$s.', 'covernews'), '<a href="https://afthemes.com/covernews">CoverNews</a>', 'AF themes');
-                        ?>
-                    <?php endif; ?>
+                        <span class="footer-copy-right">© <?php _e(date("Y")); ?> - <?php bloginfo('name'); ?>. All Rights Reserved. </span>
+                        <span class="designer">Website Design & Development By : <a href="mailto:iqbalhasanms@gmail.com">Iqbal Mahmud Hasan</a></span>
                 </div>
             </div>
         </div>
