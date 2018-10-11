@@ -1,41 +1,15 @@
 /*
- Theme Name:   Bangladesh24 Child
- Description:  Bangladesh24 Child Theme
- Author:       Iqbal Hasan
- Author URI:   https://www.facebook.com/iqbal.hasan.webdeveloper
- Template:     Bangladesh24
- Version:      1.0.0
- Tags:         bangladesh24 light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  bangladesh24-child
+Theme Name:   covernews 
+Description:  covernews News Theme
+Author:       Iqbal Hasan
+Author URI:   https://www.facebook.com/iqbal.hasan.webdeveloper
+Template:     covernews
+Version:      1.0.0
+Tags:         covernews, news, blog, entertainment, one-column, two-columns, left-sidebar, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  covernews
 */
 
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-    ## Links
-    ## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-    ## Posts and pages
-    ## Comments
-# Infinite scroll
-# Media
-    ## Captions
-    ## Galleries
-# Footer
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
 html {
     font-family: 'Montserrat:400,700', sans-serif;
     font-size: 100%;

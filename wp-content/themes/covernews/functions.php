@@ -1,13 +1,13 @@
 <?php
 /**
- * bangladesh24 functions and definitions
+ * covernews functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package bangladesh24
+ * @package covernews
  */
 
-if (!function_exists('bangladesh24_setup')):
+if (!function_exists('covernews_setup')):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -21,14 +21,14 @@ if (!function_exists('bangladesh24_setup')):
     /**
      *
      */
-    function bangladesh24_setup() {
+    function covernews_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on bangladesh24, use a find and replace
-	 * to change 'bangladesh24' to the name of your theme in all the template files.
+	 * If you're building a theme based on covernews, use a find and replace
+	 * to change 'covernews' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain('bangladesh24', get_template_directory().'/languages');
+	load_theme_textdomain('covernews', get_template_directory().'/languages');
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support('automatic-feed-links');
@@ -49,11 +49,11 @@ if (!function_exists('bangladesh24_setup')):
 	add_theme_support('post-thumbnails');
 
         // Add featured image sizes
-        add_image_size('bangladesh24-slider-full', 1536, 1020, true); // width, height, crop
-        add_image_size('bangladesh24-slider-center', 936, 897, true); // width, height, crop
-        add_image_size('bangladesh24-featured', 1024, 0, false ); // width, height, crop
-        add_image_size('bangladesh24-medium', 720, 380, true); // width, height, crop
-        add_image_size('bangladesh24-medium-square', 675, 450, true); // width, height, crop
+        add_image_size('covernews-slider-full', 1536, 1020, true); // width, height, crop
+        add_image_size('covernews-slider-center', 936, 897, true); // width, height, crop
+        add_image_size('covernews-featured', 1024, 0, false ); // width, height, crop
+        add_image_size('covernews-medium', 720, 380, true); // width, height, crop
+        add_image_size('covernews-medium-square', 675, 450, true); // width, height, crop
 
     /*
      * Enable support for Post Formats on posts and pages.
@@ -64,10 +64,10 @@ if (!function_exists('bangladesh24_setup')):
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(array(
-			'aft-primary-nav' => esc_html__('Primary Menu', 'bangladesh24'),
-			'aft-top-nav' => esc_html__('Top Menu', 'bangladesh24'),
-			'aft-social-nav' => esc_html__('Social Menu', 'bangladesh24'),
-			'aft-footer-nav' => esc_html__('Footer Menu', 'bangladesh24'),
+			'aft-primary-nav' => esc_html__('Primary Menu', 'covernews'),
+			'aft-top-nav' => esc_html__('Top Menu', 'covernews'),
+			'aft-social-nav' => esc_html__('Social Menu', 'covernews'),
+			'aft-footer-nav' => esc_html__('Footer Menu', 'covernews'),
 		));
 
 	/*
@@ -83,7 +83,7 @@ if (!function_exists('bangladesh24_setup')):
 		));
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support('custom-background', apply_filters('bangladesh24_custom_background_args', array(
+	add_theme_support('custom-background', apply_filters('covernews_custom_background_args', array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
 			)));
@@ -104,16 +104,16 @@ if (!function_exists('bangladesh24_setup')):
 
 }
 endif;
-add_action('after_setup_theme', 'bangladesh24_setup');
+add_action('after_setup_theme', 'covernews_setup');
 
 /**
  * Demo export/import
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package bangladesh24
+ * @package covernews
  */
-if (!function_exists('bangladesh24_ocdi_files')) :
+if (!function_exists('covernews_ocdi_files')) :
     /**
      * OCDI files.
      *
@@ -121,45 +121,45 @@ if (!function_exists('bangladesh24_ocdi_files')) :
      *
      * @return array Files.
      */
-    function bangladesh24_ocdi_files() {
+    function covernews_ocdi_files() {
 
         return array(
             array(
 
-                'import_file_name'             => esc_html__( 'bangladesh24 Default', 'bangladesh24' ),
-                'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo-content/default/bangladesh24.xml',
-                'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo-content/default/bangladesh24.wie',
-                'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo-content/default/bangladesh24.dat',
-                'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ) . 'demo-content/assets/bangladesh24.jpg',
-                'preview_url'                  => 'https://demo.afthemes.com/bangladesh24/',
+                'import_file_name'             => esc_html__( 'covernews Default', 'covernews' ),
+                'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo-content/default/covernews.xml',
+                'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo-content/default/covernews.wie',
+                'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo-content/default/covernews.dat',
+                'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ) . 'demo-content/assets/covernews.jpg',
+                'preview_url'                  => 'https://demo.afthemes.com/covernews/',
             ),
             array(
 
-                'import_file_name'             => esc_html__( 'bangladesh24 Sport', 'bangladesh24' ),
-                'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo-content/sport/bangladesh24.xml',
-                'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo-content/sport/bangladesh24.wie',
-                'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo-content/sport/bangladesh24.dat',
-                'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ) . 'demo-content/assets/bangladesh24-sport.jpg',
-                'preview_url'                  => 'https://demo.afthemes.com/bangladesh24/sport',
+                'import_file_name'             => esc_html__( 'covernews Sport', 'covernews' ),
+                'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo-content/sport/covernews.xml',
+                'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo-content/sport/covernews.wie',
+                'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo-content/sport/covernews.dat',
+                'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ) . 'demo-content/assets/covernews-sport.jpg',
+                'preview_url'                  => 'https://demo.afthemes.com/covernews/sport',
             ),
             array(
 
-                'import_file_name'             => esc_html__( 'bangladesh24 Fashion', 'bangladesh24' ),
-                'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo-content/fashion/bangladesh24.xml',
-                'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo-content/fashion/bangladesh24.wie',
-                'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo-content/fashion/bangladesh24.dat',
-                'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ) . 'demo-content/assets/bangladesh24-fashion.jpg',
-                'preview_url'                  => 'https://demo.afthemes.com/bangladesh24/fashion',
+                'import_file_name'             => esc_html__( 'covernews Fashion', 'covernews' ),
+                'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo-content/fashion/covernews.xml',
+                'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo-content/fashion/covernews.wie',
+                'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo-content/fashion/covernews.dat',
+                'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ) . 'demo-content/assets/covernews-fashion.jpg',
+                'preview_url'                  => 'https://demo.afthemes.com/covernews/fashion',
             ),
         );
     }
 endif;
-add_filter( 'pt-ocdi/import_files', 'bangladesh24_ocdi_files');
+add_filter( 'pt-ocdi/import_files', 'covernews_ocdi_files');
 
 /**
  * function for google fonts
  */
-if (!function_exists('bangladesh24_fonts_url')):
+if (!function_exists('covernews_fonts_url')):
 
     /**
      * Return fonts URL.
@@ -167,19 +167,19 @@ if (!function_exists('bangladesh24_fonts_url')):
      * @since 1.0.0
      * @return string Fonts URL.
      */
-    function bangladesh24_fonts_url() {
+    function covernews_fonts_url() {
 
         $fonts_url = '';
         $fonts = array();
         $subsets = 'latin,latin-ext';
 
         /* translators: If there are characters in your language that are not supported by Oswald, translate this to 'off'. Do not translate into your own language. */
-        if ('off' !== _x('on', 'Source Sans Pro font: on or off', 'bangladesh24')) {
+        if ('off' !== _x('on', 'Source Sans Pro font: on or off', 'covernews')) {
             $fonts[] = 'Source+Sans+Pro:400,400i,700,700i';
         }
 
         /* translators: If there are characters in your language that are not supported by Lato, translate this to 'off'. Do not translate into your own language. */
-        if ('off' !== _x('on', 'Lato font: on or off', 'bangladesh24')) {
+        if ('off' !== _x('on', 'Lato font: on or off', 'covernews')) {
             $fonts[] = 'Lato:400,300,400italic,900,700';
         }
 
@@ -201,10 +201,10 @@ endif;
  *
  * @global int $content_width
  */
-function bangladesh24_content_width() {
-	$GLOBALS['content_width'] = apply_filters('bangladesh24_content_width', 640);
+function covernews_content_width() {
+	$GLOBALS['content_width'] = apply_filters('covernews_content_width', 640);
 }
-add_action('after_setup_theme', 'bangladesh24_content_width', 0);
+add_action('after_setup_theme', 'covernews_content_width', 0);
 
 
 
@@ -212,7 +212,7 @@ add_action('after_setup_theme', 'bangladesh24_content_width', 0);
 /**
  * Enqueue scripts and styles.
  */
-function bangladesh24_scripts() {
+function covernews_scripts() {
 
 	$min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG?'':'.min';
 	wp_enqueue_style('font-awesome', get_template_directory_uri().'/assets/font-awesome-v5/css/fontawesome-all'.$min.'.css');
@@ -220,21 +220,21 @@ function bangladesh24_scripts() {
 	wp_enqueue_style('slick', get_template_directory_uri().'/assets/slick/css/slick'.$min.'.css');
 
 
-    $fonts_url = bangladesh24_fonts_url();
+    $fonts_url = covernews_fonts_url();
 
     if (!empty($fonts_url)) {
-        wp_enqueue_style('bangladesh24-google-fonts', $fonts_url, array(), null);
+        wp_enqueue_style('covernews-google-fonts', $fonts_url, array(), null);
     }
 
     if ( class_exists( 'WooCommerce' ) ) {
-        wp_enqueue_style('bangladesh24-woocommerce-style', get_template_directory_uri() . '/assets/woocommerce.css');
+        wp_enqueue_style('covernews-woocommerce-style', get_template_directory_uri() . '/assets/woocommerce.css');
     }
-	wp_enqueue_style('bangladesh24-style', get_stylesheet_uri());
+	wp_enqueue_style('covernews-style', get_stylesheet_uri());
 
 
 
-	wp_enqueue_script('bangladesh24-navigation', get_template_directory_uri().'/js/navigation.js', array(), '20151215', true);
-	wp_enqueue_script('bangladesh24-skip-link-focus-fix', get_template_directory_uri().'/js/skip-link-focus-fix.js', array(), '20151215', true);
+	wp_enqueue_script('covernews-navigation', get_template_directory_uri().'/js/navigation.js', array(), '20151215', true);
+	wp_enqueue_script('covernews-skip-link-focus-fix', get_template_directory_uri().'/js/skip-link-focus-fix.js', array(), '20151215', true);
 
 	wp_enqueue_script('slick', get_template_directory_uri().'/assets/slick/js/slick'.$min.'.js', array('jquery'), '', true);
 	wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/bootstrap/js/bootstrap'.$min.'.js', array('jquery'), '', true);
@@ -242,30 +242,30 @@ function bangladesh24_scripts() {
 
     wp_enqueue_script('marquee', get_template_directory_uri() . '/assets/marquee/jquery.marquee.js', array('jquery'), '', true);
     wp_enqueue_script('sticky-sidebar', get_template_directory_uri() . '/assets/theiaStickySidebar/theia-sticky-sidebar.min.js', array('jquery'), '', true);
-    wp_enqueue_script('bangladesh24-script', get_template_directory_uri().'/assets/script.js', array('jquery'), '', 1);
-	wp_enqueue_script('bangladesh24-fixed-header-script', get_template_directory_uri().'/assets/fixed-header-script.js', array('jquery'), '', 1);
+    wp_enqueue_script('covernews-script', get_template_directory_uri().'/assets/script.js', array('jquery'), '', 1);
+	wp_enqueue_script('covernews-fixed-header-script', get_template_directory_uri().'/assets/fixed-header-script.js', array('jquery'), '', 1);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'bangladesh24_scripts');
+add_action('wp_enqueue_scripts', 'covernews_scripts');
 
 
 
 /**
  * Enqueue admin scripts and styles.
  *
- * @since bangladesh24 1.0.0
+ * @since covernews 1.0.0
  */
-function bangladesh24__admin_scripts($hook){
+function covernews__admin_scripts($hook){
     if ('widgets.php' === $hook) {
         wp_enqueue_media();
-        wp_enqueue_script('bangladesh24-widgets', get_template_directory_uri() . '/assets/widgets.js', array('jquery'), '1.0.0', true);
+        wp_enqueue_script('covernews-widgets', get_template_directory_uri() . '/assets/widgets.js', array('jquery'), '1.0.0', true);
     }
 }
-add_action('admin_enqueue_scripts', 'bangladesh24__admin_scripts');
+add_action('admin_enqueue_scripts', 'covernews__admin_scripts');
 
 
 
@@ -329,12 +329,12 @@ if ( class_exists( 'WooCommerce' ) ) {
  * @param object $args, arguments passed to wp_nav_menu()
  * @return string $item_output
  */
-function bangladesh24_header_menu_desc( $item_output, $item, $depth, $args ) {
+function covernews_header_menu_desc( $item_output, $item, $depth, $args ) {
 
     if( 'aft-primary-nav' == $args->theme_location  && $item->description )
         $item_output = str_replace( '</a>', '<span class="menu-description">' . $item->description . '</span></a>', $item_output );
 
     return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'bangladesh24_header_menu_desc', 10, 4 );
+add_filter( 'walker_nav_menu_start_el', 'covernews_header_menu_desc', 10, 4 );
 
