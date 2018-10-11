@@ -116,6 +116,18 @@
     </div>
     <?php endif; ?>
     <?php endif; ?>
+
+
+
+    <div class="footer-secretary" style="width: 100%;background: #000000; color: #ffffff; padding: 3% 2%; text-align: center;">
+        সম্পাদক <br>
+        Mr ...............<br>
+        সহসভাপতি, ঢাকা সাংবাদিক ইউনিয়ন (ডিইউজে)<br>
+        XYZ, ডি.আই.টি. রোড, ৪র্থ তলা (পশ্চিম পার্শ্বে), মালিবাগ, ঢাকা-১২১৭।<br>
+        ফোন: +৮৮০-২-৪৮৩২১৫৪৭<br>
+        ইমেইল: info@beaconbangla.com
+    </div>
+
     <div class="site-info">
         <div class="container">
             <div class="row">
