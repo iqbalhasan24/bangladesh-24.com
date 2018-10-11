@@ -1,53 +1,14 @@
 /*
 Theme Name: CoverNews
-Theme URI: https://afthemes.com/products/covernews/
 Author: AF themes
-Author URI: https://www.afthemes.com/
+Author URI: https://www.facebook.com/iqbal.hasan.webdeveloper
 Description: CoverNews is a clean and elegant free WordPress theme that is perfect for online blog and magazine. With the help of live customizer options and custom widgets, you can design your website as you like and preview the changes live. This theme is fully responsive that looks beautiful on all the screen sizes from small to large devices. As it includes many useful features that require to build an awesome looking website, you can implement the layout as a personal blog, modern news journals, fashion magazine, travel blogging & magazine, vibrant news sites and more. It is also compatible with the WooCommerce plugin that helps you to integrate an online business with your blog easily. The theme is well optimized that helps to rank your website in the top of search engines and users will get an outstanding support from the team if there will be any difficulties while using the theme. There are three demos available in this theme so choose the one you like and start to build a website. See our demos: https://demo.afthemes.com/covernews/, https://demo.afthemes.com/covernews/sport/, https://demo.afthemes.com/covernews/fashion/
-Version: 1.1.2
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0.0
 Text Domain: covernews
 Tags: news, blog, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-CoverNews is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-CoverNews WordPress Theme, Copyright 2018 AF themes
-CoverNews is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-    ## Links
-    ## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-    ## Posts and pages
-    ## Comments
-# Infinite scroll
-# Media
-    ## Captions
-    ## Galleries
-# Footer
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
+
 html {
     font-family: 'Montserrat:400,700', sans-serif;
     font-size: 100%;
