@@ -53,7 +53,6 @@
         
       </div>
       <!-- ++Right coll++ -->
-
 </div>
 
 
@@ -78,33 +77,28 @@
 
   <div class="row each-row">
       <!-- ++Left coll++ -->
-     <div class="col-sm-12 left-column">
-            <div class="row each-row">
-               
-
-          
-            <div class="row each-row">
-                  <?php
-                    // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
-                   get_lead_post_by_cat_with_img_with_formate('aside', 3 , 6, 'col-sm-8','#fff');
-                   ?>
-           </div>
-           <div class="row each-row">
-               <?php
-                   //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
-                    get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-8','#f2f2f2' );
-                ?>
-            </div>
-            <div class="row each-row">
-                <?php
-                    //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-                    get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
-                ?>
-            </div>        
-    </div>
-      <!-- ++ End Left coll++ -->
-
-       
+     <div class="col-sm-12 left-column">                
+                  <div class="row each-row">
+                        <?php
+                          // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
+                         get_lead_post_by_cat_with_img_with_formate('aside', 3 , 6, 'col-sm-8','#fff');
+                         ?>
+                 </div>
+                 <div class="row each-row">
+                     <?php
+                         //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
+                          get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-8','#f2f2f2' );
+                      ?>
+                  </div>
+                  <div class="row each-row">
+                      <?php
+                          //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+                          get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
+                      ?>
+                  </div>        
+         
+            <!-- ++ End Left coll++ -->             
+      </div>
 </div>
 <!-- ++++++++++++First content++++++++++++ -->
 
@@ -154,15 +148,6 @@
                      
     ?>
 </div> 
-
-
-
-
-
-
-
-
-  </dir>
 
 </div>
 <?php  get_footer(); ?>

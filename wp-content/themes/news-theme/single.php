@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="container-fluid" style="/*max-width:100%;*/ ">
 
 <!-- <div class="row">
 		<div class="col-12 lead-add-section" style="text-align: center;display: block; min-height: 120px; padding: 0px 50px; background: #ffffff; ">
@@ -164,6 +165,7 @@
 		
 		
 	</div>
+</div>
 </div>
 
 <?php // If comments are open or we have at least one comment, load up the comment template.
