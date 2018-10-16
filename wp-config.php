@@ -26,7 +26,7 @@ define('DB_NAME', 'bangladesh_24');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'iqbalhasan@2018');
+define('DB_PASSWORD', 'Sharika!');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
