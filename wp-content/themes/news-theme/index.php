@@ -2,7 +2,7 @@
 
 <!-- ++++++++++++First content++++++++++++ -->
 
-<div class="container" style="/*max-width:100%;*/ ">
+<div class="container-fluid" style="/*max-width:100%;*/ ">
 <div class="row">
       <?php 
            //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
@@ -13,10 +13,19 @@
       ?>
 
 </div>
+
+
 <div class="row">       
-     <!-- ++Middel coll++ -->
+     <!-- ++Left coll++ -->
       <div class="col-sm-8">
+          <?php
+              get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
+              get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );
+
+          ?>
+      
       </div>
+     <!-- ++Left coll++ -->
       
 
       <!-- ++Right coll++ -->
@@ -34,10 +43,10 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div class="tab-pane container active" id="last_news">
-              <?php get_recent_post_function(4); ?>
+              <?php get_recent_post_function(10); ?>
             </div>
             <div class="tab-pane container fade" id="recent_post">
-              <?php get_recent_post_function(3); ?>      
+              <?php get_recent_post_function(10); ?>      
             </div>
 
           </div>
