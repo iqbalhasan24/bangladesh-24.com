@@ -31,8 +31,12 @@ $args = array(
             while ( $wpex_query->have_posts() ):
                 $wpex_query->the_post();
         ?>
-        	<div class='col-3' style="position: relative; background: #000; opacity: .6; overflow: hidden; padding: 1%;" >       		
-                	<a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 98%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>        			
+        	<div class='col-3' style="position: relative; overflow: hidden; padding: 1%;" >   
+        		<span style=" background: #000; opacity: .6; width: 100%;">
+        			
+                	<a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 98%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a> 
+        		</span>    		
+            	       			
         		<span style="position: absolute;bottom:55px; background: #f60000; opacity: .8; width:96%; margin-left: 2%; ">
         			
                 		<a href="<?php the_permalink();?>" style="color: #fff;"><?php the_title(); ?></a>
