@@ -17,14 +17,14 @@
 
 <div class="row">       
      <!-- ++Left coll++ -->
-      <div class="col-sm-8">
+    
           <?php
               get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
               get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );
 
           ?>
       
-      </div>
+     
      <!-- ++Left coll++ -->
       
 
