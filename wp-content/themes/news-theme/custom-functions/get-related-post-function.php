@@ -31,10 +31,11 @@ $args = array(
             while ( $wpex_query->have_posts() ):
                 $wpex_query->the_post();
         ?>
-        	<div class='single-post-box col-3'>
-                <a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-
-                <p><a href="<?php the_permalink();?>"><?php the_title(); ?></a></p>
+        	<div class='col-3'>
+        		<div class="row">
+                	<a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>        			
+        		</div>
+                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
         	</div>
        	<?php
 
