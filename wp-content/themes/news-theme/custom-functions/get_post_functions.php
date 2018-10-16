@@ -475,7 +475,7 @@ function get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $d
 	                                    $i++;
 	                                    if($i==1):
 
-	                                   _e("<div class='col-12' style='background:#ffffff; border:1px solid #EFF5F9;'> ");
+	                                   _e("<div class='col-12' style='background-image: linear-gradient(to right, #F2F2A1, #F2E39D,#F7F8D5); border:1px solid #EFF5F9;'> ");
 			                   			?>
 			                   				
 		                   					<div class='row each-row' style="margin-top: 10px;">
