@@ -109,60 +109,66 @@
 			<div class="col-md-12">
 				<span class="float-sm-left"> <?php previous_post_link(); ?>  </span>
 				<span class="float-sm-right"><?php next_post_link(); ?> </span>	
-			</div>		
-			
+			</div>
+
+			<div class="col-md-12 user-section" style="border: 1px solid #C4C4C4; margin: 10px; padding: 10px;">				
+				<span class="float-sm-left"> 
+						<img class="img-responsive" src="<?php _e(get_avatar_url()); ?>" width="80"> 
+				</span>
+				<a href="<?php _e(get_author_posts_url());?>"><span style="padding-left: 8px;"><?php _e(get_the_author());?> </span></a>	
+			</div>
+			<div class="col-md-12" style="border: 1px solid #C4C4C4; margin: 10px; padding: 10px;">
+				<?php
+						$post_id=get_the_ID();
+						
+						//get_related_post($post_id,$postnumber);
+						get_related_post($post_id,9);
+				?>			
+			</div>
 		</div>
 		
 
 		
 	</div>
 
-	<!-- ++++++++++latest-news++++++++++++++++++ -->
-		<div class="col-4">
-			<div class="row">
-				<div class="col-12">
-					<div class="latest-news">
-							<span class="head-title"> সর্বশেষ সংবাদ </span>
-							<?php
-							//get_recent_post_function($numberposts)
-							get_recent_post_function(10);
-							?>					
-					</div>
 
-			</div>			
-			</div>
+	<div class="col-4">
+		<div class="row">
+			<div class="col-12">
+				<div class="latest-news">
+						<span class="head-title"> সর্বশেষ সংবাদ </span>
+						<?php
+						//get_recent_post_function($numberposts)
+						get_recent_post_function(10);
+						?>					
+				</div>
 
-			<div class="row">
-				<div class="col-12">
-					<?php 
-					$ad_title=get_field('ad_title'); 
-					$ad_img=get_field('ad_photo');
-					
-					?>
-
-					<h3> <?php _e($ad_title);?> </h3>
-					
-					<img src="<?php _e($ad_img['url']);?>" width="100%">
-				</div>			 
-			</div>
-			
-			
+		</div>			
 		</div>
-	<!-- ++++++++++latest-news++++++++++++++++++ -->
-</div>
 
-	<div class="row">
-		<div class="col-md-12" style="border: 1px solid #C4C4C4; margin: 10px; padding: 10px;">
-			<?php
-					$post_id=get_the_ID();
-					//get_related_post($post_id,$postnumber);
-					get_related_post($post_id,9);
-			?>			
+		<div class="row">
+			<div class="col-12">
+				<?php 
+				$ad_title=get_field('ad_title'); 
+				$ad_img=get_field('ad_photo');
+				
+				?>
+
+				<h3> <?php _e($ad_title);?> </h3>
+				
+				<img src="<?php _e($ad_img['url']);?>" width="100%">
+			</div>			 
 		</div>
+		
+		
 	</div>
-
+</div>
 </div>
 
-
+<?php // If comments are open or we have at least one comment, load up the comment template.
+ if ( comments_open() || get_comments_number() ) :
+     comments_template();
+ endif;
+ ?>
 
 <?php get_footer(); ?>
