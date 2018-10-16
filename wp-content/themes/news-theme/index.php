@@ -5,8 +5,6 @@
 <div class="container" style="/*max-width:100%;*/ ">
 <div class="row">
       <?php 
-
-          <?php
            //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
            get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-8','#C2C2C2');                  
 
