@@ -15,9 +15,16 @@
 							endif;
 						?>
 			</div>
-			<div class="col-4">
-				
-				
+
+
+			<div class="col-4">				
+				<div class="latest-news">
+					<span class="head-title"> সর্বশেষ সংবাদ </span>
+					<?php
+						//get_recent_post_function($numberposts)
+						get_recent_post_function(10);
+					?>					
+				</div>
 			</div>
 
 	</div>
