@@ -11,6 +11,55 @@
   
 
 <style type="text/css">
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #bb1919;
+}
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    background: #6c757d;
+    color: #000;
+}
+
+
+.alert-spinner {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.7;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+/*++++++++++++Slider++++++++++++++++*/
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+/*++++++++++++Slider++++++++++++++++*/
+
+
+
 		.each-row{
 			margin-bottom: 20px;
 		}
@@ -163,7 +212,7 @@ nav-tabs .nav-link {
 
 .cat-img-container{
 	border-radius:5px;
-	max-width: 100%;
+	width: 100%;
 	overflow: hidden; 
 	text-align: center;
 }
@@ -186,7 +235,17 @@ nav-tabs .nav-link {
 	/*background: #abc;*/
 }
 /*+++++++Fornt Page post display design+++++++++++*/
+	.main-menu {
+		background: #bb1919;
+	}
 
+	.navbar-dark .navbar-nav .nav-link{
+		color:#fff !important;
+		text-rendering: optimizeLegibility;
+
+		font-size: 1.5em !important;
+		font-weight: 600 !important;
+	}
 	#top-mega-menu{
 		padding: 5px;		
 		background: #f04;	
@@ -334,7 +393,7 @@ nav-tabs .nav-link {
 	<!-- ++++++++++++++++++++++++++++++++++++ Primary Menu +++++++++++++++++++++++++++++++++ -->
 	
 		<div class="primary-menu row" > 
-			<nav class="navbar navbar-expand-sm  bg-primary navbar-dark" style="width:100%">
+			<nav class="navbar navbar-expand-sm  main-menu navbar-dark" style="width:100%">
 	         	<?php
 			        $arg = array(
 							'theme_location' 	=> 'primary-menu',
@@ -352,6 +411,11 @@ nav-tabs .nav-link {
 	<!-- +++++++++++++++++++++++++++++++ Headlines  Slide +++++++++++++++++++++++++++++++++++ -->
 	<div id="headlines" class="row">
 		 <div class="headlines-tag"> 
+		 		<div class="alert-spinner">
+	                <div class="double-bounce1"></div>
+	                <div class="double-bounce2"></div>
+	            </div>
+
 		 		<span> headlines </span>
 		 </div>
 		 <div class="slide-text">
@@ -359,7 +423,7 @@ nav-tabs .nav-link {
 				 <?php $posts_query = new WP_Query('posts_per_page=-1');
 				        while ($posts_query->have_posts()) : $posts_query->the_post();
 				    ?>
-				    <a href="<?php the_permalink(); ?>"><?php the_title(); ?> | </a>
+				   <a href="<?php the_permalink(); ?>"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22">  <?php the_title(); ?> | </a>
 				    <?php endwhile; wp_reset_query(); ?>			
 			</MARQUEE>		 	
 		 </div>

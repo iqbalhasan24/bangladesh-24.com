@@ -2,63 +2,104 @@
 
 <!-- ++++++++++++First content++++++++++++ -->
 
-<div class="container">
+<div class="container" style="/*max-width:100%;*/ ">
+<div class="row">
+      <?php 
+          //get_post_slider($cat_id, $post_no,$div_class);
+          get_post_slider(7, 5, 'col-sm-4');
+      ?>
+       
+     <!-- ++Middel coll++ -->
+      <div class="col-sm-4">
+
+
+      </div>
+      <!-- ++Middel coll++ -->
+
+      <!-- ++Right coll++ -->
+      <div class="col-sm-4">
+          <ul class="nav nav-pills">
+            <li class="nav-item" style="width: 50%; text-align: center;">
+              <a class="nav-link active" data-toggle="pill" href="#last_news">সর্বশেষ সংবাদ</a>
+            </li>
+            <li class="nav-item" style="width: 50%; text-align: center;">
+              <a class="nav-link" data-toggle="pill" href="#recent_post">সর্বাধিক পঠিত</a>
+            </li>
+           
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane container active" id="last_news">
+              <?php get_recent_post_function(4); ?>
+            </div>
+            <div class="tab-pane container fade" id="recent_post">
+              <?php get_recent_post_function(3); ?>      
+            </div>
+
+          </div>
+        
+      </div>
+      <!-- ++Right coll++ -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="row each-row">
       <!-- ++Left coll++ -->
-     <div class="col-sm-8 left-column">
+     <div class="col-sm-12 left-column">
+            <div class="row each-row">
+               
+
+            
             <div class="row each-row">
                   <?php
                    //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
-                   get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-12','#C2C2C2');
+                   get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-8','#C2C2C2');
+                  // get_post_slider('aside', 2 , 6, 'col-sm-12','#C2C2C2');
                    ?>
             </div>
             <div class="row each-row">
                   <?php
                     // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
-                   get_lead_post_by_cat_with_img_with_formate('aside', 3 , 6, 'col-sm-12','#fff');
+                   get_lead_post_by_cat_with_img_with_formate('aside', 3 , 6, 'col-sm-8','#fff');
                    ?>
            </div>
            <div class="row each-row">
                <?php
                    //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
-                    get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-12','#f2f2f2' );
+                    get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-8','#f2f2f2' );
                 ?>
             </div>
             <div class="row each-row">
                 <?php
                     //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-                    get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-12','#f20000' );
+                    get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
                 ?>
             </div>        
     </div>
       <!-- ++ End Left coll++ -->
 
-      <!-- ++Right coll++ -->
-      <div class="col-sm-4 right-column">
-          <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
-          <div class="col-12" style="margin:0px; padding: 0px;">
-              <nav class="multi-tab">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="width: 50%;font-size: 1.3em;">সর্বশেষ সংবাদ</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" style="width: 50%; font-size: 1.3em;">সর্বাধিক পঠিত</a>
-                  
-                </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">      
-                      <?php get_recent_post_function(10); ?>
-                  </div>
-                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                      <?php get_most_view_post(4); ?>
-                  </div>
-              </div>
-          </div>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
-
-          
-      </div>
-      <!-- ++Right coll++ -->   
+       
 </div>
 <!-- ++++++++++++First content++++++++++++ -->
 
@@ -70,30 +111,31 @@
 </div>
 
 
-    <div class="row each-row">
-            <?php
-                //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-                get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-                get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-                get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-                                                 
-            ?>
-        </div>
+<div class="row each-row">
+        <?php
+            //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
+            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
+            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
+                                             
+        ?>
+    </div>
 
 
 <div class="row each-row">
                   <?php 
                       // get_lead_post_by_cat_with_cat_img($cat_id, $post_no,$div_class)
-                      get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-12'); 
+                      get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-8'); 
                   ?>
 </div>
 
 <div class="row each-row 2nd-parent-column" style="margin-bottom: 20px; ">
     <?php
         //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-4','#f20000' );               
-       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-4','#f20000' );               
-       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-4','#f20000' );               
+       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
+       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
+       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
+       get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
                       
     ?>
 </div>
@@ -101,8 +143,9 @@
     <?php
        //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
                     
-        get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-6','#f2f2f2' );               
-        get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-6','#f2f2f2' );                 
+        get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
+        get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
+        get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );                
                      
     ?>
 </div> 
@@ -114,7 +157,7 @@
 
 
 
-
+  </dir>
 
 </div>
 <?php  get_footer(); ?>

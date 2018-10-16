@@ -64,7 +64,25 @@ add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
 add_theme_support( 'post-thumbnails', array( 'page' ) );          // Pages only
 add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
 
+//set_post_thumbnail_size( 350, 150, true );
+add_image_size('slider-size', 450, 300, true); // width, height, crop
 
+
+
+
+/*add_image_size('covernews-slider-full', 1536, 1020, true); // width, height, crop
+add_image_size('covernews-slider-center', 936, 897, true); // width, height, crop
+add_image_size('covernews-featured', 1024, 0, false ); // width, height, crop
+add_image_size('covernews-medium', 720, 380, true); // width, height, crop
+add_image_size('covernews-medium-square', 675, 450, true); // width, height, crop
+
+
+
+the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
+the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
+the_post_thumbnail('medium_large');    // Medium Large resolution (default 768px x 0px max)
+the_post_thumbnail('large');           // Large resolution (default 1024px x 1024px max)
+the_post_thumbnail('full');            // Original image resolution (unmodified)*/
 /*+++++++++++++++++++++++++++++++++add_post_formats++++++++++++++++++++++++++++++*/ 
     
 function add_post_formats() {
@@ -369,6 +387,7 @@ include_once('custom-functions/get-most-view-post-function.php');
 include_once('custom-functions/get-post-by-custom-post-type.php');
 
 include_once('custom-functions/get-psot-by-cat.php');
+include_once('custom-functions/post_slider.php');
 //include_once('custom-functions/get-post-for-category-page-function.php');
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
