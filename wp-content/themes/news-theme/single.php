@@ -10,7 +10,7 @@
 							Print <i class="fa fa-print" aria-hidden="true"></i>
 				</button>
 
-			<div style="border: 1px solid #C4C4C4; width: 100%; padding: 10px; ">
+			<div class="row each-row">
 				<h1><?php the_title(); ?></h1>
 				<p>					
 					<?php 
@@ -105,7 +105,7 @@
 		</div>
 		
 		
-		<div class="row" style="padding-top:0; padding-bottom: 0; padding-left: 5%; padding-right: 5%;">
+		<div class="row each-row">
 			<div class="col-md-12">
 				<span class="float-sm-left"> <?php previous_post_link(); ?>  </span>
 				<span class="float-sm-right"><?php next_post_link(); ?> </span>	
