@@ -25,7 +25,7 @@ function get_post_slider($cat_id, $post_no,$div_class){
                               ?>
                        
                                 
-                                 <div class="carousel-item  <?php if($i==0): echo('active'); endif; ?>" style="min-height: 300px; background: #000; opacity: .6;">
+                                 <div class="carousel-item  <?php if($i==0): echo('active'); endif; ?>" style="min-height: 300px;max-height: 300px; background: #000; opacity: .6; overflow: hidden;">
                                    <span style="width: 100%; position: relative;"></span> <a href="<?php the_permalink(); ?> "> 
                                         <?php the_post_thumbnail('slider-size');  //echo get_the_post_thumbnail_url();?> 
                                     </a>
