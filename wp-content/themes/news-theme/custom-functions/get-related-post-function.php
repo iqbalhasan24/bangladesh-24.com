@@ -36,7 +36,7 @@ $args = array(
                 	<a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a> 
         		  		
             	       			
-        		<span style="position: absolute;bottom:55px; background: #f60000; opacity: .8; width:96%; margin-left: 2%; ">
+        		<span style="position: absolute;bottom:55px; background: #f60000; opacity: .8; width:96%; margin-left: 2%; text-align: center; font-size: 1.2em; font-weight: 500; ">
         			
                 		<a href="<?php the_permalink();?>" style="color: #fff;"><?php the_title(); ?></a>
         		</span>
