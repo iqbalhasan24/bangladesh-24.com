@@ -15,7 +15,7 @@
 </div>
 
 
-<div class="row">       
+<div class="row each-row">       
      <!-- ++Left coll++ -->
     
           <?php
