@@ -30,7 +30,11 @@
 	</div>
 
 	<div class="row each-row">
-
+			<?php
+					$post_id=get_the_ID();
+					//get_related_post($post_id,$postnumber);
+					get_related_post($post_id,9);
+			?>
 
 	</div>
 
