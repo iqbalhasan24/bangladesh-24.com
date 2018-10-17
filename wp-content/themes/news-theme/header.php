@@ -42,7 +42,7 @@ body {
     background: #3B6186;
     padding: 2px;
     margin: 0px 2px 0px 0px ;
-    border-bottom: 3px solid #3B6186;   
+    border-bottom: 4px solid #3B6186;   
 }
 .first-letter-design > a > h4{	
     padding: 0 !important;
