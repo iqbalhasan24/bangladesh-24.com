@@ -262,33 +262,33 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                       $cat_image_id = get_term_meta ( $cat_id, 'category-image-id', true );
                       $cat_img_url = wp_get_attachment_image_url($cat_image_id, 'large'); 
                     ?>
-                      <div class="<?php _e($category_link); ?>">
-              <div class="first-letter-design"> 
-                <a href="<?php _e($category_link); ?>"> 
-                  <h4 class="cat-title" > 
-                    <?php _e($category_name); ?> 
-                  </h4>
-                </a>   
-              </div>
-              <div class="col-12" style="background: #000; min-height: 250px;">
-                <a href="<?php _e($category_link); ?>"> <img src="<?php _e($cat_img_url); ?>" width="100%"> </a>
-              </div>
-                    <?php
+                      <div class="<?php _e($div_class); ?>">
+                          <div class="first-letter-design"> 
+                            <a href="<?php _e($category_link); ?>"> 
+                              <h4 class="cat-title" > 
+                                <?php _e($category_name); ?> 
+                              </h4>
+                            </a>   
+                          </div>
+                          <div class="col-12" style="background: #000; min-height: 250px;">
+                            <a href="<?php _e($category_link); ?>"> <img src="<?php _e($cat_img_url); ?>" width="100%"> </a>
+                          </div>
+                                <?php
 
-                          $query = new WP_Query( $args );
+                                      $query = new WP_Query( $args );
 
-                          if ( $query->have_posts() ) :
-                                  while ( $query->have_posts() ) {
-                                      $query->the_post();
-                              ?>                                
-                  <p>
-                    <img src="/wp-content/themes/news-theme/images/icons/list-box-img.png"> 
-                    <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                  </p>                                    
-                              <?php
-                          }                    
-                    endif; 
-                    echo "</div>";
+                                      if ( $query->have_posts() ) :
+                                              while ( $query->have_posts() ) {
+                                                  $query->the_post();
+                                          ?>                                
+                              <p>
+                                <img src="/wp-content/themes/news-theme/images/icons/list-box-img.png"> 
+                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                              </p>                                    
+                                          <?php
+                                      }                    
+                         endif; 
+                        echo "</div>";
                   
                     wp_reset_postdata();
            // }
