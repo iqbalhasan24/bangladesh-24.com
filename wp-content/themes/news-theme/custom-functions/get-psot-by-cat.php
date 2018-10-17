@@ -293,7 +293,10 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                                   <?php
                                           endif;
                                         $i++;
-                                      }                    
+                                      }?>
+                                        <a href="<?php _e($category_link); ?>" style="float: right;"><?php _e("আরো..."); ?></a>
+                                      <?php
+                                                         
                               endif; 
                         echo "</div>";
                   
