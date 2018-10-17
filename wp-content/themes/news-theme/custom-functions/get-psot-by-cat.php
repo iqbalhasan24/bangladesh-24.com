@@ -270,7 +270,7 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                               </h4>
                             </a>   
                           </div>
-                          <div class="col-12" style="background: #000; min-height: 250px;">
+                          <div class="col-12" style="padding:0px; margin-bottom: 8px;">
                             <a href="<?php _e($category_link); ?>"> <img src="<?php _e($cat_img_url); ?>" width="100%"> </a>
                           </div>
                                 <?php
@@ -279,15 +279,11 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                                         $i=0;
                                       if ( $query->have_posts() ) :
                                               while ( $query->have_posts() ) {
-                                                  $query->the_post();
-                                          
-
+                                                  $query->the_post(); 
                                            if($i ==0):
                                       ?>
                                           <a href="<?php the_permalink();?>" style="font-size: 1.4em;"><?php the_title(); ?></a>
-                                      <?php      
-
-
+                                      <?php 
                                            else:                                          
                                           ?>
                                             <p>
