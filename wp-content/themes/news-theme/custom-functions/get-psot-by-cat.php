@@ -273,6 +273,7 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                           <div class="col-12" style="padding:0px; margin-bottom: 8px;">
                             <a href="<?php _e($category_link); ?>"> <img src="<?php _e($cat_img_url); ?>" width="100%"> </a>
                           </div>
+                          <div class="col-12" style="padding:10px;">
                                 <?php
 
                                       $query = new WP_Query( $args );
@@ -298,6 +299,7 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                                       <?php
                                                          
                               endif; 
+                        echo "</div>";
                         echo "</div>";
                   
                     wp_reset_postdata();
