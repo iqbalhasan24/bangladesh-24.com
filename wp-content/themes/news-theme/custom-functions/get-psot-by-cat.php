@@ -245,9 +245,9 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
 
 
 
-/*+++++++++++++++++++++get_post_by_cat_with_cat_img_and_cat_name++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++get_post_by_cat_with_cat_name_and_cat_img++++++++++++++++++++++++++++++*/
 
-function get_post_by_cat_with_cat_img_and_cat_name( $cat_id, $post_no,$div_class){
+function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class){
 
        // if ( has_post_format($post_formate) ) {          
                     $args = array(
@@ -293,4 +293,4 @@ function get_post_by_cat_with_cat_img_and_cat_name( $cat_id, $post_no,$div_class
                     wp_reset_postdata();
            // }
         }/*end function*/
-/*+++++++++++++++++++++End get_post_by_cat_with_cat_img_and_cat_name++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++End get_post_by_cat_with_cat_name_and_cat_img++++++++++++++++++++++++++++++*/
