@@ -134,9 +134,10 @@
 <div class="row each-row"> 
     <?php  
         //get_post_by_cat_with_cat_name_and_cat_img($cat_id, $post_no,$div_class);
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-4');
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-4');
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-4');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 5, 'col-sm-3');
 
     ?>
 </div>
