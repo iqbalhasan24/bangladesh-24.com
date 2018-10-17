@@ -55,26 +55,6 @@
       <!-- ++Right coll++ -->
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="row each-row">
       <!-- ++Left coll++ -->
      <div class="col-sm-12 left-column">                
@@ -148,6 +128,18 @@
                      
     ?>
 </div> 
+
+
+
+<div class="row each-row"> 
+    <?php  
+        //get_post_by_cat_with_cat_img_and_cat_name($cat_id, $post_no,$div_class);
+        get_post_by_cat_with_cat_img_and_cat_name(3 , 5, 'col-sm-4');
+        get_post_by_cat_with_cat_img_and_cat_name(3 , 5, 'col-sm-4');
+        get_post_by_cat_with_cat_img_and_cat_name(3 , 5, 'col-sm-4');
+
+    ?>
+</div>
 
 </div>
 <?php  get_footer(); ?>

@@ -242,3 +242,74 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
         }
 /*+++++++++++++++++++++End get_lead_post_by_cat_with_img_with_formate++++++++++++++++++++++++++++++*/
 
+
+
+
+/*+++++++++++++++++++++get_post_by_cat_with_cat_img_and_cat_name++++++++++++++++++++++++++++++*/
+function get_post_by_cat_with_cat_img_and_cat_name($cat_id, $post_no,$div_class){                 
+                  
+                    $args = array(
+                        'posts_per_page'  => $post_no,
+                        'cat'           => $cat_id,
+                        'orderby'       => 'date',
+                        'order'       => 'DESC',
+                    );
+
+                    
+                    $cat_name = get_cat_name ( $cat_id);
+                    $category_link = get_category_link ( $cat_id);
+                    $cat_image_id = get_term_meta ( $cat_id, 'category-image-id', true );
+                    $cat_url = wp_get_attachment_image_url($cat_image_id, 'large');  
+                    $key=0;         
+                    
+                    $query = new WP_Query($args);
+                    if ( $query->have_posts() ) :
+                    ?>
+                  <div class="<?php _e($div_class); ?> lead-container">
+                    <div class="col-12 cat-post-container">
+                      <div class="row">
+                          <div class="col-12" >
+                            <div class="lead-title" >
+                                 <?php
+                                      while ( $query->have_posts() ): $query->the_post();
+                                      $key++;
+                                      if($key==1):
+                                  ?> 
+
+                                 
+                                    <a href="<?php the_permalink();?>">  
+                                        <?php the_title(); ?> 
+                                    </a>
+                                  <?php endif; endwhile;  wp_reset_postdata(); ?> 
+                              </div>
+                            </div>  
+                      </div>
+
+
+                      <div class="row">
+                          <div class="col-5">
+                              <a href="<?php _e($cat_url ); ?>"><img class="mx-auto" src="<?php _e($cat_url);?>" width="100%"> </a>
+                          </div>
+
+                          <div class="col-7"> 
+                    <?php
+                        while ( $query->have_posts() ): $query->the_post();
+                            $key++;                            
+                            if($key > ($post_no+1) ):
+                    ?>  
+                
+                          <a href="<?php the_permalink();?>" class="title-text">  <?php the_title(); ?> </a>
+
+
+                    <?php
+                      endif;
+                        endwhile; 
+                    _e("</div>");
+                    _e("</div>");
+                    _e("</div>");
+                    _e("</div>");
+                    endif; 
+                    wp_reset_postdata();
+      
+   }/*end function*/
+/*+++++++++++++++++++++End get_post_by_cat_with_cat_img_and_cat_name++++++++++++++++++++++++++++++*/

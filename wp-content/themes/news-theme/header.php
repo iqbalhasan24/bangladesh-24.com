@@ -11,6 +11,48 @@
   
 
 <style type="text/css">
+/*++++++++++++++++++++++++*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "Helvetica Neue", Helvetica, Times New Roman, sans-serif;
+    font-size: 11px;
+    line-height: 1.3;
+    background-color: #ffffff;
+    color: #333;
+    font-family: Times New Roman;
+    font-size: 15px;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*++++++++++++++++++++++++*/
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+ .first-letter-design{
+  	border-bottom: 3px solid #3B6186;
+  	width: 100%;
+  }
+
+.first-letter-design > h4::first-letter {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffffff;
+    background: #3B6186;
+    padding: 2px;
+    margin: 0px 2px 0px 0px ;
+    border-bottom: 3px solid #3B6186;
+   
+}
+.first-letter-design > h4{
+	
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+/*++++++++++++++++++++++++++++++++++++++++++*/
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
