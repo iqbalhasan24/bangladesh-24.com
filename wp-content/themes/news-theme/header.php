@@ -302,7 +302,7 @@ nav-tabs .nav-link {
 	}
 	
 	.site-title{
-		background: #4D96FF;
+		/*background: #4D96FF;*/
 		padding: 5px;
 		text-align:center;
 
