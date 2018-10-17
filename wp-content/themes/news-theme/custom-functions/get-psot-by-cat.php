@@ -276,18 +276,29 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
                                 <?php
 
                                       $query = new WP_Query( $args );
-
+                                        $i=0;
                                       if ( $query->have_posts() ) :
                                               while ( $query->have_posts() ) {
                                                   $query->the_post();
-                                          ?>                                
-                              <p>
-                                <img src="/wp-content/themes/news-theme/images/icons/list-box-img.png"> 
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                              </p>                                    
-                                          <?php
+                                          
+
+                                           if($i ==0):
+                                      ?>
+                                          <a href="<?php the_permalink();?>" style="font-size: 1.4em;"><?php the_title(); ?></a>
+                                      <?php      
+
+
+                                           else:                                          
+                                          ?>
+                                            <p>
+                                              <img src="/wp-content/themes/news-theme/images/icons/list-box-img.png"> 
+                                              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                            </p>                                    
+                                  <?php
+                                          endif;
+                                        $i++;
                                       }                    
-                         endif; 
+                              endif; 
                         echo "</div>";
                   
                     wp_reset_postdata();

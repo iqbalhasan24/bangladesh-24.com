@@ -36,21 +36,17 @@ body {
   	width: 100%;
   }
 
-.first-letter-design > a > h4::first-letter {
-    font-size: 1.5em;
+.first-letter-design > a > h4::first-letter {    
     font-weight: 600;
     color: #ffffff;
     background: #3B6186;
     padding: 2px;
     margin: 0px 2px 0px 0px ;
-    border-bottom: 3px solid #3B6186;
-   
+    border-bottom: 3px solid #3B6186;   
 }
-.first-letter-design > a > h4{
-	
+.first-letter-design > a > h4{	
     padding: 0 !important;
     margin: 0 !important;
-
 }
 /*++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -59,7 +55,7 @@ body {
     background-color: #bb1919;
 }
 .nav-pills .nav-link {
-    border-radius: .25rem;
+    border-radius: .25em;
     background: #6c757d;
     color: #000;
 }
