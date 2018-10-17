@@ -46,7 +46,7 @@ body {
     border-bottom: 3px solid #3B6186;
    
 }
-.first-letter-design > h4{
+.first-letter-design > a > h4{
 	
     padding: 0 !important;
     margin: 0 !important;
