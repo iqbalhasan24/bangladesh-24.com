@@ -40,7 +40,7 @@
 		সহসভাপতি, ঢাকা সাংবাদিক ইউনিয়ন (ডিইউজে)<br>
 		১০৯, ডি.আই.টি. রোড, ৪র্থ তলা (পশ্চিম পার্শ্বে), মালিবাগ, ঢাকা-১২১৭।<br>
 		ফোন: +৮৮০-২-৪৮৩২১৫৪৭<br>
-		ইমেইল: info@beaconbangla.com
+		ইমেইল: info@bangladesh-24.com
     </div>
     <div class="col-12 footer-menu-area">
         footer-menu-area
