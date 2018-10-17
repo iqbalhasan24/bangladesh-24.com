@@ -36,7 +36,7 @@ body {
   	width: 100%;
   }
 
-.first-letter-design > h4::first-letter {
+.first-letter-design > a > h4::first-letter {
     font-size: 1.5em;
     font-weight: 600;
     color: #ffffff;
