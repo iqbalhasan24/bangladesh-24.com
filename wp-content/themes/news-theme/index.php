@@ -20,7 +20,7 @@
          <div class="row each-row">
                 <?php
                   //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
-                  get_post_by_special_cat_with_post_title_and_content_and_img(2 , 1, 'col-sm-12');
+                  //get_post_by_special_cat_with_post_title_and_content_and_img(2 , 1, 'col-sm-12');
               ?> 
          </div> 
       </div>
