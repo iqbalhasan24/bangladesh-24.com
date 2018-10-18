@@ -521,3 +521,78 @@ function get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $d
       
    }/*end function*/
 /*+++++++++++++++++++++End get_lead_post_by_cat_with_post_img++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+/*+++++++++++++++++++++get_lead_post_by_cat_with_post_img_and_title++++++++++++++++++++++++++++++*/
+function get_lead_post_by_cat_with_post_img_and_title($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code){                 
+                  
+                    if ( has_post_format($post_formate) ) {          
+                    $args = array(
+                        'posts_per_page'  => $post_no,
+                        'cat'           => $cat_id,
+                        'orderby'       => 'date',
+                        'order'       => 'DESC',
+                    );
+
+                    $category_link = get_category_link ( $cat_id);                          
+                   
+                   	 _e("<div class='".$div_class."'>");
+		                  
+
+	                            $query = new WP_Query( $args );
+
+	                            	$i=0;
+
+	                            if ( $query->have_posts() ) :
+	                                while ( $query->have_posts() ) {
+	                                    $query->the_post();
+	                                    $i++;
+	                                    if($i==1):
+
+	                                   _e("<div class='col-12' style='background-image: linear-gradient(to right, #F2F2A1, #F2E39D,#F7F8D5); border:1px solid #EFF5F9; min-height:300px;'> ");
+			                   			?>
+			                   				
+			                   				
+			                   				<div class='row each-row' style="padding-top:20px; ">
+		                        				<div class='col-6'>
+	                        						<a href="<?php the_permalink();?>">
+					                                	<img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>">
+					                                </a>
+		                        				</div>
+		                        				<div class='col-6' style="text-align: justify;">
+		                        					<a href="<?php the_permalink();?>">
+					                              		<h4 style="color:#ff0000"><?php the_title(); ?></h4>
+					                              	</a>
+					                              	<a href="<?php the_permalink();?>">		
+						                                <p style="font-size: 1.2em; color:#000;">
+														<?php 
+							                                $content=get_the_content();
+							                                $content_20word=wp_trim_words($content,40);
+							                                _e($content_20word);
+						                                ?>	
+						                                </p>
+						                            </a>    
+				                            	</div>
+				                            </div>
+			                   		
+	                            	
+	                           	<?php
+	                           		endif;
+	                            	
+
+	                                }
+                    	
+                    
+                    echo "</div>";
+                    echo "</div>";
+                    endif; 
+                    wp_reset_postdata();
+            }
+
+      
+   }/*end function*/
+/*+++++++++++++++++++++End get_lead_post_by_cat_with_post_img_and_title++++++++++++++++++++++++++++++*/

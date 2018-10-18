@@ -22,45 +22,40 @@ function get_lead_post_by_cat_with_cat_img($cat_id, $post_no,$div_class){
                     ?>
                   <div class="<?php _e($div_class); ?> lead-container">
                     <div class="col-12 cat-post-container">
-                      <div class="row">
-                          <div class="col-12" >
-                            <div class="lead-title" >
-                                 <?php
-                                      while ( $query->have_posts() ): $query->the_post();
-                                      $key++;
-                                      if($key==1):
-                                  ?> 
-
-                                 
-                                    <a href="<?php the_permalink();?>">  
-                                        <?php the_title(); ?> 
-                                    </a>
-                                  <?php endif; endwhile;  wp_reset_postdata(); ?> 
-                              </div>
-                            </div>  
-                      </div>
-
-
-                      <div class="row">
-                          <div class="col-5">
-                              <a href="<?php _e($cat_url ); ?>"><img class="mx-auto" src="<?php _e($cat_url);?>" width="100%"> </a>
+                          <div class="row">
+                              <div class="col-12" >
+                                <div class="lead-title" >
+                                     <?php
+                                          while ( $query->have_posts() ): $query->the_post();
+                                          $key++;
+                                          if($key==1):
+                                      ?>                                      
+                                        <a href="<?php the_permalink();?>">  
+                                            <?php the_title(); ?> 
+                                        </a>
+                                      <?php endif; endwhile;  wp_reset_postdata(); ?> 
+                                  </div>
+                                </div>  
                           </div>
 
-                          <div class="col-7"> 
-                    <?php
-                        while ( $query->have_posts() ): $query->the_post();
-                            $key++;                            
-                            if($key > ($post_no+1) ):
-                    ?>  
-                
-                          <a href="<?php the_permalink();?>" class="title-text">  <?php the_title(); ?> </a>
 
+                        <div class="row">
+                            <div class="col-5">
+                                <a href="<?php _e($cat_url ); ?>"><img class="mx-auto" src="<?php _e($cat_url);?>" width="100%"> </a>
+                            </div>
 
-                    <?php
-                      endif;
-                        endwhile; 
-                    _e("</div>");
-                    _e("</div>");
+                                <div class="col-7"> 
+                                    <?php
+                                        while ( $query->have_posts() ): $query->the_post();
+                                            $key++;                            
+                                            if($key > ($post_no+1) ):
+                                    ?>
+                                     <a href="<?php the_permalink();?>" class="title-text">  <?php the_title(); ?> </a>
+                                  <?php
+                                          endif;
+                                      endwhile; 
+                              _e("</div>");
+                        _e("</div>");
                     _e("</div>");
                     _e("</div>");
                     endif; 
@@ -322,7 +317,8 @@ function get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $
                         'posts_per_page'  => $post_no,
                         'cat'           => $cat_id,
                         'orderby'       => 'date',
-                        'order'       => 'DESC',
+                        //'order'       => 'DESC',
+                        'order'       => 'ASC',
                     );
 
                       $category_link = get_category_link ( $cat_id);
@@ -337,17 +333,23 @@ function get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $
                                       
                                       if ( $query->have_posts() ) :
                                               while ( $query->have_posts() ) {
-                                                  $query->the_post();           
+                                                  $query->the_post();  
+
+                                                  $content=get_the_content();
+                                                  $title=get_the_title();
+                                                  $content_20word=wp_trim_words($content,15);  
+                                                  $content_text=str_replace(" ","</span> &nbsp; <span>", $content_20word);        
+                                                  $title_text=str_replace(" ","</span> &nbsp; <span>", $title);        
                                           ?>
-                                            <p class="special-text"  style="position: absolute;top:25%; width: 96%; margin-left: 2%;">
-                                                <a href="<?php _e($category_link); ?>"> 
-                                                    <span> <?php _e($category_name); ?> </span>
+                                            <p class="special-text col-12"  style="position: absolute;top:5%; width: 96%; margin-left: 2%;">
+                                                <a href="<?php the_permalink();  ?>"> 
+                                                    <span> <?php _e($title_text); ?> </span>
                                                 </a> 
                                             </p>  
 
-                                            <p class="special-text"  style="position: absolute;bottom:25%; width: 96%; margin-left: 2%;">
-                                                <a href="<?php _e($category_link); ?>" style="color:#0c5460; font-weight: 600;">
-                                                  <span> <?php _e($category_name); ?> </span>    
+                                            <p class="special-text col-12"  style="position: absolute;bottom:5%; width: 96%; margin-left: 2%; text-align: left; ">
+                                                <a href="<?php the_permalink(); ?>" style="color:#0c5460; font-weight: 600;">
+                                                  <span> <?php _e($content_text); ?> </span>    
                                                 </a>
                                             </p>                                  
                                   <?php                                   

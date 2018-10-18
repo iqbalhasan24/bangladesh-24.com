@@ -33,7 +33,8 @@ body {
 /*++++++++++++++++*/
 		.special-text span{
 			background: #f00;
-			padding: 0 2px;
+			/*padding: 0 2px;*/
+			color: #ffffff;
 		}
 
 /*++++++++++++++++*/
@@ -383,7 +384,7 @@ nav-tabs .nav-link {
 
 	<div id="top-mega-menu" class="row">
 		<div class="col-12">
-			<!-- <script type="text/javascript" src="http://bangladate.appspot.com/index2.php"></script> -->
+		<!-- 	<script type="text/javascript" src="http://bangladate.appspot.com/index2.php"></script> || -->
 			<script type="text/javascript" src="http://bangladate.appspot.com/index4.php"></script> || <?php _e(date("Y-M-d"));?>  <?php _e(date('l'));  ?>
 		</div>
 	</div>
