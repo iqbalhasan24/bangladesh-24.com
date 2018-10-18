@@ -30,6 +30,13 @@ body {
 }
 /*++++++++++++++++++++++++*/
 
+/*++++++++++++++++*/
+		.special-text span{
+			background: #f00;
+			padding: 0 2px;
+		}
+
+/*++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++*/
  .first-letter-design{
   	border-bottom: 3px solid #3B6186;

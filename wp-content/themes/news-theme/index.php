@@ -6,7 +6,21 @@
 <div class="row each-row">
       <?php 
            //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
-           get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-8','#C2C2C2');                  
+           get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-5','#C2C2C2');   
+      ?>
+
+      <div class="col-sm-3">
+          <div class="row each-row">
+              <?php
+                  //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
+                  get_post_by_special_cat_with_post_title_and_content_and_img(3 , 5, 'col-sm-4');
+              ?>
+          </div>
+         <div class="row each-row">
+         
+         </div> 
+      </div>
+      <?php               
 
           //get_post_slider($cat_id, $post_no,$div_class);
           get_post_slider(7, 5, 'col-sm-4');

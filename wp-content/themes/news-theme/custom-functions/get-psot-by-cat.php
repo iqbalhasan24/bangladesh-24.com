@@ -306,3 +306,61 @@ function get_post_by_cat_with_cat_name_and_cat_img( $cat_id, $post_no,$div_class
            // }
         }/*end function*/
 /*+++++++++++++++++++++End get_post_by_cat_with_cat_name_and_cat_img++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+/*+++++++++++++++++++++get_post_by_special_cat_with_post_title_and_content_and_img++++++++++++++++++++++++++++++*/
+
+function get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class){
+
+       // if ( has_post_format($post_formate) ) {          
+                    $args = array(
+                        'posts_per_page'  => $post_no,
+                        'cat'           => $cat_id,
+                        'orderby'       => 'date',
+                        'order'       => 'DESC',
+                    );
+
+                      $category_link = get_category_link ( $cat_id);
+                      $category_name = get_cat_name($cat_id);
+                      $cat_image_id = get_term_meta ( $cat_id, 'category-image-id', true );                      
+                    ?>
+                      <div class="<?php _e($div_class); ?>">
+                        <div class="col-12" style="position: relative;">
+                             <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>">           
+                                <?php
+                                      $query = new WP_Query( $args );
+                                      
+                                      if ( $query->have_posts() ) :
+                                              while ( $query->have_posts() ) {
+                                                  $query->the_post();           
+                                          ?>
+                                            <p class="special-text"  style="position: absolute;top:25%; width: 96%; margin-left: 2%;">
+                                                <a href="<?php _e($category_link); ?>"> 
+                                                    <span> <?php _e($category_name); ?> </span>
+                                                </a> 
+                                            </p>  
+
+                                            <p class="special-text"  style="position: absolute;bottom:25%; width: 96%; margin-left: 2%;">
+                                                <a href="<?php _e($category_link); ?>" style="color:#0c5460; font-weight: 600;">
+                                                  <span> <?php _e($category_name); ?> </span>    
+                                                </a>
+                                            </p>                                  
+                                  <?php                                   
+                                    
+                                     }
+                                                         
+                              endif; 
+
+
+                        echo "</div>";
+                        echo "</div>";
+                  
+                    wp_reset_postdata();
+           // }
+        }/*end function*/
+/*+++++++++++++++++++++End get_post_by_special_cat_with_post_title_and_content_and_img++++++++++++++++++++++++++++++*/
