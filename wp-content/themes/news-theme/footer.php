@@ -31,7 +31,7 @@
 
 
 	<?php if ( has_nav_menu( 'footer-menu-one' ) || has_nav_menu( 'footer-menu-two' ) || has_nav_menu( 'footer-menu-three' ) ): ?>
-	    <div class="col-12 footer-menu-area footer-wrapper" style="margin:0;">
+	    <div class="row footer-menu-area footer-wrapper" style="margin:0;">
 	    	 <div class="col-4">
 	    	 		<?php
 	    	 			if ( has_nav_menu( 'footer-menu-one' ) ):
