@@ -9,58 +9,88 @@
 
 <div class="row footer-row">
   <!-- <section class="footer" style="float: left; width: 100%;"> -->
-  	 <div class="col-12 footer-logo-area" >
-	  	 <div class="row" style="background: #EFF0EC; padding: 6px;">
-	  	 	
-		  	 <div class="col-3 site-logo">
-		        <?php
-		        	$custom_logo_id = get_theme_mod( 'custom_logo' );
-					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-					if ( has_custom_logo() ) {
-					        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:80px;'>";
-					} else {
-					        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
-					}
+  
+
+		<?php if ( has_nav_menu( 'media-menu' ) ): ?>
+		    <div class="col-12 footer-social-media-menu">
+		    	<?php    			
+		 			
+				        $footer_menu_one = array(
+							'theme_location' 	=> 'media-menu',							
+							'container'       	=> 'div',
+							'menu_class'     	=> 'media-menu',
+							'before'   			=> '<ul>',
+							'after'   			=> '</ul>',
+							);
+							wp_nav_menu($footer_menu_one);
+						
+				?>
+		    </div>
+		<?php endif; ?>    
 
 
+<?php if ( has_nav_menu( 'footer-menu-one' ) || has_nav_menu( 'footer-menu-two' ) || has_nav_menu( 'footer-menu-three' ) ): ?>
+    <div class="col-12 footer-menu-area footer-wrapper" style="margin:0;">
+    	 <div class="col-4">
+    	 		<?php
+    	 			if ( has_nav_menu( 'footer-menu-one' ) ):
+				        $footer_menu_one = array(
+							'theme_location' 	=> 'footer-menu-one',							
+							'container'       	=> 'div',
+							'menu_class'     	=> 'footer-menu footer-menu-one',
+							'before'   			=> '<ul>',
+							'after'   			=> '</ul>',
+							);
+							wp_nav_menu($footer_menu_one);
+					endif;
+				?>
+    	 </div>
+    	 
+    	 <div class="col-4">
+         		<?php
+				    if ( has_nav_menu( 'footer-menu-two' ) ):
+				        $footer_menu_two = array(
+							'theme_location' 	=> 'footer-menu-two',
+							'container'       	=> 'div',
+							'before'   			=> '<ul>',
+							'after'   			=> '</ul>',
+							'menu_class'     	=> 'col-3 footer-menu footer-menu-two',
+							);
 
-		        ?>
-		        	
-	        </div>
-	  	 	<div class="col-9 site-logo">
-	  	 			<?php get_post_by_custom_post_type(); ?>
-	  	 	</div>
-		</div>
-	</div>
+							wp_nav_menu($footer_menu_two);
+					endif;
+				?>		
+			</div>
+			<div class="col-4">
+					<?php
+						if ( has_nav_menu( 'footer-menu-three' ) ):
+					        $footer_menu_three = array(
+								'theme_location' 	=> 'footer-menu-three',
+								'container'       	=> 'div',
+								'before'   			=> '<ul>',
+								'after'   			=> '</ul>',
+								'menu_class'     	=> 'footer-menu footer-menu-three',
+								);
 
-
-    <div class="col-12 footer-widget-area">
-        সম্পাদক <br>
-		খন্দকার মোজাম্মেল হক<br>
-		সহসভাপতি, ঢাকা সাংবাদিক ইউনিয়ন (ডিইউজে)<br>
-		১০৯, ডি.আই.টি. রোড, ৪র্থ তলা (পশ্চিম পার্শ্বে), মালিবাগ, ঢাকা-১২১৭।<br>
-		ফোন: +৮৮০-২-৪৮৩২১৫৪৭<br>
-		ইমেইল: info@bangladesh-24.com
+							wp_nav_menu($footer_menu_three);
+						endif;
+				?>				
+			</div>				
     </div>
-    <div class="col-12 footer-menu-area">
-        footer-menu-area
-    </div>
+<?php endif; ?>
 
 
     <div class="col-12 footer-bottom">
-      <span class="footer-copy-right">© <?php _e(date("Y")); ?> - <?php bloginfo('name'); ?>. All Rights Reserved.
-      </span>
+      <span class="footer-copy-right1">© <?php _e(date("Y")); ?> - <?php bloginfo('name'); ?>. All Rights Reserved.
+      </span>||
 
-      <span class="designer">Website Design & Development By : <a href="mailto:iqbalhasanms@gmail.com">Iqbal Mahmud Hasan</a></span>
+      <span class="designer1">Website Design & Development By : <a href="mailto:iqbalhasanms@gmail.com">Iqbal Mahmud Hasan</a></span>
     </div>
 
   <!-- </section> -->
 </div>
 
 <!--+++++++++++++++++Footer Section ++++++++++++++++++++++-->
-
-
-
 </div>
 
 
@@ -97,12 +127,7 @@
 					$(".slide-text").css({"position":"absolute","left":div_width});
 						  
 			});
-			/* ++++++++++++++++ End jQuery for Slide text ++++++++++++++++++++++++ */
-
-
-
-		  	
-		  	
+			/* ++++++++++++++++ End jQuery for Slide text ++++++++++++++++++++++++ */		  	
 
 		  /*$('.dropdown > ul').addClass('dropdown-menu show');*/
 		  	
@@ -131,35 +156,91 @@
 <!--+++++++++++++++End Menu Script+++++++++++++++++++++-->
 	
 <style type="text/css">
-	
+
+.footer-social-media-menu{
+			
+			background: #202629;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+
+		}
+.footer-social-media-menu ul{
+	margin: 0;
+	padding: 0;
+}		
+
+.footer-social-media-menu ul li a{
+	font-size: 1.8em;
+	color: #AAACAE;
+}
+	.footer-wrapper{
+			text-align: center;
+	}
+	.footer-menu{
+		 display: inline-block;
+	}
+
+
+	.footer-menu li{
+		/*float: left;*/
+		list-style: none;
+		text-decoration: none;
+		margin-right: 4px;
+		display: block;
+		text-align: left;
+		
+	}
+
+	.footer-menu li a{
+		color: #fff;
+		font-weight: 600;
+	}
+
+
+.footer-menu li a:before {
+   /* content: "👉 ";*/
+ } 
+
+.footer-menu li a:hover {
+    text-decoration: none;
+ }   
+
+
+
+
+
+
+
+
 
 	.footer{
 			
 		}
-		.footer-widget-area{
-			
-			background: #000000;
-			color: #ffffff;
-			padding: 3% 2%;
-			text-align: center;
-
-		}
+		
 		.footer-menu-area{
 
 	
 			
-			background: #2C2C2C;
+			background: #2F383D;
 			color: #ffffff;
 			padding: 3% 2%;
 			text-align: center;
 		}
 
 		.footer-bottom{ 
-			background: #000000;
+			background: #202629;
 			color: #ffffff;
 			text-align: center;
 			padding: 2%;
 			}
+
+		.footer-bottom a{ 
+			
+			color: #ffffff;
+			
+			}
+				
 		.footer-copy-right{
 			float: left;
 		}

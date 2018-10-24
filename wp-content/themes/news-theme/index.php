@@ -14,7 +14,7 @@
           <div class="row each-row">
               <?php
                   //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
-                  get_post_by_special_cat_with_post_title_and_content_and_img(3 , 1, 'col-sm-12');
+                 // get_post_by_special_cat_with_post_title_and_content_and_img( 6, 1, 'col-sm-12');
               ?>
           </div>
          <div class="row each-row">
@@ -156,10 +156,10 @@
 <div class="row each-row"> 
     <?php  
         //get_post_by_cat_with_cat_name_and_cat_img($cat_id, $post_no,$div_class);
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 3, 'col-sm-3');
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 3, 'col-sm-3');
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 3, 'col-sm-3');
-        get_post_by_cat_with_cat_name_and_cat_img(3 , 3, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
 
     ?>
 </div>

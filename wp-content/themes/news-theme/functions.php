@@ -148,9 +148,10 @@ function wpb_custom_new_menu() {
       'top-mega-menu' => __( 'Top Mega Menu'),
       'top-menu' => __( 'Top Menu'),
       'primary-menu' => __( 'Primary Menu'),
-      'top-foote-menu' => __( 'Top Footer Menu'),
-      'bottom-foote-menu' => __( 'Bottom Footer Menu'),
-      'media-menu' => __( 'Media Menu')
+      'media-menu' => __( 'Media Menu'),
+      'footer-menu-one' => __( 'Footer Menu One'),
+      'footer-menu-two' => __( 'Footer Menu Two'),
+      'footer-menu-three' => __( 'Footer Menu Three')
     )
   );
 }

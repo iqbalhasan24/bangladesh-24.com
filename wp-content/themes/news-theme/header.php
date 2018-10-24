@@ -11,6 +11,13 @@
   
 
 <style type="text/css">
+
+p, h1, h2, h3, h4, h5, h6, a {
+		font-family: SolaimanLipi, Kiron, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif  !important;
+		color: #000;
+	
+		font-weight: 550;
+	}
 /*++++++++++++++++++++++++*/
 body {
     margin: 0;
@@ -372,7 +379,7 @@ nav-tabs .nav-link {
 	}
 
 
-	
+
 	
 </style>
 
@@ -380,6 +387,7 @@ nav-tabs .nav-link {
 </head>
 <body <?php body_class(); ?>>
 <!-- container-main -->
+<div id="top"></div>
 <div id="page" class="container-fluid">
 
 	<div id="top-mega-menu" class="row">
