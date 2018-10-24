@@ -375,7 +375,7 @@ nav-tabs .nav-link {
 	}
 
 	#headlines .slide-text{
-		max-width: 100%; float: left; padding: 4px; border: 2px solid #000;	display: block;   	
+		max-width: 100%; float: left; padding: 4px; /*border: 2px solid #000;*/	display: block;   	
 	}
 
 
