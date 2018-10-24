@@ -37,10 +37,10 @@
 	    	 			if ( has_nav_menu( 'footer-menu-one' ) ):
 					        $footer_menu_one = array(
 								'theme_location' 	=> 'footer-menu-one',							
-								'container'       	=> 'div',
+								'container'       	=> 'ul',
 								'menu_class'     	=> 'footer-menu footer-menu-one',
-								'before'   			=> '<ul>',
-								'after'   			=> '</ul>',
+								/*'before'   			=> '<ul>',
+								'after'   			=> '</ul>',*/
 								);
 								wp_nav_menu($footer_menu_one);
 						endif;
@@ -52,10 +52,10 @@
 					    if ( has_nav_menu( 'footer-menu-two' ) ):
 					        $footer_menu_two = array(
 								'theme_location' 	=> 'footer-menu-two',
-								'container'       	=> 'div',
-								'before'   			=> '<ul>',
-								'after'   			=> '</ul>',
-								'menu_class'     	=> 'col-3 footer-menu footer-menu-two',
+								'container'       	=> 'ul',
+								/*'before'   			=> '<ul>',
+								'after'   			=> '</ul>',*/
+								'menu_class'     	=> 'footer-menu footer-menu-two',
 								);
 
 								wp_nav_menu($footer_menu_two);
@@ -67,9 +67,9 @@
 							if ( has_nav_menu( 'footer-menu-three' ) ):
 						        $footer_menu_three = array(
 									'theme_location' 	=> 'footer-menu-three',
-									'container'       	=> 'div',
-									'before'   			=> '<ul>',
-									'after'   			=> '</ul>',
+									'container'       	=> 'ul',
+									/*'before'   			=> '<ul>',
+									'after'   			=> '</ul>',*/
 									'menu_class'     	=> 'footer-menu footer-menu-three',
 									);
 
