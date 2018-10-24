@@ -126,7 +126,16 @@
 					$(".slide-text").css({"position":"absolute","left":div_width});
 						  
 			});
-			/* ++++++++++++++++ End jQuery for Slide text ++++++++++++++++++++++++ */		  	
+			/* ++++++++++++++++ End jQuery for Slide text ++++++++++++++++++++++++ */	
+
+
+
+
+			/*+++++++++++++++++++++++++++ Add Target Blank++++++++++++++++++++++++++++*/	  	
+			$(document).ready(function() {
+				 jQuery('.media-menu li a').attr('target','_blank');
+			});
+			/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/	  	
 
 		  /*$('.dropdown > ul').addClass('dropdown-menu show');*/
 		  	
