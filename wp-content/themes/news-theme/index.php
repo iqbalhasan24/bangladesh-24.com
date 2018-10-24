@@ -130,7 +130,7 @@
                   ?>
 </div>
 
-<div class="row each-row 2nd-parent-column" style="margin-bottom: 20px; ">
+<div class="row each-row" style="margin-bottom: 20px; ">
     <?php
         //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
        get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
@@ -140,7 +140,7 @@
                       
     ?>
 </div>
-<div class="row each-row 2nd-parent-column" style="margin-bottom: 20px; ">
+<div class="row each-row" style="margin-bottom: 20px; ">
     <?php
        //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
                     
