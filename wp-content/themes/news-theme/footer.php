@@ -5,12 +5,13 @@
  */
 ?>
 
+</div>
+
+
 <!--+++++++++++++++++Footer Section ++++++++++++++++++++++-->
-
+<div class="container-fluid">
 <div class="row footer-row">
-  <!-- <section class="footer" style="float: left; width: 100%;"> -->
-  
-
+  <!-- <section class="footer" style="float: left; width: 100%;"> --> 
 		<?php if ( has_nav_menu( 'media-menu' ) ): ?>
 		    <div class="col-12 footer-social-media-menu">
 		    	<?php    			
@@ -86,12 +87,11 @@
 
       <span class="designer1">Website Design & Development By : <a href="mailto:iqbalhasanms@gmail.com">Iqbal Mahmud Hasan</a></span>
     </div>
-
   <!-- </section> -->
 </div>
-
-<!--+++++++++++++++++Footer Section ++++++++++++++++++++++-->
 </div>
+<!--+++++++++++++++++Footer Section ++++++++++++++++++++++-->
+
 
 
 
@@ -206,14 +206,6 @@
     text-decoration: none;
  }   
 
-
-
-
-
-
-
-
-
 	.footer{
 			
 		}
@@ -247,18 +239,6 @@
 		.designer{
 			float: right;
 		}
-
-
-
-
-
-
-
-
-
-
-
-
 .share-button {
     background: black;
     color: white;
