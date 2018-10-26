@@ -1,12 +1,16 @@
 <?php get_header(); ?>
-<div class="container-fluid" style="/*max-width:100%;*/ ">
+<div class="container" style="/*max-width:100%;*/ ">
 	<div class="row each-row">
 			<div class="col-8" style="text-align: justify;">
 					<?php
 							if (have_posts()) :
 								while (have_posts()) : the_post();
+									$alternative_featured_image = get_field('alternative_featured_image');
+									$alternative_featured_image_url = $alternative_featured_image['url'];
 
 								?>
+									<h2><?php _e(get_the_title()); ?></h2>
+									<p> <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></p>
 									<p><?php _e(get_the_content()); ?></p>
 								<?php
 								endwhile;
