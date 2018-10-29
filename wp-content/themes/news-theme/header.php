@@ -404,7 +404,8 @@ nav-tabs .nav-link {
 			<div class="col-sm-3 sportlight">
 				<?php 
 					//get_sportlight_post_title($cat_id, $post_no) 
-					get_sportlight_post_title(14, 3); 
+
+					get_sportlight_post_title( 14, 2); 
 				?>
 			</div>
 		<!-- End Sportlight -->
