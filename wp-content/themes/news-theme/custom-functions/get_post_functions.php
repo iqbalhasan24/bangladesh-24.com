@@ -623,8 +623,13 @@ function get_sportlight_post_title($cat_id, $post_no){
                         					<a href="<?php the_permalink();?>">
 			                              		<h4 style="color:#ff0000"><?php the_title(); ?></h4>
 			                              	</a>
-			                             </span> <br>	                            	
+			                             </span> 
+
+
 	                           			<?php
+	                           			$content=get_the_content();
+							            $content_18word=wp_trim_words($content,18);
+							            _e($content_18word);
 	                                }                    	
                     			
                     
