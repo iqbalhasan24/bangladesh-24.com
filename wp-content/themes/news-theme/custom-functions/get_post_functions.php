@@ -611,23 +611,18 @@ function get_sportlight_post_title($cat_id, $post_no){
                         'order'       => 'DESC',
                     );                                         
                    
-                   	 _e("<ul>");
-		                  
-
-	                        $query = new WP_Query( $args );
+                   	 $query = new WP_Query( $args );
 	                        if ( $query->have_posts() ) :
 	                                while ( $query->have_posts() ) {
 	                                    $query->the_post();
 	                                   ?>		
-                        				<li>
+                        				<span>
                         					<a href="<?php the_permalink();?>">
 			                              		<h4 style="color:#ff0000"><?php the_title(); ?></h4>
 			                              	</a>
-			                             </li> 	                            	
+			                             </span> 	                            	
 	                           			<?php
 	                                }                    	
-                    			_e("</ul>");
-                    
                    			 endif; 
                     wp_reset_postdata();
            
