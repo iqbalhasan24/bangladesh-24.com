@@ -596,3 +596,42 @@ function get_lead_post_by_cat_with_post_img_and_title($post_formate, $cat_id, $p
       
    }/*end function*/
 /*+++++++++++++++++++++End get_lead_post_by_cat_with_post_img_and_title++++++++++++++++++++++++++++++*/
+
+
+
+
+/*+++++++++++++++++++++get_sportlight_post_title++++++++++++++++++++++++++++++*/
+function get_sportlight_post_title($cat_id, $post_no){                 
+                  
+                            
+                    $args = array(
+                        'posts_per_page'  => $post_no,
+                        'cat'           => $cat_id,
+                        'orderby'       => 'date',
+                        'order'       => 'DESC',
+                    );                                         
+                   
+                   	 _e("<ul>");
+		                  
+
+	                        $query = new WP_Query( $args );
+	                        if ( $query->have_posts() ) :
+	                                while ( $query->have_posts() ) {
+	                                    $query->the_post();
+	                                   ?>		
+                        				<li>
+                        					<a href="<?php the_permalink();?>">
+			                              		<h4 style="color:#ff0000"><?php the_title(); ?></h4>
+			                              	</a>
+			                             </li> 	                            	
+	                           			<?php
+	                                }                    	
+                    			_e("</ul>");
+                    
+                   			 endif; 
+                    wp_reset_postdata();
+           
+
+      
+   }/*end function*/
+/*+++++++++++++++++++++End get_sportlight_post_title++++++++++++++++++++++++++++++*/

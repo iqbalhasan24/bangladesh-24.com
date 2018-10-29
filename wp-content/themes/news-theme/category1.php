@@ -49,12 +49,15 @@
                     if($i <=8):
         ?>        	
                	<div class="col-md-3">
-                   	<div class="cat-box" style="display: block;overflow: hidden; padding: 10px; text-align: justify; max-height: 180px; " >
+    		        	<div class="cat-box" style=" background-color:blue; background: url('<?php _e($thumbnail); ?>'); -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;  display: block;overflow: hidden; padding: 10px; text-align: justify; max-height: 180px; " >
+    		               
 
-    		            <img class="img-responsive" src="<?php _e($thumbnail); ?>" width="100%">
-    		            <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
-    		            <p><a href="<?php the_permalink();?>"><?php the_content(); ?></a></p>
-    		        </div>
+    		                <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
+    		                <p><a href="<?php the_permalink();?>"><?php the_content(); ?></a></p>
+    		            </div>
                 </div>
 <?php 	
             endif;

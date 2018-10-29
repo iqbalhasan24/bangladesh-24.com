@@ -402,7 +402,10 @@ nav-tabs .nav-link {
 		
 		<!-- Sportlight -->
 			<div class="col-sm-3 sportlight">
-				Sportlight
+				<?php 
+					//get_sportlight_post_title($cat_id, $post_no) 
+					get_sportlight_post_title(14, 3); 
+				?>
 			</div>
 		<!-- End Sportlight -->
 
@@ -436,8 +439,8 @@ nav-tabs .nav-link {
 		<!--End Site Title-->
 
 		<!-- Advertisment -->
-		<div id=""  class="col-sm-4 advertisment">
-			<img src="" alt="Advertisment"> 
+		<div id=""  class="col-sm-4 advertisment" style="background-image: linear-gradient(to right, #C90000, #C5005D,#92000D);">
+			<!-- <img src="" alt="Advertisment"> --> 
 		</div>
 		<!-- End Advertisment -->
 	</div>
