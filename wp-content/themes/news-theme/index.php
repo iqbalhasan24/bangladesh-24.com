@@ -7,10 +7,10 @@
         <?php 
              //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
              //get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-5','#C2C2C2'); 
-             get_lead_post_by_cat_with_post_img_and_title('aside', 2 , 6, 'col-sm-5','#C2C2C2');   
+             get_lead_post_by_cat_with_post_img_and_title('aside', 2 , 6, 'col-sm-7','#C2C2C2');   
         ?>
 
-        <div class="col-md-3">
+        <div class="col-md-1">
             <div class="row each-row">
                 <?php
                     //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
