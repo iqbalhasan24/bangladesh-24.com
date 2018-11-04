@@ -412,7 +412,7 @@ nav-tabs .nav-link {
 
 		<!--Site Title-->
 		<div id="" class="col-sm-5 site-title-container">			
-			<div id="" class="site-title">	
+			<!-- <div id="" class="site-title"> -->	
 
 				<div class="row">
 					<div class="col-3">
@@ -435,7 +435,7 @@ nav-tabs .nav-link {
 					</div>
 				</div>
 
-			</div>
+			<!-- </div> -->
 		</div>
 		<!--End Site Title-->
 
