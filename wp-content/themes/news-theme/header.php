@@ -424,7 +424,7 @@ nav-tabs .nav-link {
 							<a href="<?php echo get_option('home'); ?>/">
 
 							<?php
-						        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:80px;'></a>";
+						        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:92px;'></a>";
 						} 
 			        ?>
 			        	
