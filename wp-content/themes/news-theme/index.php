@@ -1,4 +1,4 @@
-<?php get_header('with-search'); ?>
+<?php  get_header(); ?>
 
 <!-- ++++++++++++First content++++++++++++ -->
 
