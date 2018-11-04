@@ -401,7 +401,7 @@ nav-tabs .nav-link {
 	<div id="top-section" class="row">
 		
 		<!-- Sportlight -->
-			<div class="col-sm-3 sportlight">
+			<div class="col-sm-4 sportlight">
 				<?php 
 					//get_sportlight_post_title($cat_id, $post_no) 
 
@@ -411,7 +411,7 @@ nav-tabs .nav-link {
 		<!-- End Sportlight -->
 
 		<!--Site Title-->
-		<div id="" class="col-sm-5 site-title-container">			
+		<div id="" class="col-sm-4 site-title-container">			
 			<!-- <div id="" class="site-title"> -->	
 
 				<div class="row">
@@ -430,8 +430,8 @@ nav-tabs .nav-link {
 			        	
 		        	</div>
 			        <div class="col-9">		
-						<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-						<h4><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h4>			
+						<h3><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
+						<h5><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
 					</div>
 				</div>
 
