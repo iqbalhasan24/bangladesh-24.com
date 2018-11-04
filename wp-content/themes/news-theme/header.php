@@ -496,7 +496,7 @@ nav-tabs .nav-link {
 				 <?php $posts_query = new WP_Query('posts_per_page=-1');
 				        while ($posts_query->have_posts()) : $posts_query->the_post();
 				    ?>
-				   <a href="<?php the_permalink(); ?>"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22">  <?php the_title(); ?> | </a>
+				   <a href="<?php the_permalink(); ?>"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22" style="font-size: 1.2em;">  <?php the_title(); ?> | </a>
 				    <?php endwhile; wp_reset_query(); ?>			
 			</MARQUEE>		 	
 		 </div>
