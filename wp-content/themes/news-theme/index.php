@@ -40,7 +40,7 @@
      <!-- ++Left coll++ -->
     
           <?php
-              get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 13, 'col-sm-8','#f2f2f2' );               
+              get_post_with_left_lead_lead_news('aside',3 , 13, 'col-sm-8','#f2f2f2' );               
               //get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );
 
           ?>
