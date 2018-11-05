@@ -401,7 +401,7 @@ nav-tabs .nav-link {
 	<div id="top-section" class="row">
 		
 		<!-- Sportlight -->
-			<div class="col-sm-3 sportlight">
+			<div class="col-sm-4 sportlight">
 				<?php 
 					//get_sportlight_post_title($cat_id, $post_no) 
 
@@ -411,8 +411,8 @@ nav-tabs .nav-link {
 		<!-- End Sportlight -->
 
 		<!--Site Title-->
-		<div id="" class="col-sm-5 site-title-container">			
-			<div id="" class="site-title">	
+		<div id="" class="col-sm-4 site-title-container">			
+			<!-- <div id="" class="site-title"> -->	
 
 				<div class="row">
 					<div class="col-3">
@@ -424,18 +424,18 @@ nav-tabs .nav-link {
 							<a href="<?php echo get_option('home'); ?>/">
 
 							<?php
-						        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:80px;'></a>";
+						        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:92px;'></a>";
 						} 
 			        ?>
 			        	
 		        	</div>
 			        <div class="col-9">		
-						<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-						<h4><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h4>			
+						<h3><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
+						<h5><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
 					</div>
 				</div>
 
-			</div>
+			<!-- </div> -->
 		</div>
 		<!--End Site Title-->
 
@@ -496,7 +496,7 @@ nav-tabs .nav-link {
 				 <?php $posts_query = new WP_Query('posts_per_page=-1');
 				        while ($posts_query->have_posts()) : $posts_query->the_post();
 				    ?>
-				   <a href="<?php the_permalink(); ?>"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22">  <?php the_title(); ?> | </a>
+				   <a href="<?php the_permalink(); ?>" style="font-size: 1.2em;"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22">  <?php the_title(); ?> | </a>
 				    <?php endwhile; wp_reset_query(); ?>			
 			</MARQUEE>		 	
 		 </div>
