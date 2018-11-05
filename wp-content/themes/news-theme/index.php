@@ -10,27 +10,27 @@
              get_lead_post_by_cat_with_post_img_and_title('aside', 2 , 6, 'col-sm-7','#C2C2C2');   
         ?>
 
-        <div class="col-md-1">
-            <div class="row each-row">
+        <!-- <div class="col-md-1">
+            <div class="row each-row"> -->
                 <?php
                     //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
                    // get_post_by_special_cat_with_post_title_and_content_and_img( 6, 1, 'col-sm-12');
                 ?>
-            </div>
-           <div class="row each-row">
+            <!-- </div>
+           <div class="row each-row"> -->
                   <?php
                     //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
                     //get_post_by_special_cat_with_post_title_and_content_and_img(2 , 1, 'col-sm-12');
                 ?> 
-           </div> 
-        </div>
+          <!--  </div> 
+        </div> -->
 
 
 
         <?php               
 
             //get_post_slider($cat_id, $post_no,$div_class);
-            get_post_slider(7, 10, 'col-sm-4');
+            get_post_slider(7, 10, 'col-sm-5');
         ?>
 
   </div>
@@ -40,8 +40,8 @@
      <!-- ++Left coll++ -->
     
           <?php
-              get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
-              get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );
+              get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 13, 'col-sm-8','#f2f2f2' );               
+              //get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );
 
           ?>
       

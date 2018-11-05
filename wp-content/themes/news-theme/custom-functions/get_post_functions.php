@@ -60,6 +60,99 @@ function get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_format
 
 
 
+/*+++++++++++++++++++++get_post_with_left_lead_lead_news++++++++++++++++++++++++++++++*/
+function get_post_with_left_lead_lead_news($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code){
+
+        if ( has_post_format($post_formate) ) {          
+                    $args = array(
+                        'posts_per_page'  => $post_no,
+                        'cat'           => $cat_id,
+                        'orderby'       => 'date',
+                        'order'       => 'DESC',
+                    );
+
+                    $cat_name = get_cat_name ( $cat_id);  
+                    $category_link = get_category_link ( $cat_id);  
+                    ?>
+                    <div class="<?php _e($div_class);?>">
+                    	<div class="col-12 cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
+                    		<div class="row">
+	                    		<div class="col-12">
+		                    		<div class="category-title" >
+		                    			<a href="<?php $category_link; ?>">
+				                    				<?php _e( $cat_name); ?>
+		                    			</a>
+		                    		</div>
+	                    		</div>
+	                    	</div>
+                    		<div class="row post-box-container">
+
+
+                    <?php   
+                        $query = new WP_Query( $args );
+                        $i=0;
+
+	                            if ( $query->have_posts() ) :
+	                                while ( $query->have_posts() ) {
+	                                    $query->the_post();
+	                                    $i++;
+	                                    if($i==1):	                                   
+			                   			?>
+			                   				<div class='col-3'>
+				                   				<div class='lead-post-box'>
+					                                <a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
+					                                <h5><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h5>
+					                                <?php 
+						                                $content=get_the_content();
+						                                $content_20word=wp_trim_words($content,20);
+					                                ?>	
+					        
+					                                <p><?php _e($content_20word); ?></p>
+				                            	</div>
+			                            	</div>
+			                   				<div class='col-9'>
+				                   				<div class='row'>                            	
+			                   			<?php
+	                                 endif;	
+	                                 if($i>1):
+	                            ?>
+			                            	<div class='lead-news-box'>
+				                                <a href="<?php the_permalink();?>">
+				                                	<img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>">
+				                                </a>
+				                                <a href="<?php the_permalink();?>">
+				                                	<?php the_title(); ?>           		
+				                                </a>
+			                            	</div>
+		                            	
+	                           	<?php
+	                           		endif;                            	
+
+	                            }
+			                    			_e("</div>");
+			                    		_e("</div>");
+                    		_e("</div>");
+
+                		_e("</div>");
+                	_e("</div>");
+                    endif; 
+                    wp_reset_postdata();
+            }
+        }
+/*+++++++++++++++++++++End get_post_with_left_lead_lead_news ++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*+++++++++++++++++++++get_post_with_left_lead_post_and_post_thumb_on_top++++++++++++++++++++++++++++++*/
 function get_post_with_left_lead_post_and_post_thumb_on_top($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code){
 

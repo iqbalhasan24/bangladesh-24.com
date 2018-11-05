@@ -280,12 +280,21 @@ nav-tabs .nav-link {
 }
 .single-post-box{
 	/*border: 1px solid #C1C1C1;*/
-	margin: 1px;
+	
 	width: 46%;
 	padding: 1%; 
 	margin: 1%; 
 	float: left;
 	/*background: #abc;*/
+}
+
+
+.lead-news-box{	
+	width: 15%;
+	padding: .5%; 
+	margin:.83%; 
+	float: left;
+
 }
 /*+++++++Fornt Page post display design+++++++++++*/
 	.main-menu {
