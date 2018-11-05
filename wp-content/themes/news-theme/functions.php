@@ -149,6 +149,7 @@ function wpb_custom_new_menu() {
       'top-menu' => __( 'Top Menu'),
       'primary-menu' => __( 'Primary Menu'),
       'media-menu' => __( 'Media Menu'),
+      'top-media-menu' => __( 'Top Media Menu'),
       'footer-menu-one' => __( 'Footer Menu One'),
       'footer-menu-two' => __( 'Footer Menu Two'),
       'footer-menu-three' => __( 'Footer Menu Three')

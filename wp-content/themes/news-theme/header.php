@@ -378,8 +378,17 @@ nav-tabs .nav-link {
 		max-width: 100%; float: left; padding: 4px; /*border: 2px solid #000;*/	display: block;   	
 	}
 
-
-
+	.top-social-media-menu ul.top-media-menu li {
+			    display: inline-block;
+			    margin-right: 20px;
+			}
+	.top-social-media-menu ul.top-media-menu{
+		margin: 0 !important;
+		float: right;
+	} 
+	.top-social-media-menu ul.top-media-menu li a{
+		color: #ffffff;
+	}
 	
 </style>
 
@@ -391,11 +400,30 @@ nav-tabs .nav-link {
 <div id="page" class="container-fluid">
 
 	<div id="top-mega-menu" class="row">
-		<div class="col-12">
+		<div class="col-8">
 		<!-- 	<script type="text/javascript" src="http://bangladate.appspot.com/index2.php"></script> || -->
 			<script type="text/javascript" src="http://bangladate.appspot.com/index4.php"></script> || <?php _e(date("Y-M-d"));?>  <?php _e(date('l'));  ?>
 		</div>
+		<div class="col-4">
+			<?php if ( has_nav_menu( 'media-menu' ) ): ?>
+			    <div class="col-12 top-social-media-menu" style="width: 100%;">
+			    	<?php    			
+			 			
+					        $footer_menu_one = array(
+								'theme_location' 	=> 'top-media-menu',							
+								'container'       	=> 'ul',
+								'menu_class'     	=> 'top-media-menu',
+								
+								);
+								wp_nav_menu($footer_menu_one);
+							
+					?>
+			    </div>
+			<?php endif; ?> 
+		</div>
 	</div>
+
+	
 
 	<!-- +++++++++++++++++++++++++++++++Top Section +++++++++++++++++++++++++++++++++++ -->
 	<div id="top-section" class="row">

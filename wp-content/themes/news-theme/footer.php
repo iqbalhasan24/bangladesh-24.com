@@ -133,9 +133,12 @@
 
 			/*+++++++++++++++++++++++++++ Add Target Blank++++++++++++++++++++++++++++*/	  	
 			$(document).ready(function() {
+				 jQuery('.top-media-menu li a').attr('target','_blank');
 				 jQuery('.media-menu li a').attr('target','_blank');
 			});
-			/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/	  	
+			/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/	 
+
+			 	
 
 		  /*$('.dropdown > ul').addClass('dropdown-menu show');*/
 		  	
