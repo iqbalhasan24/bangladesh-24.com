@@ -6,7 +6,40 @@ Author URI: http://www.indiangallerybd.com/iqbal-hasan/
 Description: The theme for WordPress takes us back to the blog or news
 Version: 1.0
 */
+/*+++++++++++Add Font++++++++++++++*/
+@font-face{
+	font-family: Durwent;
+	src: url('/wp-content/themes/news-theme/font/Durwent.ttf');
+}
 
+@font-face{
+	font-family: KJV1611;
+	src: url('/wp-content/themes/news-theme/font/KJV1611.otf');
+}
+
+@font-face{
+	font-family: LudlowStrongAle;
+	src: url('/wp-content/themes/news-theme/font/LudlowStrongAle.ttf');
+}
+
+
+@font-face{
+	font-family: YeOldeOak;
+	src: url('/wp-content/themes/news-theme/font/YeOldeOak.ttf');
+}
+
+
+
+@font-face{
+	font-family: Yorktown;
+	src: url('/wp-content/themes/news-theme/font/Yorktown.ttf');
+}
+
+
+
+
+
+/*+++++++++++Add Font++++++++++++++*/
 
 
 

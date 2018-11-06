@@ -398,6 +398,13 @@ nav-tabs .nav-link {
 	.top-social-media-menu ul.top-media-menu li a{
 		color: #ffffff;
 	}
+
+	.site-info .site-name h3{
+		font-family: Durwent;
+	}
+	.site-info .site-description h5{
+		font-family:LudlowStrongAle;
+	}
 	
 </style>
 
@@ -466,9 +473,9 @@ nav-tabs .nav-link {
 			        ?>
 			        	
 		        	</div>
-			        <div class="col-9">		
-						<h3><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
-						<h5><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
+			        <div class="col-9 site-info">		
+						<h3 class="site-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
+						<h5 class="site-description"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
 					</div>
 				</div>
 
