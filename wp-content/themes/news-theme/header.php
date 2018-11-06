@@ -399,11 +399,11 @@ nav-tabs .nav-link {
 		color: #ffffff;
 	}
 
-	.site-info .site-name h3{
-		font-family: Durwent;
+	.site-info h3 .site-name a{
+		font-family: Durwent !important;
 	}
-	.site-info .site-description h5{
-		font-family:LudlowStrongAle;
+	.site-info h5 .site-description a{
+		font-family:LudlowStrongAle !important;
 	}
 	
 </style>
