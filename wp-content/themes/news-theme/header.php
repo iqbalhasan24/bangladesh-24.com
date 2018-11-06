@@ -12,6 +12,15 @@
 
 <style type="text/css">
 
+@font-face{
+	font-family: Durwent;
+	src: url('/wp-content/themes/news-theme/font/Durwent.ttf');
+}
+@font-face{
+	font-family: LudlowStrongAle;
+	src: url('/wp-content/themes/news-theme/font/LudlowStrongAle.ttf');
+}
+
 p, h1, h2, h3, h4, h5, h6, a {
 		font-family: SolaimanLipi, Kiron, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif  !important;
 		color: #000;
