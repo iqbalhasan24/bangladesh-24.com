@@ -22,12 +22,21 @@
 
 
 			<div class="col-4">				
-				<div class="latest-news">
+				<div class="row latest-news">
 					<span class="head-title"> সর্বশেষ সংবাদ </span>
 					<?php
 						//get_recent_post_function($numberposts)
 						get_recent_post_function(10);
 					?>					
+				</div>
+				<div class="row">
+					<div class="col">
+						<?php 
+							$post_advertisment = get_field('individual_post_advertisment');
+							$post_advertisment_image_url = $post_advertisment['url'];
+						?>
+							<img class="img-responsive" src="<?php _e($post_advertisment_image_url); ?>" width="100%">						
+					</div>
 				</div>
 			</div>
 
