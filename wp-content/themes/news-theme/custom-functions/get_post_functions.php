@@ -714,7 +714,7 @@ function get_sportlight_post_title($cat_id, $post_no){
 	                                   ?>		
                         				<span>
                         					<a href="<?php the_permalink();?>">
-			                              		<h4 style="color:#ff0000"><?php the_title(); ?></h4>
+			                              		<h4 style="color:#ff0000"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22"> <?php the_title(); ?></h4>
 			                              	</a>
 			                             </span> 
 
