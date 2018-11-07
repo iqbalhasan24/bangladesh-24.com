@@ -34,8 +34,10 @@
 						<?php 
 							$post_advertisment = get_field('individual_post_advertisment');
 							$post_advertisment_image_url = $post_advertisment['url'];
+							if($post_advertisment_image_url !=""):
 						?>
-							<img class="img-responsive" src="<?php _e($post_advertisment_image_url); ?>" width="100%">						
+							<img class="img-responsive" src="<?php _e($post_advertisment_image_url); ?>" width="100%">	
+						<?php endif; ?>						
 					</div>
 				</div>
 			</div>
