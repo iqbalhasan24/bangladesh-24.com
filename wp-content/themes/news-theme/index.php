@@ -67,7 +67,7 @@
               <?php get_recent_post_function(10); ?>
             </div>
             <div class="tab-pane container fade" id="recent_post">
-              <?php get_recent_post_function(10); ?>      
+              <?php get_most_view_post(10); ?>      
             </div>
 
           </div>
