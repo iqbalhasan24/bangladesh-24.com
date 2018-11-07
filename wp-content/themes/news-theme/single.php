@@ -22,14 +22,14 @@
 
 
 			<div class="col-4">				
-				<div class="row latest-news">
+				<div class="row latest-news each-row">
 					<span class="head-title"> সর্বশেষ সংবাদ </span>
 					<?php
 						//get_recent_post_function($numberposts)
 						get_recent_post_function(10);
 					?>					
 				</div>
-				<div class="row">
+				<div class="row each-row">
 					<div class="col">
 						<?php 
 							$post_advertisment = get_field('individual_post_advertisment');
@@ -43,11 +43,15 @@
 	</div>
 
 	<div class="row each-row">
+		<div class="col-8">
 			<?php
 					$post_id=get_the_ID();
 					//get_related_post($post_id,$postnumber);
 					get_related_post($post_id,9);
 			?>
+		</div>
+		<div class="col-4">
+		</div>	
 
 	</div>
 
