@@ -4,11 +4,36 @@
 <head>
   <title><?php if(is_front_page()|| is_home()): bloginfo('name'); else: get_the_title(); endif; ?></title>
   
-  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  
+
+
+  <!-- Website SEO -->
+  		<?php 
+  				if (have_posts()) :
+					while (have_posts()) :
+		?>
+		<title> <?php _e(get_the_title()); ?> </title>
+				<meta name="keywords" content="" />
+		<meta name="description" content="<?php ?>" />
+		
+		<!--for fb -->
+		<meta property="og:title" content="<?php _e(get_the_title()); ?>" />
+		<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+		<meta property="og:description" content="<?php $content=get_the_content();  $content_20word=wp_trim_words($content,25); _e( $content_20word); ?>" />
+		<meta property="og:type" content="article" />
+		<!--<meta property="article:author" content="[author_link]" />-->
+						
+		<meta property="og:url" content="<?php _e(get_permalink()); ?>" />
+		
+		<meta property="og:image" content="<?php _e(get_the_post_thumbnail_url()); ?>" />
+		<meta property="og:image:width" content="600" />
+		<meta property="og:image:height" content="315" />
+		<meta name="fb:app_id" property="fb:app_id" content="1608610629250627" />
+	<?php endwhile; endif; ?>
+  <!-- End Website SEO -->
 
 <style type="text/css">
 
