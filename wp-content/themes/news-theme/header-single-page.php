@@ -19,7 +19,7 @@
 		<!--for fb -->
 		<meta property="og:title" content="<?php _e(get_the_title()); ?>" />
 		<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-		<meta property="og:description" content="<?php $content=get_the_content();  $content_20word=wp_trim_words($content,25); _e( $content_20word); ?>" />
+		<meta property="og:description" content="<?php _e(wp_trim_words(get_the_content(),25)); ?>" />
 		<meta property="og:type" content="article" />
 		<!--<meta property="article:author" content="[author_link]" />-->
 						
