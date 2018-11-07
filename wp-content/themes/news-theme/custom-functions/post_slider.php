@@ -30,7 +30,7 @@ function get_post_slider($cat_id, $post_no,$div_class){
                                         <?php the_post_thumbnail('slider-size');  //echo get_the_post_thumbnail_url();?> 
                                     </a>
                                     <a href="<?php the_permalink();?>" style="color:#ffffff; font-size: 1.2em; font-weight: 550;">
-                                    <span style="position: absolute; top:55%; background: #f60000; width: 96%; margin-left:2%; padding-top: 1%;  opacity: .9; color: ">
+                                    <span style="position: absolute; top:80%; background: #f60000; width: 96%; margin-left:2%; padding-top: 1%;  opacity: .9; color: ">
                                         <p style=" text-align: center;"> 
                                              <?php the_title(); ?> 
                                         </p>
