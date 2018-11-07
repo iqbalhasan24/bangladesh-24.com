@@ -13,8 +13,8 @@
   <!-- Website SEO -->
   		
 		<title> <?php _e(get_the_title()); ?> </title>
-				<meta name="keywords" content="" />
-		<meta name="description" content="<?php ?>" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="<?php echo wp_trim_words( get_the_content(), 40); ?>" />
 		
 		<!--for fb -->
 		<meta property="og:title" content="<?php _e(get_the_title()); ?>" />
