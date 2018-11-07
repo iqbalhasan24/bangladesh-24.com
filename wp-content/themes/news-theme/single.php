@@ -8,7 +8,7 @@
 									$alternative_featured_image = get_field('alternative_featured_image');
 									$alternative_featured_image_url = $alternative_featured_image['url'];
 
-									$count_read = get_post_meta(the_ID(), 'meta_value_num');
+									
 								?>
 									<span style="float: left; display: inline-block;">
 											<h2><?php _e(get_the_title()); ?>  </h2>
@@ -16,10 +16,10 @@
 
 									<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px;">
 
-										<i class="bf-icon  fa fa-eye"></i> 
 										<b class="number">
-											<?php _e($count_read); ?>
+											<?php $count_read = get_post_meta(the_ID(), 'meta_value_num', true); ?>
 										</b>
+										<i class="bf-icon  fa fa-eye"></i> 
 									</span>
 
 									<p> <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></p>
