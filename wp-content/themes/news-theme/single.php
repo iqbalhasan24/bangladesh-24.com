@@ -14,7 +14,7 @@
 											<h2><?php _e(get_the_title()); ?>  </h2>
 									</span>
 
-									<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px;">
+									<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px; padding:2px 6px;">
 
 										<b class="number">
 											<?php $count_read = get_post_meta(the_ID(), 'meta_value_num', true); ?>
