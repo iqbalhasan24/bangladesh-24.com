@@ -11,10 +11,7 @@
 
 
   <!-- Website SEO -->
-  		<?php 
-  				if (have_posts()) :
-					while (have_posts()) :
-		?>
+  		
 		<title> <?php _e(get_the_title()); ?> </title>
 				<meta name="keywords" content="" />
 		<meta name="description" content="<?php ?>" />
@@ -32,7 +29,7 @@
 		<meta property="og:image:width" content="600" />
 		<meta property="og:image:height" content="315" />
 		<meta name="fb:app_id" property="fb:app_id" content="1608610629250627" />
-	<?php endwhile; endif; ?>
+	
   <!-- End Website SEO -->
 
 <style type="text/css">
