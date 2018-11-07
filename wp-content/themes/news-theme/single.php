@@ -8,8 +8,9 @@
 									$alternative_featured_image = get_field('alternative_featured_image');
 									$alternative_featured_image_url = $alternative_featured_image['url'];
 
+									$count_read = get_post_meta(the_ID(), 'meta_value_num', true);
 								?>
-									<h2><?php _e(get_the_title()); ?></h2>
+									<h2><?php _e(get_the_title()); ?> <span> <?php _e($count_read); ?></span></h2>
 									<p> <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></p>
 									<p><?php _e(get_the_content()); ?></p>
 								<?php
