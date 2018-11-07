@@ -490,7 +490,7 @@ nav-tabs .nav-link {
 			<!-- <div id="" class="site-title"> -->	
 
 				<div class="row">
-					<div class="col-3">
+					<div class="col-3" style="padding-right:0px;">
 			        <?php
 			        	$custom_logo_id = get_theme_mod( 'custom_logo' );
 						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -504,7 +504,7 @@ nav-tabs .nav-link {
 			        ?>
 			        	
 		        	</div>
-			        <div class="col-9 site-info">		
+			        <div class="col-9 site-info" style="padding-left:0px;">		
 						<h3 class="site-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
 						<h5 class="site-description"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
 					</div>
