@@ -8,7 +8,7 @@
 									$alternative_featured_image = get_field('alternative_featured_image');
 									$alternative_featured_image_url = $alternative_featured_image['url'];
 
-									$count_read = get_post_meta(the_ID(), 'meta_value_num', true);
+									$count_read = get_post_meta(the_ID(), 'meta_value_num');
 								?>
 									<span style="float: left; display: inline-block;">
 											<h2><?php _e(get_the_title()); ?>  </h2>
