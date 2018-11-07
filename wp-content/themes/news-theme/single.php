@@ -10,7 +10,18 @@
 
 									$count_read = get_post_meta(the_ID(), 'meta_value_num', true);
 								?>
-									<h2><?php _e(get_the_title()); ?> <span> <?php _e($count_read); ?></span></h2>
+									<span style="float: left; display: inline-block;">
+											<h2><?php _e(get_the_title()); ?>  </h2>
+									</span>
+
+									<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px;">
+
+										<i class="bf-icon  fa fa-eye"></i> 
+										<b class="number">
+											<?php _e($count_read); ?>
+										</b>
+									</span>
+
 									<p> <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></p>
 									<p><?php _e(get_the_content()); ?></p>
 								<?php
