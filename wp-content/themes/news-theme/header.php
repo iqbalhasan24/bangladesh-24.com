@@ -415,6 +415,19 @@ nav-tabs .nav-link {
 		font-family:LudlowStrongAle !important;
 	}
 	
+
+
+	.left-stick{
+		content: ' ';
+	    overflow: hidden;
+	    width: 2px;
+	    height: 15px;
+	    float: left;
+	    margin-top: 3px;
+	    margin-right: 8px;
+	    background: #d84315;
+	}
+
 </style>
 
 <?php wp_head(); ?>
