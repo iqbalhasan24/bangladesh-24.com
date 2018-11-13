@@ -105,10 +105,10 @@
 
 
     <div class="row each-row">     
-          <?php get_psot_by_cat_with_post_formate('aside',9 , 6, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',7 , 6, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',11 , 6, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',10 , 6, 'col-sm-3'); ?>
+          <?php get_psot_by_cat_with_post_formate('aside',9 , 5, 'col-sm-3'); ?>
+          <?php get_psot_by_cat_with_post_formate('aside',7 , 5, 'col-sm-3'); ?>
+          <?php get_psot_by_cat_with_post_formate('aside',11 , 5, 'col-sm-3'); ?>
+          <?php get_psot_by_cat_with_post_formate('aside',10 , 5, 'col-sm-3'); ?>
     </div>
 
 
@@ -166,14 +166,28 @@
     <div class="row each-row">
         <?php 
             //get_single_post_each_category($cat_id, $post_no, $div_class);
-            get_single_post_each_category(3, 1, 'col');
-            get_single_post_each_category(3, 1, 'col');
-            get_single_post_each_category(3, 1, 'col');
-            get_single_post_each_category(3, 1, 'col');
-            get_single_post_each_category(3, 1, 'col');
+            get_single_post_each_category(84, 1, 'col');
+            get_single_post_each_category(85, 1, 'col');
+            get_single_post_each_category(15, 1, 'col');
+            get_single_post_each_category(11, 1, 'col');
+            get_single_post_each_category(87, 1, 'col');
 
         ?> 
     </div>
+    <div class="row each-row">
+        <?php 
+            //get_single_post_each_category($cat_id, $post_no, $div_class);
+            get_single_post_each_category(90, 1, 'col');
+            get_single_post_each_category(16, 1, 'col');
+            get_single_post_each_category(91, 1, 'col');
+            get_single_post_each_category(92, 1, 'col');
+            get_single_post_each_category(93, 1, 'col');
+
+        ?> 
+    </div>
+
+
+
   </div>
 </div>
 <?php  get_footer(); ?>
