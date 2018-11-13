@@ -163,6 +163,17 @@
 
         ?>
     </div>
+    <div class="row each-row">
+        <?php 
+            //get_single_post_each_category($cat_id, $post_no, $div_class);
+            get_single_post_each_category(3, 1, 'col');
+            get_single_post_each_category(3, 1, 'col');
+            get_single_post_each_category(3, 1, 'col');
+            get_single_post_each_category(3, 1, 'col');
+            get_single_post_each_category(3, 1, 'col');
+            
+        ?> 
+    </div>
   </div>
 </div>
 <?php  get_footer(); ?>
