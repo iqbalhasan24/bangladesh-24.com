@@ -77,9 +77,11 @@ function get_single_post_each_category($cat_id, $post_no,$div_class){
                                           
                                             <div class="col-12" >
                                                 <div style="width: 100%; padding: 2%; text-align: left; background: #fff;">
-                                                    <a href="<?php the_permalink();?>" style="font-size: 1.4em; font-weight: 600;"> 
-                                                         <?php the_title(); ?> 
-                                                    </a>      
+                                                    <p>
+                                                        <a href="<?php the_permalink();?>" style="font-size: 1.4em; font-weight: 600;"> 
+                                                             <?php the_title(); ?> 
+                                                        </a>
+                                                    </p>      
                                                     <a href="<?php _e($category_link); ?>">
                                                         <span class="left-stick"></span> 
                                                         <span><?php _e($cat_name); ?></span>
