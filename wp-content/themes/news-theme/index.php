@@ -82,7 +82,7 @@
                   <div class="row each-row">
                         <?php
                           // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
-                         get_lead_post_by_cat_with_img_with_formate('aside', 3 , 6, 'col-sm-8','#fff');
+                         get_lead_post_by_cat_with_img_with_formate('aside', 4 , 6, 'col-sm-8','#fff');
                          ?>
                  </div>
                  <div class="row each-row">
@@ -171,7 +171,7 @@
             get_single_post_each_category(3, 1, 'col');
             get_single_post_each_category(3, 1, 'col');
             get_single_post_each_category(3, 1, 'col');
-            
+
         ?> 
     </div>
   </div>
