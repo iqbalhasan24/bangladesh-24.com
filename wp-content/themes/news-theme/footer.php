@@ -5,11 +5,11 @@
  */
 ?>
 
-</div>
+
 
 
 <!--+++++++++++++++++Footer Section ++++++++++++++++++++++-->
-<div class="container-fluid" style="margin: 0; padding: 0; width: 100%;">
+<!-- <div class="container-fluid" style="margin: 0; padding: 0; width: 100%;"> -->
 	<div class="row footer-row">
 	  <!-- <section class="footer" style="float: left; width: 100%;"> --> 
 			<?php if ( has_nav_menu( 'media-menu' ) ): ?>
