@@ -323,7 +323,7 @@ nav-tabs .nav-link {
 	}
 	#top-section{		
 		height: auto;
-		padding: 5px; 
+		padding: 5px 0px; 
 	}
 
 	.sportlight, .advertisment{
