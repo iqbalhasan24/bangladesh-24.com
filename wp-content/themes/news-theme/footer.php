@@ -273,7 +273,9 @@ ul.media-menu li {
 .share-button.icon-google-plus {background:#db4b40;}
 
 
-		
+.menu-main-menu .nav-item a{
+	color: #fff !important;
+}		
 
 
 </style>
