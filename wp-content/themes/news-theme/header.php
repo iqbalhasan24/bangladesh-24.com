@@ -435,7 +435,7 @@ nav-tabs .nav-link {
 <body <?php body_class(); ?>>
 <!-- container-main -->
 <div id="top"> </div>
-<div id="page" class="container-fluid">
+<div id="page" class="container">
 
 	<div id="top-mega-menu" class="row">
 		<div class="col-8">
