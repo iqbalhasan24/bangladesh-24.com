@@ -74,8 +74,8 @@ function get_post_with_left_lead_lead_news($post_formate, $cat_id, $post_no,$div
                     $cat_name = get_cat_name ( $cat_id);  
                     $category_link = get_category_link ( $cat_id);  
                     ?>
-                    <div class="<?php _e($div_class);?>">
-                    	<div class="col-12 cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
+                    <div class="<?php _e($div_class);?>  cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
+                    	
                     		<div class="row">
 	                    		<div class="col-12">
 		                    		<div class="category-title" >
@@ -134,7 +134,7 @@ function get_post_with_left_lead_lead_news($post_formate, $cat_id, $post_no,$div
                     		_e("</div>");
 
                 		_e("</div>");
-                	_e("</div>");
+                	
                     endif; 
                     wp_reset_postdata();
             }
