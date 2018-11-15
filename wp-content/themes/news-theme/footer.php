@@ -275,7 +275,18 @@ ul.media-menu li {
 
 .menu-main-menu .nav-item a{
 	color: #fff !important;
-}		
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}	
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    font-weight: 700 !important;
+}	
+
+
 
 
 </style>
