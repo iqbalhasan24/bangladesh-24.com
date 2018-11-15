@@ -633,7 +633,7 @@ function get_lead_post_by_cat_with_post_img_and_title($post_formate, $cat_id, $p
 
                     $category_link = get_category_link ( $cat_id);                          
                    
-                   	 _e("<div class='".$div_class."'>");
+                   	 _e("<div class='".$div_class."' style='background-image: linear-gradient(to right, #F2F2A1, #F2E39D,#F7F8D5); border:1px solid #EFF5F9; min-height:300px;'>");
 		                  
 
 	                            $query = new WP_Query( $args );
@@ -646,7 +646,6 @@ function get_lead_post_by_cat_with_post_img_and_title($post_formate, $cat_id, $p
 	                                    $i++;
 	                                    if($i==1):
 
-	                                   _e("<div class='col-12' style='background-image: linear-gradient(to right, #F2F2A1, #F2E39D,#F7F8D5); border:1px solid #EFF5F9; min-height:300px;'> ");
 			                   			?>
 			                   				
 			                   				
@@ -678,9 +677,6 @@ function get_lead_post_by_cat_with_post_img_and_title($post_formate, $cat_id, $p
 	                            	
 
 	                                }
-                    	
-                    
-                    echo "</div>";
                     echo "</div>";
                     endif; 
                     wp_reset_postdata();

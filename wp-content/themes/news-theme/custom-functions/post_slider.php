@@ -3,7 +3,7 @@
 function get_post_slider($cat_id, $post_no,$div_class){
 ?>
 
-<div class="<?php echo $div_class; ?>" >          
+<div class="<?php echo $div_class; ?> style='background-image: linear-gradient(to right, #F2F2A1, #F2E39D,#F7F8D5); border:1px solid #EFF5F9; min-height:300px;'" >          
            <div id="lead_news" class="carousel slide" data-ride="carousel">
 
   <?php 
