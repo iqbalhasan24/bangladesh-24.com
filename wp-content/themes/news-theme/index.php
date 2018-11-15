@@ -2,7 +2,7 @@
 
 <!-- ++++++++++++First content++++++++++++ -->
 
-<div class="container" style="max-width:92%;">
+<!-- <div class="container" style="max-width:92%;"> -->
   <div class="row each-row">
         <?php 
              //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
@@ -189,5 +189,5 @@
 
 
   </div>
-</div>
+<!-- </div> -->
 <?php  get_footer(); ?>
