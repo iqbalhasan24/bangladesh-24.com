@@ -435,7 +435,7 @@ nav-tabs .nav-link {
 <body <?php body_class(); ?>>
 <!-- container-main -->
 <!-- <div id="top"> </div> -->
-<div id="page" class="container" style="paddind: 0px 2px; box-shadow: 2px 2px 4px 8px #dcd6d6;">
+<div id="page" class="container" style="padding: 0px 22px; box-shadow: -1px 3px 3px 8px #dcd6d6;">
 
 	<div id="top-mega-menu" class="row">
 		<div class="col-8">
