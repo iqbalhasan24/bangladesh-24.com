@@ -428,6 +428,17 @@ nav-tabs .nav-link {
 	    background: #d84315;
 	}
 
+.whole_wrapper {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 20px #000;
+    padding: 0 20px;
+    overflow: hidden;
+}	
+
 </style>
 
 <?php wp_head(); ?>
@@ -435,7 +446,7 @@ nav-tabs .nav-link {
 <body <?php body_class(); ?>>
 <!-- container-main -->
 <!-- <div id="top"> </div> -->
-<div id="page" class="container" style="padding: 0px 22px; box-shadow: -1px 3px 3px 8px #dcd6d6;">
+<div id="page" class="whole_wrapper" >
 
 	<div id="top-mega-menu" class="row">
 		<div class="col-8">
