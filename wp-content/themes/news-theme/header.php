@@ -431,8 +431,7 @@ nav-tabs .nav-link {
 .whole_wrapper {
     width: 85%;
     max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto;    
     background: #fff;
     box-shadow: 0 0 20px #000;
     padding: 0 20px;
