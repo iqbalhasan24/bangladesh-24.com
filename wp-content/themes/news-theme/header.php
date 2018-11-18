@@ -544,7 +544,7 @@ nav-tabs .nav-link {
 					wp_nav_menu($arg);
 				?>
 
-				<?php get_search_form(); ?>
+				<?php //get_search_form(); ?>
 			  
 			    <!-- <form class="form-inline my-2 my-lg-0">
 			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
