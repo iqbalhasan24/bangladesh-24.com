@@ -1,7 +1,22 @@
 <?php  get_header(); ?>
 
-<!-- ++++++++++++First content++++++++++++ -->
+<?php
 
+      $first_ad = get_field('first_ad');
+      $second_ad = get_field('second_ad');
+      $third_ad = get_field('third_ad');
+      $fourth_ad = get_field('fourth_ad');
+      $fifth_ad = get_field('fifth_ad');
+
+      $first_ad_img = $first_ad['url'];
+      $second_ad_img = $second_ad['url'];
+      $third_ad_img = $third_ad['url'];
+      $fourth_ad_img = $fourth_ad['url'];
+      $fifth_ad_img = $fifth_ad['url'];
+
+?>
+
+<!-- ++++++++++++First content++++++++++++ -->
 
 
   <div class="row each-row">
@@ -35,6 +50,15 @@
         ?>
 
   </div>
+
+
+<?php if ( $first_ad_img!=""):?>
+    <div class="row each-row"> 
+        <div class="col">
+              <img class="img-fluid" src="<? echo  $first_ad_img;?>" width="100%" >
+        </div>
+    </div>   
+<?php endif; ?>
 
 
 <div class="row each-row">       

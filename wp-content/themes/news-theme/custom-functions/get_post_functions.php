@@ -133,6 +133,9 @@ function get_post_with_left_lead_lead_news($post_formate, $cat_id, $post_no,$div
 			                    		_e("</div>");
                     		_e("</div>");
 
+
+                    		
+
                 		_e("</div>");
                 	
                     endif; 
@@ -171,11 +174,11 @@ function get_post_with_left_lead_post_and_post_thumb_on_top($post_formate, $cat_
                     	<div class="col-12 cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
                     		<div class="row">
 	                    		<div class="col-12">
-		                    		<span class="category-title" >
+		                    		<div class="category-title" >
 		                    			<a href="<?php $category_link; ?>">
 				                    				<?php _e( $cat_name); ?>
 		                    			</a>
-		                    		</span>
+		                    		</div>
 	                    		</div>
 	                    	</div>
                     		<div class="row post-box-container">
