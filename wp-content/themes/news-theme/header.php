@@ -149,11 +149,13 @@ body {
 		  }  
 		  .category-title{
 		    text-align: center;
-		    background-image: linear-gradient(to right, #222222, #555555,#ffffff);
+		    background-image: linear-gradient(to right, #4B409A,#4B409A);
 		    color: #ffffff;
 		    font-weight: 600;
 		    font-size: 1.5em;
 		    width: 100%;
+		    border-radius: 3px;
+		    padding:4px 30px;
 
 		  }
 
