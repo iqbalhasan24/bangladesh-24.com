@@ -491,7 +491,7 @@ nav-tabs .nav-link {
 			<!-- <div id="" class="site-title"> -->	
 
 				<div class="row">
-					<div class="col-3">
+					<div class="col">
 			        <?php
 			        	$custom_logo_id = get_theme_mod( 'custom_logo' );
 						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -500,15 +500,12 @@ nav-tabs .nav-link {
 							<a href="<?php echo get_option('home'); ?>/">
 
 							<?php
-						        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:92px;'></a>";
+						        echo "<img class='img-responsive mg-fluid' src='". esc_url( $logo[0] ) ."' width="100%"></a>";
 						} 
 			        ?>
 			        	
 		        	</div>
-			        <div class="col-9 site-info">		
-						<h3 class="site-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
-						<h5 class="site-description"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
-					</div>
+			      
 				</div>
 
 			<!-- </div> -->
