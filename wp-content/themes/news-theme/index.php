@@ -13,6 +13,7 @@
       $third_ad_img = $third_ad['url'];
       $fourth_ad_img = $fourth_ad['url'];
       $fifth_ad_img = $fifth_ad['url'];
+      _e($fifth_ad_img);
 
 ?>
 
