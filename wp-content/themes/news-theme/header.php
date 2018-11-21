@@ -500,7 +500,7 @@ nav-tabs .nav-link {
 							<a href="<?php echo get_option('home'); ?>/">
 
 							<?php
-						        echo "<img class='img-responsive mg-fluid' src='". esc_url( $logo[0] ) ."  width='100%'></a>";
+						        echo "<img class='img-responsive mg-fluid' src='". esc_url( $logo[0] ) ."'   width='100%'></a>";
 						} 
 			        ?>
 			        	
