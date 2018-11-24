@@ -132,47 +132,44 @@
 
     <div class="row each-row">     
           <?php get_psot_by_cat_with_post_formate('aside',9 , 5, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',7 , 5, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',11 , 5, 'col-sm-3'); ?>
+          <?php get_psot_by_cat_with_post_formate('aside',89 , 5, 'col-sm-3'); ?>
           <?php get_psot_by_cat_with_post_formate('aside',10 , 5, 'col-sm-3'); ?>
+          <?php get_psot_by_cat_with_post_formate('aside',88 , 5, 'col-sm-3'); ?>
     </div>
 
 
     <div class="row each-row">
         <?php
             //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
+            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );
+
+            // get_lead_post_by_cat_with_cat_img($cat_id, $post_no,$div_class)
+            get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-8');                                      
+            
+            /*get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
+            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );*/                                
                                              
         ?>
     </div>
 
 
-    <div class="row each-row">
-            <?php 
-                // get_lead_post_by_cat_with_cat_img($cat_id, $post_no,$div_class)
-                get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-8'); 
-            ?>
-    </div>
 
     <div class="row each-row" style="margin-bottom: 20px; ">
         <?php
             //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',3 , 4, 'col-sm-3','#f20000' );               
-                          
+           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );               
+           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',85 , 5, 'col-sm-3','#f20000' );               
+           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',94 , 5, 'col-sm-3','#f20000' );               
+           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',15 , 5, 'col-sm-3','#f20000' );                      
         ?>
     </div>
     <div class="row each-row" style="margin-bottom: 20px; ">
         <?php
            //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
                         
-            get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
-            get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
-            get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );                
+            get_post_with_left_lead_post_and_post_thumb_on_top('aside',86, 5, 'col-sm-4','#f2f2f2' );               
+           /* get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
+            get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );*/                
                          
         ?>
     </div> 

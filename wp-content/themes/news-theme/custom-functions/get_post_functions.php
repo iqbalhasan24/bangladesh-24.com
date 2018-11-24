@@ -732,3 +732,74 @@ function get_sportlight_post_title($cat_id, $post_no){
       
    }/*end function*/
 /*+++++++++++++++++++++End get_sportlight_post_title++++++++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++get_special_two_post++++++++++++++++++++++++++++++*/
+function get_special_two_post($cat_id, $post_no, $div_class){                 
+                  $args = array(
+                        'posts_per_page'  => $post_no,
+                        'cat'           => $cat_id,
+                        'orderby'       => 'date',
+                        'order'       => 'DESC',
+                    );
+
+                    $category_link = get_category_link ( $cat_id);                          
+                    $cat_name = get_cat_name( $cat_id);                     
+
+
+				?>
+
+					<div class="<?php _e($div_class); ?>">
+					 <div style="width: 100%; float: left; background:#654DF9; text-align: center; color: #fff;">
+			            <h3> <a href="<?php _e($category_link); ?>"> <?php _e($cat_name); ?> </a> </h3>          
+			        </div>
+			        <div style="width: 100%; padding:2%;  float: left; background: #D8E7FF; text-align: left; color: #000;">
+
+				<?php 
+
+	                            $query = new WP_Query( $args );
+	                            	$i=0;
+	                            if ( $query->have_posts() ) :
+	                                while ( $query->have_posts() ) {
+	                                    $query->the_post();
+	                                    $i++;
+	                                    if($i==1):
+					                   			?>				                   				
+					                   				<img class="img-responsive" src="<?php echo get_the_post_thumbnail_url(); ?>" width="100%">
+					                   				 <h3>
+					                   				 	<a href="<?php the_permalink();?>">
+					                   				 		<?php the_title(); ?>
+					                   				 	</a>
+					                   				 </h3>
+		             								<p style="border-bottom-style: dotted;"> 
+
+		             									<?php 
+							                                $content=get_the_content();
+							                                $content_20word=wp_trim_words($content,40);
+							                                _e($content_20word);
+								                         ?>
+		             								</p> 
+			                        		   	<?php
+			                           		endif;
+		                           		?>
+		                           			<h4>
+	             								<a href="<?php the_permalink();?>">
+	             									<?php the_title(); ?>
+	             								</a>
+	             							</h4>
+
+
+		                           		<?php
+
+	                                }
+		                        endif;
+                    		echo "</div>";
+                    	echo "</div>";                   
+                    wp_reset_postdata();
+      
+   }/*end function*/
+/*+++++++++++++++++++++End get_special_two_post++++++++++++++++++++++++++++++*/
+
+
+
+
