@@ -137,6 +137,10 @@
                         <?php
                           // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
                          get_lead_post_by_cat_with_img_with_formate('aside', 4 , 6, 'col-sm-8','#fff');
+
+
+                         //get_special_two_post($cat_id, $post_no, $div_class)
+                         get_special_two_post(90, 2, "col-sm-4")
                          ?>
                  </div>
                   <div class="row each-row">
@@ -148,7 +152,7 @@
                  <div class="row each-row">
                      <?php
                          //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
-                          get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-8','#f2f2f2' );
+                          get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',7 , 6, 'col-sm-8','#f2f2f2' );
                       ?>
                   </div>
          
