@@ -23,28 +23,12 @@
   <div class="row each-row">
         <?php 
              //get_lead_post_by_cat_with_post_img($post_formate, $cat_id, $post_no, $div_class,$title_bg_color_code);
-             //get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-5','#C2C2C2'); 
+             //get_lead_post_by_cat_with_post_img('aside', 2 , 6, 'col-sm-5','#C2C2C2');
+
              get_lead_post_by_cat_with_post_img_and_title('aside', 2 , 6, 'col-sm-7','#C2C2C2');   
-        ?>
-
-        <!-- <div class="col-md-1">
-            <div class="row each-row"> -->
-                <?php
-                    //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
-                   // get_post_by_special_cat_with_post_title_and_content_and_img( 6, 1, 'col-sm-12');
-                ?>
-            <!-- </div>
-           <div class="row each-row"> -->
-                  <?php
-                    //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
-                    //get_post_by_special_cat_with_post_title_and_content_and_img(2 , 1, 'col-sm-12');
-                ?> 
-          <!--  </div> 
-        </div> -->
-
-
-
-        <?php               
+                     
+            //get_post_by_special_cat_with_post_title_and_content_and_img( $cat_id, $post_no,$div_class);
+            //get_post_by_special_cat_with_post_title_and_content_and_img(2 , 1, 'col-sm-12');
 
             //get_post_slider($cat_id, $post_no,$div_class);
             get_post_slider(7, 10, 'col-sm-5');
@@ -53,13 +37,57 @@
   </div>
 
 
-<?php if ( $first_ad_img !=""): ?>
-    <div class="row each-row"> 
-        <div class="col">
-              <img class="img-fluid" src="<? echo  $first_ad_img; ?>" width="100%" >
-        </div>
-    </div>   
-<?php endif; ?>
+
+
+    <!-- Add section -->
+        <?php if ( $second_ad_img !=""): ?>
+          <div class="row each-row"> 
+                <div class="col">
+                      <img class="img-fluid" src="<? echo  $second_ad_img; ?>" width="100%" >
+                </div>
+            </div>   
+        <?php endif; ?>
+    <!-- End Add section -->
+
+    <!-- Add section -->
+        <?php if ( $third_ad_img !=""): ?>
+          <div class="row each-row"> 
+                <div class="col">
+                      <img class="img-fluid" src="<? echo  $third_ad_img; ?>" width="100%" >
+                </div>
+            </div>   
+        <?php endif; ?>
+    <!-- End Add section -->
+
+    <!-- Add section -->
+        <?php if ( $fourth_ad_img !=""): ?>
+          <div class="row each-row"> 
+                <div class="col">
+                      <img class="img-fluid" src="<? echo  $fourth_ad_img; ?>" width="100%" >
+                </div>
+            </div>   
+        <?php endif; ?>
+    <!-- End Add section -->
+
+    <!-- Add section -->
+        <?php if ( $fifth_ad_img !=""): ?>
+          <div class="row each-row"> 
+                <div class="col">
+                      <img class="img-fluid" src="<? echo  $fifth_ad_img; ?>" width="100%" >
+                </div>
+            </div>   
+        <?php endif; ?>
+    <!-- End Add section -->
+    
+    <!-- Add section -->
+        <?php if ( $first_ad_img !=""): ?>
+            <div class="row each-row"> 
+                <div class="col">
+                      <img class="img-fluid" src="<? echo  $first_ad_img; ?>" width="100%" >
+                </div>
+            </div>   
+        <?php endif; ?>
+    <!-- End Add section -->
 
 
 <div class="row each-row">       
@@ -111,18 +139,18 @@
                          get_lead_post_by_cat_with_img_with_formate('aside', 4 , 6, 'col-sm-8','#fff');
                          ?>
                  </div>
-                 <div class="row each-row">
-                     <?php
-                         //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
-                          get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-8','#f2f2f2' );
-                      ?>
-                  </div>
                   <div class="row each-row">
                       <?php
                           //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
                           get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
                       ?>
                   </div>        
+                 <div class="row each-row">
+                     <?php
+                         //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
+                          get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',5 , 6, 'col-sm-8','#f2f2f2' );
+                      ?>
+                  </div>
          
             <!-- ++ End Left coll++ -->             
       </div>
@@ -153,18 +181,23 @@
     </div>
 
 
-
-    <div class="row each-row" style="margin-bottom: 20px; ">
-        <?php
-            //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );               
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',85 , 5, 'col-sm-3','#f20000' );               
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',94 , 5, 'col-sm-3','#f20000' );               
-           get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',15 , 5, 'col-sm-3','#f20000' );                      
+    <div class="row each-row"> 
+        <?php  
+            //get_post_by_cat_with_cat_name_and_cat_img($cat_id, $post_no,$div_class);
+            get_post_by_cat_with_cat_name_and_cat_img(8 , 5, 'col-sm-3');
+            get_post_by_cat_with_cat_name_and_cat_img(85 , 5, 'col-sm-3');
+            get_post_by_cat_with_cat_name_and_cat_img(94 , 5, 'col-sm-3');
+            get_post_by_cat_with_cat_name_and_cat_img(15 , 5, 'col-sm-3');
         ?>
     </div>
+
+
+    
     <div class="row each-row" style="margin-bottom: 20px; ">
         <?php
+          //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+           //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );
+
            //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
                         
             get_post_with_left_lead_post_and_post_thumb_on_top('aside',86, 5, 'col-sm-4','#f2f2f2' );               
@@ -175,17 +208,6 @@
     </div> 
 
 
-
-    <div class="row each-row"> 
-        <?php  
-            //get_post_by_cat_with_cat_name_and_cat_img($cat_id, $post_no,$div_class);
-            get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
-            get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
-            get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
-            get_post_by_cat_with_cat_name_and_cat_img(3 , 4, 'col-sm-3');
-
-        ?>
-    </div>
     <div class="row each-row">
         <?php 
             //get_single_post_each_category($cat_id, $post_no, $div_class);
