@@ -357,6 +357,8 @@ function get_post_with_post_thumb_on_top($post_formate, $cat_id, $post_no,$div_c
                             
 
 		                  _e("<div class='row post-box-container'>");
+		                  _e("<div class='col-12'>");
+		                  _e("<div class='row'>");
 
 	                            $query = new WP_Query( $args );
 
@@ -365,21 +367,28 @@ function get_post_with_post_thumb_on_top($post_formate, $cat_id, $post_no,$div_c
 	                            if ( $query->have_posts() ) :
 	                                while ( $query->have_posts() ) {
 	                                    $query->the_post();
-	                                    	
+	                                  $i++;
+	                                  if($i%2==0):
+	                                  		_e("</div>");
+	                                  		_e("<div class='row'>");
+	                                  endif;	
+
 	                            ?>
-	                            	<div class='col-12'>
-		                            	<div class='row'>
+	                            	
+		                            
 			                            	<div class='single-post-box'>
 				                                <a href="<?php the_permalink();?>"><img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
 				                                <p><a href="<?php the_permalink();?>"><?php the_title(); ?></a></p>
 			                            	</div>
-			                            </div>
-			                        </div>    	
+			                            
+			                           	
 	                           	<?php
 	                           		
 	                            	
 	                                }
                     		
+                    		_e("</div>");
+                    		_e("</div>");
                     		_e("</div>");
 
                     echo "</div>";
