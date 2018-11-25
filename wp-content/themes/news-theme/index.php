@@ -169,7 +169,7 @@
             
             //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
             get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );
-            get_post_with_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );
+            get_post_with_post_thumb_on_top('aside',5 , 4, 'col-sm-4','#f20000' );
 
             //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                        
             get_post_with_left_lead_post_and_post_thumb_on_top('aside',86, 5, 'col-sm-4','#f2f2f2' ); 

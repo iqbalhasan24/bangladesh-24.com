@@ -367,7 +367,6 @@ function get_post_with_post_thumb_on_top($post_formate, $cat_id, $post_no,$div_c
 	                            if ( $query->have_posts() ) :
 	                                while ( $query->have_posts() ) {
 	                                    $query->the_post();
-	                                  $i++;
 	                                  if($i%2==0):
 	                                  		_e("</div>");
 	                                  		_e("<div class='row'>");
@@ -383,6 +382,7 @@ function get_post_with_post_thumb_on_top($post_formate, $cat_id, $post_no,$div_c
 			                            
 			                           	
 	                           	<?php
+	                                  $i++;
 	                           		
 	                            	
 	                                }
