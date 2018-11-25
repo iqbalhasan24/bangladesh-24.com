@@ -144,7 +144,7 @@ body {
 		  .cat-post-container{   
 		    padding: 5px;
 		    height: 100%;
-		    border:1px solid #C6C6C6;    
+		    /*border:1px solid #C6C6C6;*/    
 		    
 		  }  
 		  .category-title{
@@ -299,12 +299,16 @@ nav-tabs .nav-link {
 	/*background: #abc;*/
 }
 
+.lead-post-box{
+	text-align:justify;
+}
 
 .lead-news-box{	
 	width: 15%;
 	padding: .5%; 
-	margin:.83%; 
+	margin:.7%; 
 	float: left;
+	text-align:justify
 
 }
 /*+++++++Fornt Page post display design+++++++++++*/
