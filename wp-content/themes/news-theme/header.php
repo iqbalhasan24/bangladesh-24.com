@@ -390,7 +390,7 @@ nav-tabs .nav-link {
 	}
 	#headlines .headlines-tag{
 		text-transform: uppercase;		
-		background: #f20000;				
+		background: #E78200;				
 		float: left;
 		padding: 10px;
 		display: block;
@@ -568,7 +568,7 @@ nav-tabs .nav-link {
 	                <div class="double-bounce2"></div>
 	            </div>
 
-		 		<span style="font-family: SolaimanLipi !important;"> সর্বশেষ </span>
+		 		<span style="font-family: SolaimanLipi !important; font-weight: 600; font-size: 1.3em; color: #fff; "> সর্বশেষ </span>
 		 </div>
 		 <div class="slide-text">
 			<MARQUEE  onMouseOver="this.stop()" onMouseOut="this.start()">
