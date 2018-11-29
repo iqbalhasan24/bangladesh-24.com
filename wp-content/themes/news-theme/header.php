@@ -568,7 +568,7 @@ nav-tabs .nav-link {
 	                <div class="double-bounce2"></div>
 	            </div>
 
-		 		<span> headlines </span>
+		 		<span> সর্বশেষ </span>
 		 </div>
 		 <div class="slide-text">
 			<MARQUEE  onMouseOver="this.stop()" onMouseOut="this.start()">
