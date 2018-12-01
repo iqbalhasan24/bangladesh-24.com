@@ -159,6 +159,11 @@
                           get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',7 , 6, 'col-sm-8','#f2f2f2' );
                       ?>
 
+                      <div class="col-sm-4">
+                            <?php dynamic_sidebar( 'prayer_time' ); ?>
+
+                      </div>
+
                   </div>
          
             <!-- ++ End Left coll++ -->             

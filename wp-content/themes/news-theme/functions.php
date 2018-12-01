@@ -390,6 +390,7 @@ include_once('custom-functions/get-post-by-custom-post-type.php');
 
 include_once('custom-functions/get-psot-by-cat.php');
 include_once('custom-functions/post_slider.php');
+include_once('custom-functions/widgetized-function.php');
 //include_once('custom-functions/get-post-for-category-page-function.php');
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
