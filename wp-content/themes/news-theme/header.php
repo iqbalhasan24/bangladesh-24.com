@@ -444,8 +444,8 @@ nav-tabs .nav-link {
     overflow: hidden;
 }
 
-h2 .prayer-time{
-	display: none !important;
+h2.prayer-time {
+    display: none !important;
 }	
 
 </style>
