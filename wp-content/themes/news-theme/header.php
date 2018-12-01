@@ -445,7 +445,7 @@ nav-tabs .nav-link {
 }
 
 h2 .prayer-time{
-	display: none;
+	display: none !important;
 }	
 
 </style>
