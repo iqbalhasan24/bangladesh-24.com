@@ -442,6 +442,10 @@ nav-tabs .nav-link {
     box-shadow: 0 0 20px #000;
     padding: 0 20px;
     overflow: hidden;
+}
+
+h2 .prayer-time{
+	display: none;
 }	
 
 </style>

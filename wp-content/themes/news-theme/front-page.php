@@ -160,6 +160,7 @@
                       ?>
 
                       <div class="col-sm-4">
+                            <h3 style="text-align: center;"> নামাজ এর সময় সূচি</h3>
                             <?php dynamic_sidebar( 'prayer_time' ); ?>
 
                       </div>
