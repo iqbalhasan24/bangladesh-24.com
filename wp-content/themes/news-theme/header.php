@@ -96,7 +96,7 @@ body {
 
 .double-bounce1,
 .double-bounce2 {
-    background: #fff;
+    background: #f20000;
     width: 100%;
     height: 100%;
     border-radius: 50%;
