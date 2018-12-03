@@ -400,11 +400,12 @@ nav-tabs .nav-link {
 	    line-height: 19px;
    		border-radius: 3px;
     	color: #fff;
-		padding: 0px 10px;
+		padding: 0px 14px;
 		display: block;
 		position: absolute;
-    	left: 10px;
+    	left: 0px;
 		float: left;
+		margin-top: 5px;
 	}
 
 
