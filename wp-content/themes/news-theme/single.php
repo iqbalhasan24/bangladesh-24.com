@@ -13,7 +13,7 @@
 									<span style="float: left; display: inline-block;">
 											<h2><?php _e(get_the_title()); ?>  </h2>
 									</span>
-									<?php if(is_author()): ?>
+									<?php if(is_user_logged_in()): ?>
 										<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px; padding:2px 6px;">
 
 											<b class="number">
