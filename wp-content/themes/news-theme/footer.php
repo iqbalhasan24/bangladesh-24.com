@@ -32,12 +32,12 @@
 
 	<?php if ( has_nav_menu( 'footer-menu-one' ) || has_nav_menu( 'footer-menu-two' ) || has_nav_menu( 'footer-menu-three' ) ): ?>
 	    <div class="row footer-menu-area footer-wrapper" style="margin:0;">
-	    	 <div class="col-sm-6" style="text-align: left; color: #fff; border-right: 1px solid #f00;">
+	    	 <div class="col-sm-6" style="text-align: left; color: #fff; border-right: 2px solid #f00;">
 	    	 	<h3 style="color:#fff;">যোগাযোগ:</h3>
-	    	 	<address>
-	    	 		১০১ কাটাসুর, শেরেবাংলা রোড 
-					মোহাম্মদপুর, ঢাকা-১২০৭ 
-					মোবাইল: ০১৮১৯৯০৭২২৭
+	    	 	<address style="font-size: 14px;">
+	    	 		১০১ কাটাসুর, শেরেবাংলা রোড <br>
+					মোহাম্মদপুর, ঢাকা-১২০৭ <br>
+					মোবাইল: ০১৮১৯৯০৭২২৭ <br>
 	    	 	</address>
 	    	 </div>
 	    	
