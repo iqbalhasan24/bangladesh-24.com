@@ -249,7 +249,8 @@
     <div class="row each-row">
         <?php 
             //get_single_post_each_category($cat_id, $post_no, $div_class);
-            get_single_post_each_category(90, 1, 'col');
+            //get_single_post_each_category(90, 1, 'col');
+            get_single_post_each_category(127, 1, 'col');
             get_single_post_each_category(16, 1, 'col');
             get_single_post_each_category(91, 1, 'col');
             get_single_post_each_category(92, 1, 'col');
