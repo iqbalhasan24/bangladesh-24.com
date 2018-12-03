@@ -34,7 +34,7 @@
 	    <div class="row footer-menu-area footer-wrapper" style="margin:0;">
 	    	 <div class="col-sm-6" style="text-align: left; color: #fff; border-right: 2px solid #f00;">
 	    	 	<h3 style="color:#fff;">যোগাযোগ:</h3>
-	    	 	<address style="font-size: 14px;">
+	    	 	<address style="font-size: 1.3em; font-family: SolaimanLipi !important;">
 	    	 		১০১ কাটাসুর, শেরেবাংলা রোড <br>
 					মোহাম্মদপুর, ঢাকা-১২০৭ <br>
 					মোবাইল: ০১৮১৯৯০৭২২৭ <br>
