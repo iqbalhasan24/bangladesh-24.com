@@ -32,7 +32,17 @@
 
 	<?php if ( has_nav_menu( 'footer-menu-one' ) || has_nav_menu( 'footer-menu-two' ) || has_nav_menu( 'footer-menu-three' ) ): ?>
 	    <div class="row footer-menu-area footer-wrapper" style="margin:0;">
-	    	 <div class="col-4">
+	    	 <div class="col-sm-6" style="text-align: left; color: #fff; border-right: 1px solid #f00;">
+	    	 	<h3 style="color:#fff;">যোগাযোগ:</h3>
+	    	 	<address>
+	    	 		১০১ কাটাসুর, শেরেবাংলা রোড 
+					মোহাম্মদপুর, ঢাকা-১২০৭ 
+					মোবাইল: ০১৮১৯৯০৭২২৭
+	    	 	</address>
+	    	 </div>
+	    	
+
+	    	 <div class="col-sm-2">
 	    	 		<?php
 	    	 			if ( has_nav_menu( 'footer-menu-one' ) ):
 					        $footer_menu_one = array(
@@ -47,7 +57,7 @@
 					?>
 	    	 </div>
 	    	 
-	    	 <div class="col-4">
+	    	 <div class="col-sm-2">
 	         		<?php
 					    if ( has_nav_menu( 'footer-menu-two' ) ):
 					        $footer_menu_two = array(
@@ -62,7 +72,7 @@
 						endif;
 					?>		
 				</div>
-				<div class="col-4">
+				<div class="col-sm-2">
 						<?php
 							if ( has_nav_menu( 'footer-menu-three' ) ):
 						        $footer_menu_three = array(
