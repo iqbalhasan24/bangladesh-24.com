@@ -179,7 +179,7 @@
         <?php
             
             //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-            //get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );
+            //get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );            
             //get_post_with_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
 
             get_post_with_post_thumb_on_top('aside',5 , 4, 'col-sm-4','#f20000' );
@@ -239,8 +239,8 @@
         <?php 
             //get_single_post_each_category($cat_id, $post_no, $div_class);
             get_single_post_each_category(84, 1, 'col');
-            get_single_post_each_category(85, 1, 'col');
-            get_single_post_each_category(15, 1, 'col');
+            get_single_post_each_category(128, 1, 'col');
+            get_single_post_each_category(129, 1, 'col');
             get_single_post_each_category(11, 1, 'col');
             get_single_post_each_category(87, 1, 'col');
 
