@@ -38,7 +38,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: SolaimanLipi !important;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.3;
     background-color: #ffffff;
     color: #333;
