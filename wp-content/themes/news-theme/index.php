@@ -239,8 +239,8 @@
         <?php 
             //get_single_post_each_category($cat_id, $post_no, $div_class);
             get_single_post_each_category(84, 1, 'col');
-            get_single_post_each_category(85, 1, 'col');
-            get_single_post_each_category(15, 1, 'col');
+            get_single_post_each_category(128, 1, 'col');
+            get_single_post_each_category(129, 1, 'col');
             get_single_post_each_category(11, 1, 'col');
             get_single_post_each_category(87, 1, 'col');
 
