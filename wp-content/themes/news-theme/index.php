@@ -148,12 +148,23 @@
                           //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
                           get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
                       ?>
+
+                      <div class="col-sm-4">
+                          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbangladesh24production%2F%3Fref%3Daymt_homepage_panel&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=269412256939285" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                      </div>
                   </div>        
                  <div class="row each-row">
                      <?php
                          //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
                           get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',7 , 6, 'col-sm-8','#f2f2f2' );
                       ?>
+
+                      <div class="col-sm-4">
+                            <h3 style="text-align: center;"> নামাজ এর সময় সূচী</h3>
+                            <?php dynamic_sidebar( 'prayer_time' ); ?>
+
+                      </div>
+
                   </div>
          
             <!-- ++ End Left coll++ -->             
@@ -168,7 +179,9 @@
         <?php
             
             //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-            //get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );
+            //get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );            
+            //get_post_with_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+
             get_post_with_post_thumb_on_top('aside',5 , 4, 'col-sm-4','#f20000' );
 
             //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                        
@@ -183,9 +196,11 @@
             //get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-8');                                      
             
             /*get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );*/                                
+            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );*/
+
                                              
         ?>
+        
     </div>
 
 
@@ -234,7 +249,8 @@
     <div class="row each-row">
         <?php 
             //get_single_post_each_category($cat_id, $post_no, $div_class);
-            get_single_post_each_category(90, 1, 'col');
+            //get_single_post_each_category(90, 1, 'col');
+            get_single_post_each_category(127, 1, 'col');
             get_single_post_each_category(16, 1, 'col');
             get_single_post_each_category(91, 1, 'col');
             get_single_post_each_category(92, 1, 'col');

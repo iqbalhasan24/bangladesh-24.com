@@ -22,23 +22,27 @@
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
-		font-family: SolaimanLipi, Kiron, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif  !important;
-		color: #000;
-	
+		/*font-family: SolaimanLipi, Kiron, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif  !important;*/
+		font-family: SolaimanLipi !important;
+		color: #000;	
 		font-weight: 550;
 	}
 /*++++++++++++++++++++++++*/
+
+
+
+
+
 body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: "Helvetica Neue", Helvetica, Times New Roman, sans-serif;
-    font-size: 11px;
+    font-family: SolaimanLipi !important;
+    font-size: 12px;
     line-height: 1.3;
     background-color: #ffffff;
     color: #333;
-    font-family: Times New Roman;
-    font-size: 15px;
+
 }
 *, :after, :before {
     -webkit-box-sizing: border-box;
@@ -96,7 +100,7 @@ body {
 
 .double-bounce1,
 .double-bounce2 {
-    background: #fff;
+    background: #f20000;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -390,13 +394,22 @@ nav-tabs .nav-link {
 	}
 	#headlines .headlines-tag{
 		text-transform: uppercase;		
-		background: #f20000;				
-		float: left;
-		padding: 10px;
+		background: #4db2ec;				
+	    font-size: 1.2em;
+	    font-weight: 700;
+	    line-height: 19px;
+   		border-radius: 3px;
+    	color: #fff;
+		padding: 0px 14px;
 		display: block;
 		position: absolute;
-    	left: 0;
+    	left: 0px;
+		float: left;
+		margin-top: 5px;
 	}
+
+
+
 
 	#headlines .slide-text{
 		max-width: 100%; float: left; padding: 4px; /*border: 2px solid #000;*/	display: block;   	
@@ -442,6 +455,10 @@ nav-tabs .nav-link {
     box-shadow: 0 0 20px #000;
     padding: 0 20px;
     overflow: hidden;
+}
+
+h2.prayer-time {
+    display: none !important;
 }	
 
 </style>
@@ -563,12 +580,12 @@ nav-tabs .nav-link {
 	<!-- +++++++++++++++++++++++++++++++ Headlines  Slide +++++++++++++++++++++++++++++++++++ -->
 	<div id="headlines" class="row">
 		 <div class="headlines-tag"> 
-		 		<div class="alert-spinner">
+		 		<!-- <div class="alert-spinner">
 	                <div class="double-bounce1"></div>
 	                <div class="double-bounce2"></div>
-	            </div>
+	            </div> -->
 
-		 		<span> headlines </span>
+		 		<span style="font-family: SolaimanLipi !important; font-weight: 600; font-size: 1.3em; color: #fff; "> সর্বশেষ </span>
 		 </div>
 		 <div class="slide-text">
 			<MARQUEE  onMouseOver="this.stop()" onMouseOut="this.start()">

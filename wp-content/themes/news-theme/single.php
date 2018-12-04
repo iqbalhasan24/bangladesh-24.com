@@ -13,15 +13,22 @@
 									<span style="float: left; display: inline-block;">
 											<h2><?php _e(get_the_title()); ?>  </h2>
 									</span>
+										<?php if(is_user_logged_in()): ?>
+										<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px; padding:2px 6px;">
 
-									<span style="float: right; display: inline-block; border: 1px solid #4E4E4E; border-radius: 3px; padding:2px 6px;">
+											<b class="number">
+												<?php 
 
-										<b class="number">
-											<?php $count_read = get_post_meta(the_ID(), 'meta_value_num', true); ?>
-										</b>
-										<i class="bf-icon  fa fa-eye"></i> 
-									</span>
-
+												//		setPostViews(get_the_ID());
+												//		echo getPostViews(get_the_ID());
+												//$count_read = get_post_meta(the_ID(), 'meta_value_num', true); 
+												$p_id= get_the_ID();
+													echo post_view_counter($p_id);
+												?>
+											</b>
+											<i class="bf-icon  fa fa-eye"></i> 
+										</span>
+									<?php endif; ?>
 									<p> <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></p>
 									<p><?php _e(get_the_content()); ?></p>
 								<?php
