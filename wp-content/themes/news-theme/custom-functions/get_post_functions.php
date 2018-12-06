@@ -79,9 +79,9 @@ function get_post_with_left_lead_lead_news($post_formate, $cat_id, $post_no,$div
                     		<div class="row">
 	                    		<div class="col-12">
 		                    		<div class="category-title" >
-		                    			<a href="<?php $category_link; ?>">
+		                    			<span style=" text-transform: uppercase; background: #4db2ec;border-radius: 3px; padding: 3px 10px;"> <a href="<?php $category_link; ?>">
 				                    				<?php _e( $cat_name); ?>
-		                    			</a>
+		                    			</a></span>
 		                    		</div>
 	                    		</div>
 	                    	</div>
