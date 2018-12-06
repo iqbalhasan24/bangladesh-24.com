@@ -194,9 +194,7 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
                     $cat_name = get_cat_name ( $cat_id);  
                     $category_link = get_category_link ( $cat_id);  
                     ?>
-                    <div class="<?php _e($div_class);?>" style="">
-
-                      <div class="col-12 " style="background:<?php _e($title_bg_color_code);?> ; border:1px solid #EFF5F9; padding-top:10px;">
+                    <div class="<?php _e($div_class);?>" style="background:<?php _e($title_bg_color_code);?> ; border:1px solid #EFF5F9; padding-top:10px;">
                         <div class="row each-row">
                             <div class="col-12">
                                 <div class="category-title" >
@@ -229,8 +227,6 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
                             }
                             _e("</div>");
                         _e("</div>");
-                     _e("</div>");
-                    
                     endif; 
                     wp_reset_postdata();
             }

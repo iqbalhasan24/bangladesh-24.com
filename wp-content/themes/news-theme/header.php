@@ -159,7 +159,7 @@ body {
 		    font-size: 1.5em;
 		    width: 100%;
 		    border-radius: 3px;
-		    padding:4px 30px;
+		    /*padding:4px 30px;*/
 
 		  }
 
