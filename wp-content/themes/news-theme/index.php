@@ -130,137 +130,135 @@
       <!-- ++Right coll++ -->
 </div>
 
-  <div class="row each-row">
-      <!-- ++Left coll++ -->
-     <div class="col-sm-12 left-column">                
-                  <div class="row each-row">
-                        <?php
-                          // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
-                         get_lead_post_by_cat_with_img_with_formate('aside', 4 , 6, 'col-sm-8','#fff');
+
+     
+
+              <div class="row each-row">
+                    <?php
+                      // get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $post_no,$div_class,$title_bg_color_code)
+                     get_lead_post_by_cat_with_img_with_formate('aside', 4 , 6, 'col-sm-8','#fff');
 
 
-                         //get_special_two_post($cat_id, $post_no, $div_class)
-                         get_special_two_post(90, 2, "col-sm-4")
-                         ?>
-                 </div>
-                  <div class="row each-row">
-                      <?php
-                          //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-                          get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
-                      ?>
+                     //get_special_two_post($cat_id, $post_no, $div_class)
+                     get_special_two_post(90, 2, "col-sm-4")
+                     ?>
+             </div>
+              <div class="row each-row">
+                  <?php
+                      //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+                      get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
+                  ?>
 
-                      <div class="col-sm-4">
-                          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbangladesh24production%2F%3Fref%3Daymt_homepage_panel&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=269412256939285" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                      </div>
-                  </div>        
-                 <div class="row each-row">
-                     <?php
-                         //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
-                          get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',7 , 6, 'col-sm-8','#f2f2f2' );
-                      ?>
+                  <div class="col-sm-4">
+                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbangladesh24production%2F%3Fref%3Daymt_homepage_panel&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=269412256939285" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                  </div>
+              </div>        
+             <div class="row each-row">
+                 <?php
+                     //get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                              
+                      get_post_with_left_two_lead_post_and_post_thumb_at_teft('aside',7 , 6, 'col-sm-8','#f2f2f2' );
+                  ?>
 
-                      <div class="col-sm-4">
-                            <h3 style="text-align: center;"> নামাজ এর সময় সূচী</h3>
-                            <?php dynamic_sidebar( 'prayer_time' ); ?>
-
-                      </div>
+                  <div class="col-sm-4">
+                        <h3 style="text-align: center;"> নামাজ এর সময় সূচী</h3>
+                        <?php dynamic_sidebar( 'prayer_time' ); ?>
 
                   </div>
-         
-            <!-- ++ End Left coll++ -->             
-      </div>
+
+              </div>
+     
+ 
 
 <!-- ++++++++++++First content++++++++++++ -->
 
 
 
 
-    <div class="row each-row">
-        <?php
-            
-            //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-            //get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );            
-            //get_post_with_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-
-            get_post_with_post_thumb_on_top('aside',5 , 4, 'col-sm-4','#f20000' );
-
-            //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                        
-            get_post_with_left_lead_post_and_post_thumb_on_top('aside',86, 5, 'col-sm-4','#f2f2f2' ); 
-
-             //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-            //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );
-
-            
-
-            // get_lead_post_by_cat_with_cat_img($cat_id, $post_no,$div_class)
-            //get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-8');                                      
-            
-            /*get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
-            get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );*/
-
-                                             
-        ?>
+<div class="row each-row">
+    <?php
         
-    </div>
+        //get_post_with_top_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+        //get_post_with_top_lead_post_and_post_thumb_on_top('aside',5 , 3, 'col-sm-4','#f20000' );            
+        //get_post_with_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
 
+        get_post_with_post_thumb_on_top('aside',5 , 4, 'col-sm-4','#f20000' );
 
-    <div class="row each-row"> 
-        <?php  
-            //get_post_by_cat_with_cat_name_and_cat_img($cat_id, $post_no,$div_class);
-            get_post_by_cat_with_cat_name_and_cat_img(8 , 5, 'col-sm-3');
-            get_post_by_cat_with_cat_name_and_cat_img(85 , 5, 'col-sm-3');
-            get_post_by_cat_with_cat_name_and_cat_img(94 , 5, 'col-sm-3');
-            get_post_by_cat_with_cat_name_and_cat_img(15 , 5, 'col-sm-3');
-        ?>
-    </div>
+        //get_post_with_left_lead_post_and_post_thumb_on_top($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);                        
+        get_post_with_left_lead_post_and_post_thumb_on_top('aside',86, 5, 'col-sm-4','#f2f2f2' ); 
 
+         //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+        //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );
 
-    <div class="row each-row">     
-          <?php get_psot_by_cat_with_post_formate('aside',9 , 5, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',89 , 5, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',10 , 5, 'col-sm-3'); ?>
-          <?php get_psot_by_cat_with_post_formate('aside',88 , 5, 'col-sm-3'); ?>
-    </div>
+        
+
+        // get_lead_post_by_cat_with_cat_img($cat_id, $post_no,$div_class)
+        //get_lead_post_by_cat_with_cat_img(3 , 4, 'col-sm-8');                                      
+        
+        /*get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );                                      
+        get_post_with_top_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f20000' );*/
+
+                                         
+    ?>
     
-    <div class="row each-row" style="margin-bottom: 20px; ">
-        <?php
-          //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-           //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );
-
-                         
-           /* get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
-            get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );*/                
-                         
-        ?>
-    </div> 
+</div>
 
 
-    <div class="row each-row">
-        <?php 
-            //get_single_post_each_category($cat_id, $post_no, $div_class);
-            get_single_post_each_category(84, 1, 'col');
-            get_single_post_each_category(128, 1, 'col');
-            get_single_post_each_category(129, 1, 'col');
-            get_single_post_each_category(11, 1, 'col');
-            get_single_post_each_category(87, 1, 'col');
-
-        ?> 
-    </div>
-    <div class="row each-row">
-        <?php 
-            //get_single_post_each_category($cat_id, $post_no, $div_class);
-            //get_single_post_each_category(90, 1, 'col');
-            get_single_post_each_category(127, 1, 'col');
-            get_single_post_each_category(16, 1, 'col');
-            get_single_post_each_category(91, 1, 'col');
-            get_single_post_each_category(92, 1, 'col');
-            get_single_post_each_category(93, 1, 'col');
-
-        ?> 
-    </div>
+<div class="row each-row"> 
+    <?php  
+        //get_post_by_cat_with_cat_name_and_cat_img($cat_id, $post_no,$div_class);
+        get_post_by_cat_with_cat_name_and_cat_img(8 , 5, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(85 , 5, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(94 , 5, 'col-sm-3');
+        get_post_by_cat_with_cat_name_and_cat_img(15 , 5, 'col-sm-3');
+    ?>
+</div>
 
 
+<div class="row each-row">     
+      <?php get_psot_by_cat_with_post_formate('aside',9 , 5, 'col-sm-3'); ?>
+      <?php get_psot_by_cat_with_post_formate('aside',89 , 5, 'col-sm-3'); ?>
+      <?php get_psot_by_cat_with_post_formate('aside',10 , 5, 'col-sm-3'); ?>
+      <?php get_psot_by_cat_with_post_formate('aside',88 , 5, 'col-sm-3'); ?>
+</div>
 
-  </div>
+<div class="row each-row" style="margin-bottom: 20px; ">
+    <?php
+      //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
+       //get_post_by_post_formate_and_cat_with_catimg_and_title_bgc('aside',8 , 5, 'col-sm-3','#f20000' );
+
+                     
+       /* get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );               
+        get_post_with_left_lead_post_and_post_thumb_on_top('aside',3 , 5, 'col-sm-4','#f2f2f2' );*/                
+                     
+    ?>
+</div> 
+
+
+<div class="row each-row">
+    <?php 
+        //get_single_post_each_category($cat_id, $post_no, $div_class);
+        get_single_post_each_category(84, 1, 'col');
+        get_single_post_each_category(128, 1, 'col');
+        get_single_post_each_category(129, 1, 'col');
+        get_single_post_each_category(11, 1, 'col');
+        get_single_post_each_category(87, 1, 'col');
+
+    ?> 
+</div>
+<div class="row each-row">
+    <?php 
+        //get_single_post_each_category($cat_id, $post_no, $div_class);
+        //get_single_post_each_category(90, 1, 'col');
+        get_single_post_each_category(127, 1, 'col');
+        get_single_post_each_category(16, 1, 'col');
+        get_single_post_each_category(91, 1, 'col');
+        get_single_post_each_category(92, 1, 'col');
+        get_single_post_each_category(93, 1, 'col');
+
+    ?> 
+</div>
+
+
+
 
 <?php  get_footer(); ?>
