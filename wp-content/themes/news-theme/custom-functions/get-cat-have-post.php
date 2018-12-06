@@ -44,61 +44,7 @@ function get_category_that_have_post(){
 
 
 
-/*++++++++++++++++++++++++  get_single_post_each_category+++++++++++++++++++++++++*/
 
-function get_single_post_each_category($cat_id, $post_no,$div_class){
-
-                    $args = array(
-                        'posts_per_page'  => $post_no,
-                        'cat'           => $cat_id,
-                        'orderby'       => 'date',
-                        'order'       => 'DESC',
-                    );
-
-                    $cat_name      = get_cat_name($cat_id);
-                    $category_link = get_category_link ( $cat_id);
-                                           
-
-                                $query = new WP_Query( $args );
-
-                                if ( $query->have_posts() ) :
-                                    while ( $query->have_posts() ) {
-                                        $query->the_post();
-                                ?>
-                                    <div class="<?php _e($div_class); ?>">
-                                       <div class="row">
-                                          <div class="col-12">
-                                            <div style="width: 100%">
-                                                <a href="<?php the_permalink();?>"> 
-                                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" width="100%" >
-                                                </a>
-                                            </div>          
-                                          </div>
-                                          
-                                            <div class="col-12" >
-                                                <div style="width: 100%; padding: 2%; text-align: left; background: #fff;">
-                                                    <p>
-                                                        <a href="<?php the_permalink();?>" style="font-size: 1.4em; font-weight: 600;"> 
-                                                             <?php the_title(); ?> 
-                                                        </a>
-                                                    </p>      
-                                                    <a href="<?php _e($category_link); ?>">
-                                                        <span class="left-stick"></span> 
-                                                        <span><?php _e($cat_name); ?></span>
-                                                    </a>
-                                                </div>
-                                            </div>                                          
-                                       </div>
-                                    </div>
-                                <?php
-                                   }
-                           
-                    endif; 
-                    wp_reset_postdata();
-            
-
-}
-/*++++++++++++++++++++++++++++++++++End get_category_that_have_post++++++++++++++++++++++++++++++++++++++++*/
 
 
 
