@@ -141,6 +141,7 @@ body {
 			 	width: 100%;			 	
 			 	color: #000000;
 			 	padding:3px 0px;
+		    	border-bottom: 4px solid #59A1F0;
 			}
 		  .cat-post-container a:hover{
 		    text-decoration: none;
@@ -148,7 +149,6 @@ body {
 		  .cat-post-container{   
 		    padding: 5px;
 		    height: 100%;
-		    border-bottom: 4px solid #59A1F0;
 		    /*border:1px solid #C6C6C6;*/    
 		    
 		  }  
