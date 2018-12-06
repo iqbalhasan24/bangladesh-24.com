@@ -441,14 +441,15 @@ function get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate, 
                     $cat_name = get_cat_name ( $cat_id);  
                     $category_link = get_category_link ( $cat_id);  
                     ?>
-                    <div class="<?php _e($div_class);?>">
-                    	<div class="col-12 cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
+                    <div class="<?php _e($div_class);?> cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
                     		<div class="row">
 	                    		<div class="col-12">
 		                    		<div class="category-title" >
+		                    			<span style=" text-transform: uppercase; background: #4db2ec;border-radius: 3px 3px 0px 0px; padding: 3px 10px;"> 
 		                    			<a href="<?php $category_link; ?>">
 				                    				<?php _e( $cat_name); ?>
 		                    			</a>
+		                    			</span>
 		                    		</div>
 	                    		</div>
 	                    	</div>
@@ -513,8 +514,6 @@ function get_post_with_left_two_lead_post_and_post_thumb_at_teft($post_formate, 
                     		
                     		_e("</div>");
                     		_e("</div>");
-
-                		_e("</div>");
                 	_e("</div>");
                     endif; 
                     wp_reset_postdata();
@@ -540,7 +539,7 @@ function get_lead_post_with_lead_content_and_img($post_formate, $cat_id, $post_n
 
                     $category_link = get_category_link ( $cat_id);                          
                    
-                   	 _e("<div class='".$div_class."' style='background:#ffffff; border:1px solid #EFF5F9' >");
+                   	 _e("<div class='".$div_class." cat-post-container' style='background:#ffffff; border:1px solid #EFF5F9' >");
 		                   _e ("<div class='box-container'>");
 		                   _e ("<div class='row cat-img-containe'>");
 			                   _e("<div class='cat-img-container' style='width:100%;'> ");

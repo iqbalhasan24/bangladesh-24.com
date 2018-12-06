@@ -198,7 +198,7 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
                         <div class="row each-row">
                             <div class="col-12">
                                 <div class="category-title" >
-                                    <span style=" text-transform: uppercase; background: #4db2ec;border-radius: 3px; padding: 3px 10px;">  
+                                    <span style=" text-transform: uppercase; background: #4db2ec;border-radius: 3px 3px 0px 0px; padding: 3px 10px;">  
                                       <a href="<?php $category_link; ?>">
                                                 <?php _e( $cat_name); ?>
                                       </a>
