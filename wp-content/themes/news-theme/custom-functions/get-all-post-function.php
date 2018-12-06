@@ -78,12 +78,14 @@ function get_post_with_left_lead_lead_news($post_formate, $cat_id, $post_no,$div
                     ?>
                     <div class="<?php _e($div_class);?>  cat-post-container" style="background:<?php _e($title_bg_color_code);?> ">
                     	
-                    		<div class="row each-row">	                    		
-	                    		<div class="category-title" >
-	                    			<span style=" text-transform: uppercase; background: #4db2ec; padding: 3px 10px;"> <a href="<?php $category_link; ?>">
-			                    				<?php _e( $cat_name); ?>
-	                    			</a></span>
-	                    		</div>	                    		
+                    		<div class="row">
+	                    		<div class="col-12">
+		                    		<div class="category-title" >
+		                    			<span style=" text-transform: uppercase; background: #4db2ec; padding: 3px 10px;"> <a href="<?php $category_link; ?>">
+				                    				<?php _e( $cat_name); ?>
+		                    			</a></span>
+		                    		</div>
+	                    		</div>
 	                    	</div>
                     		<div class="row post-box-container">
 
