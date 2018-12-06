@@ -155,8 +155,8 @@ body {
 		     /*text-align: center;
 		  	 background-image: linear-gradient(to right, #4B409A,#4B409A);
 		    color: #ffffff;*/
-		    font-weight: 600;
-		    font-size: 1.5em;
+		    font-weight: 650;
+		    font-size: 1.3em;
 		    width: 100%;
 		    border-radius: 3px;
 		    border-bottom: 4px solid #59A1F0;
