@@ -274,7 +274,7 @@ nav-tabs .nav-link {
 .box-container{
 	max-width: 100%;
 	/*border: 1px solid #000012;*/
-	padding: 10px;
+	padding:0px 10px;
 	display: block;
 	overflow: hidden;
 }
@@ -283,12 +283,15 @@ nav-tabs .nav-link {
 	border-radius:5px;
 	width: 100%;
 	overflow: hidden; 
-	text-align: center;
+	/*text-align: center;*/
+	font-size: 1.3em;
 }
 
 .cat-img-containe, .post-box-container{
 	/*border: 1px solid #000012;*/
 }
+
+
 .post-box-container{
 	margin-top:3px; 
 	margin-bottom:3px; 
