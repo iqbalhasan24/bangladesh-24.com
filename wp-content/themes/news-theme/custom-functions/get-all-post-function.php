@@ -284,24 +284,25 @@ function get_lead_post_with_lead_content_and_img($post_formate, $cat_id, $post_n
                         'order'       => 'DESC',
                     );
 
-                    $category_link = get_category_link ( $cat_id);                          
-                   
-                   	 _e("<div class='".$div_class." cat-post-container' style='' >");
-		                   _e ("<div class='box-container'>");
-		                   _e ("<div class='row cat-img-containe'>");
-			                   _e("<div class='cat-img-container' style='width:100%;'> ");
-			                   			_e("<a href='".$category_link ."'><span> <h2 class='cat-title' style='background:".$title_bg_color_code."'>". get_cat_name($cat_id) ."</h2> </span></a>");
-			                           
-			                   _e("</div>");
-		                   	_e("</div>");
-                            
+                    $category_link = get_category_link ( $cat_id); 
+                    ?>
 
-		                  _e("<div class='row post-box-container'>");
+                    	<div class="<?php _e($div_class); ?> cat-post-container"  style="" >
+                    		<div class='box-container'>
+                    			<div class='row cat-img-containe'>
+                    				<div class='cat-img-container' style='width:100%;'>
+                    					<a href="<?php _e($category_link); ?>">
+                    						<span style="background:<?php _e($title_bg_color_code); ?> ;text-transform: uppercase; border-radius: 3px 3px 0px 0px; padding: 3px 10px;">
+                    							<?php _e(get_cat_name($cat_id));?>
+                    						</span>
+			               				</a>
+			               		   </div>
+			               		</div>
 
+		                  	<div class='row post-box-container'>
+			               <?php
 	                            $query = new WP_Query( $args );
-
 	                            	$i=0;
-
 	                            if ( $query->have_posts() ) :
 	                                while ( $query->have_posts() ) {
 	                                    $query->the_post();

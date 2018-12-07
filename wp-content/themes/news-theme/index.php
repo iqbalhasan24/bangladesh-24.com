@@ -146,7 +146,7 @@
               <div class="row each-row">
                   <?php
                       //get_lead_post_with_lead_content_and_img($post_formate,$catid,$post_no,$div_class,$title_bg_color_code);
-                      get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#f20000' );
+                      get_lead_post_with_lead_content_and_img('aside',6 , 5, 'col-sm-8','#4db2ec;' );
                   ?>
 
                   <div class="col-sm-4">
