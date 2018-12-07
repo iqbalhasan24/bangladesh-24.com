@@ -290,7 +290,7 @@ function get_lead_post_with_lead_content_and_img($post_formate, $cat_id, $post_n
                     	<div class="<?php _e($div_class); ?> cat-post-container"  style="" >
                     		<div class='box-container'>
                     			<div class='row cat-img-containe'>
-                    				<div class='cat-img-container' style="width:100%; border: 3px solid <?php _e($title_bg_color_code);?>">
+                    				<div class='cat-img-container' style="width:100%; border-bottom: 3px solid <?php _e($title_bg_color_code);?>">
                     					<a href="<?php _e($category_link); ?>">
                     						<span style="background:<?php _e($title_bg_color_code); ?> ;text-transform: uppercase; border-radius: 3px 3px 0px 0px; padding: 3px 10px;">
                     							<?php _e(get_cat_name($cat_id));?>
