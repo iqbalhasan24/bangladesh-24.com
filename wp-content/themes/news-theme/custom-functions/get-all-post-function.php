@@ -166,6 +166,7 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
                     ?>
                     <div class="<?php _e($div_class);?> cat-post-container" style="background:<?php _e($title_bg_color_code);?> ; border:1px solid #EFF5F9; padding-top:10px;">
                         <div class="row each-row">
+                        	<div class="col-12">                        		
                                 <div class="category-title" >
                                     <span style=" text-transform: uppercase; background: #4db2ec;border-radius: 3px 3px 0px 0px; padding: 3px 10px;">  
                                       <a href="<?php $category_link; ?>">
@@ -173,6 +174,7 @@ function get_lead_post_by_cat_with_img_with_formate($post_formate, $cat_id, $pos
                                       </a>
                                     </span>
                                 </div>
+                        	</div>
                         </div>
 
                         <div class="row">                      
