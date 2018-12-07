@@ -486,7 +486,7 @@ function get_post_with_post_thumb_on_top($post_formate, $cat_id, $post_no,$div_c
 		                   _e ("<div class='box-container'>");
 		                   _e ("<div class='row cat-img-containe'>");
 			                   _e("<div class='cat-img-container' style='width:100%;'> ");
-			                   			_e("<a href='".$category_link ."'><span> <h2 class='cat-title' style='background:".$title_bg_color_code."'>". get_cat_name($cat_id) ."</h2> </span></a>");
+			                   			_e("<a href='".$category_link ."'><span> <h2 class='cat-title-center' style='background:".$title_bg_color_code."'>". get_cat_name($cat_id) ."</h2> </span></a>");
 			                           
 			                   _e("</div>");
 		                   	_e("</div>");

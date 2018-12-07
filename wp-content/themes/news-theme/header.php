@@ -291,7 +291,13 @@ nav-tabs .nav-link {
 	/*border: 1px solid #000012;*/
 }
 
-
+.cat-title-center{
+	text-align: center;
+	display: block;
+    width: 100%;
+    color: #000000;
+    padding: 3px 0px;
+}
 .post-box-container{
 	margin-top:3px; 
 	margin-bottom:3px; 
