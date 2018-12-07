@@ -148,7 +148,7 @@ body {
 		  .cat-post-container{   
 		    padding: 5px;
 		    height: 100%;
-		    /*border:1px solid #C6C6C6;*/    
+		    border:1px solid #EFF5F9;    
 		    
 		  }  
 		  .category-title{
