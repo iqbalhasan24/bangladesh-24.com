@@ -1,4 +1,4 @@
-<?php get_header('single-page'); ?>
+<?php get_header(); ?>
 <div class="container" style="/*max-width:100%;*/ ">
 	<div class="row each-row">
 			<div class="col-8" style="text-align: justify;">
