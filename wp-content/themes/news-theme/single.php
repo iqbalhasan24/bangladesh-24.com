@@ -28,7 +28,7 @@
 											</b>
 											<i class="bf-icon  fa fa-eye"></i> 
 										</span>
-									<?php endif; ?>
+									<?php else: $p_id= get_the_ID(); post_view_counter($p_id); endif; ?>
 									<p> <img class="img-responsive" style="width: 100%" src="<?php echo get_the_post_thumbnail_url(); ?>"></p>
 									<p><?php _e(get_the_content()); ?></p>
 								<?php
