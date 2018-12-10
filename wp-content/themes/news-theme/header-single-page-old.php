@@ -4,9 +4,11 @@
 <head>
   <title><?php if(is_front_page()|| is_home()): bloginfo('name'); else: get_the_title(); endif; ?></title>
   
-  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
 
   <!-- Website SEO -->
   		
@@ -30,8 +32,6 @@
 	
   <!-- End Website SEO -->
 
-  
-
 <style type="text/css">
 
 @font-face{
@@ -44,27 +44,23 @@
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
-		/*font-family: SolaimanLipi, Kiron, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif  !important;*/
-		font-family: SolaimanLipi !important;
-		color: #000;	
+		font-family: SolaimanLipi, Kiron, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif  !important;
+		color: #000;
+	
 		font-weight: 550;
 	}
 /*++++++++++++++++++++++++*/
-
-
-
-
-
 body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: SolaimanLipi !important;
-    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Times New Roman, sans-serif;
+    font-size: 11px;
     line-height: 1.3;
     background-color: #ffffff;
     color: #333;
-
+    font-family: Times New Roman;
+    font-size: 15px;
 }
 *, :after, :before {
     -webkit-box-sizing: border-box;
@@ -122,7 +118,7 @@ body {
 
 .double-bounce1,
 .double-bounce2 {
-    background: #f20000;
+    background: #fff;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -170,19 +166,16 @@ body {
 		  .cat-post-container{   
 		    padding: 5px;
 		    height: 100%;
-		    border:1px solid #EFF5F9;    
+		    border:1px solid #C6C6C6;    
 		    
 		  }  
 		  .category-title{
-		     /*text-align: center;
-		  	 background-image: linear-gradient(to right, #4B409A,#4B409A);
-		    color: #ffffff;*/
-		    font-weight: 650;
-		    font-size: 1.3em;
+		    text-align: center;
+		    background-image: linear-gradient(to right, #222222, #555555,#ffffff);
+		    color: #ffffff;
+		    font-weight: 600;
+		    font-size: 1.5em;
 		    width: 100%;
-		    /*border-radius: 3px;*/
-		    border-bottom: 4px solid #59A1F0;
-		    /*padding:4px 30px;*/
 
 		  }
 
@@ -296,7 +289,7 @@ nav-tabs .nav-link {
 .box-container{
 	max-width: 100%;
 	/*border: 1px solid #000012;*/
-	padding:0px 10px;
+	padding: 10px;
 	display: block;
 	overflow: hidden;
 }
@@ -305,20 +298,11 @@ nav-tabs .nav-link {
 	border-radius:5px;
 	width: 100%;
 	overflow: hidden; 
-	/*text-align: center;*/
-	font-size: 1.3em;
+	text-align: center;
 }
 
 .cat-img-containe, .post-box-container{
 	/*border: 1px solid #000012;*/
-}
-
-.cat-title-center{
-	text-align: center;
-	display: block;
-    width: 100%;
-    color: #000000;
-    padding: 3px 0px;
 }
 .post-box-container{
 	margin-top:3px; 
@@ -335,16 +319,12 @@ nav-tabs .nav-link {
 	/*background: #abc;*/
 }
 
-.lead-post-box{
-	text-align:justify;
-}
 
 .lead-news-box{	
 	width: 15%;
 	padding: .5%; 
-	margin:.7%; 
+	margin:.83%; 
 	float: left;
-	text-align:justify
 
 }
 /*+++++++Fornt Page post display design+++++++++++*/
@@ -365,7 +345,7 @@ nav-tabs .nav-link {
 	}
 	#top-section{		
 		height: auto;
-		padding: 5px 0px; 
+		padding: 5px; 
 	}
 
 	.sportlight, .advertisment{
@@ -426,22 +406,13 @@ nav-tabs .nav-link {
 	}
 	#headlines .headlines-tag{
 		text-transform: uppercase;		
-		background: #4db2ec;				
-	    font-size: 1.2em;
-	    font-weight: 700;
-	    line-height: 19px;
-   		border-radius: 3px;
-    	color: #fff;
-		padding: 0px 14px;
+		background: #f20000;				
+		float: left;
+		padding: 10px;
 		display: block;
 		position: absolute;
-    	left: 0px;
-		float: left;
-		margin-top: 5px;
+    	left: 0;
 	}
-
-
-
 
 	#headlines .slide-text{
 		max-width: 100%; float: left; padding: 4px; /*border: 2px solid #000;*/	display: block;   	
@@ -466,41 +437,14 @@ nav-tabs .nav-link {
 		font-family:LudlowStrongAle !important;
 	}
 	
-
-
-	.left-stick{
-		content: ' ';
-	    overflow: hidden;
-	    width: 2px;
-	    height: 15px;
-	    float: left;
-	    margin-top: 3px;
-	    margin-right: 8px;
-	    background: #d84315;
-	}
-
-.whole_wrapper {
-    width: 85%;
-    max-width: 1280px;
-    margin: 0 auto;    
-    background: #fff;
-    box-shadow: 0 0 20px #000;
-    padding: 0 20px;
-    overflow: hidden;
-}
-
-h2.prayer-time {
-    display: none !important;
-}	
-
 </style>
 
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <!-- container-main -->
-<!-- <div id="top"> </div> -->
-<div id="page" class="whole_wrapper" >
+<div id="top"> </div>
+<div id="page" class="container-fluid">
 
 	<div id="top-mega-menu" class="row">
 		<div class="col-8">
@@ -546,7 +490,7 @@ h2.prayer-time {
 			<!-- <div id="" class="site-title"> -->	
 
 				<div class="row">
-					<div class="col">
+					<div class="col-3" style="padding-right:0px;">
 			        <?php
 			        	$custom_logo_id = get_theme_mod( 'custom_logo' );
 						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -555,12 +499,15 @@ h2.prayer-time {
 							<a href="<?php echo get_option('home'); ?>/">
 
 							<?php
-						        echo "<img class='img-responsive mg-fluid' src='". esc_url( $logo[0] ) ."'   width='100%'></a>";
+						        echo "<img class='mg-fluid' src='". esc_url( $logo[0] ) ."' style='max-height:92px;'></a>";
 						} 
 			        ?>
 			        	
 		        	</div>
-			      
+			        <div class="col-9 site-info" style="padding-left:0px;">		
+						<h3 class="site-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h3>
+						<h5 class="site-description"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('description'); ?></a></h5>			
+					</div>
 				</div>
 
 			<!-- </div> -->
@@ -579,7 +526,7 @@ h2.prayer-time {
 	<!-- ++++++++++++++++++++++++++++++++++++ Primary Menu +++++++++++++++++++++++++++++++++ -->
 	
 		<div class="primary-menu row" >
-	      <nav class="navbar navbar-expand-lg navbar-light bg-light main-menu" style="background:#000 !important; width:100%; margin-bottom: 2px;">
+	      <nav class="navbar navbar-expand-lg navbar-light bg-light main-menu" style="background:#f00 !important; width:100%; margin-bottom: 2px;">
 			  <!-- <a class="navbar-brand" href="/">প্রচ্ছদ</a> -->
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
@@ -596,7 +543,7 @@ h2.prayer-time {
 					wp_nav_menu($arg);
 				?>
 
-				<?php //get_search_form(); ?>
+				<?php get_search_form(); ?>
 			  
 			    <!-- <form class="form-inline my-2 my-lg-0">
 			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -612,12 +559,12 @@ h2.prayer-time {
 	<!-- +++++++++++++++++++++++++++++++ Headlines  Slide +++++++++++++++++++++++++++++++++++ -->
 	<div id="headlines" class="row">
 		 <div class="headlines-tag"> 
-		 		<!-- <div class="alert-spinner">
+		 		<div class="alert-spinner">
 	                <div class="double-bounce1"></div>
 	                <div class="double-bounce2"></div>
-	            </div> -->
+	            </div>
 
-		 		<span style="font-family: SolaimanLipi !important; font-weight: 600; font-size: 1.3em; color: #fff; "> সর্বশেষ </span>
+		 		<span> headlines </span>
 		 </div>
 		 <div class="slide-text">
 			<MARQUEE  onMouseOver="this.stop()" onMouseOut="this.start()">
