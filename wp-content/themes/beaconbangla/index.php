@@ -736,6 +736,7 @@
                </div>
 
 
+               
                <div class="main--content pd--30-0">
                   <div class="post--items-title" data-ajax="tab">
                      <h2 class="h4">Audio &amp; Videos</h2>
@@ -746,7 +747,7 @@
                         <li class="col-md-8">
                            <div class="post--item post--layout-1 post--type-video post--title-large">
                               <div class="post--img">
-                                 <a href="news-single-v1-boxed.html" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-01.jpg" alt=""></a> <a href="#" class="cat">Wave</a> <a href="#" class="icon"><i class="fa fa-eye"></i></a> 
+                                 <a data-toggle="modal" data-target="#myModal" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-01.jpg" alt=""></a> <a href="#" class="cat">Wave</a> <a href="#" class="icon"><i class="fa fa-eye"></i></a> 
                                  <div class="post--info">
                                     <ul class="nav meta">
                                        <li><a href="#">Succubus</a></li>
@@ -765,7 +766,7 @@
                               <li>
                                  <div class="post--item post--type-audio post--layout-3">
                                     <div class="post--img">
-                                       <a href="news-single-v1-boxed.html" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-02.jpg" alt=""></a> 
+                                       <a href="news-single-v1-boxed.html" class="thumb" data-toggle="modal" data-target="#myModal"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-02.jpg" alt=""></a> 
                                        <div class="post--info">
                                           <ul class="nav meta">
                                              <li><a href="#">Maclaan John</a></li>
@@ -834,12 +835,40 @@
                      </div>
                   </div>
                </div>
+
+
+              <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                   Open modal
+                 </button> -->
+
+                 <!-- The Modal -->
+                 <div class="modal" id="myModal">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                     
+                       <!-- Modal Header -->
+                       <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       </div>
+                       
+                       <!-- Modal body -->
+                       <div class="modal-body">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/DxbwKtr_ups" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       </div>
+                       
+                       <!-- Modal footer -->
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                       </div>
+                       
+                     </div>
+                   </div>
+                 </div>           
+               <!-- End  The Modal -->
+
+
+
                <div class="ad--space pd--30-0"> <a href="#"> <img src="img/ads-img/ad-970x90.jpg" alt="" class="center-block"> </a> </div>
-               
-
-
-
-
                <div class="row">
                   <div class="main--content col-md-8 col-sm-7" data-sticky-content="true">
                      <div class="sticky-content-inner">
@@ -854,7 +883,7 @@
                                     <li>
                                        <div class="post--item post--layout-1">
                                           <div class="post--img">
-                                             <a href="news-single-v1-boxed.html" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/health-and-fitness-01.jpg" alt=""></a> <a href="#" class="cat">Business</a> <a href="#" class="icon"><i class="fa fa-star-o"></i></a> 
+                                             <a class=" btn thumb" data-toggle="modal" data-target="#myModal"><img src="/wp-content/themes/beaconbangla/img/home-img/health-and-fitness-01.jpg" alt=""></a> <a href="#" class="cat">Business</a> <a href="#" class="icon"><i class="fa fa-star-o"></i></a> 
                                              <div class="post--info">
                                                 <ul class="nav meta">
                                                    <li><a href="#">Bathin</a></li>

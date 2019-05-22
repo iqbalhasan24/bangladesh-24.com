@@ -92,13 +92,32 @@
                <div class="social--bg bg--color-1">
                </div>
                <div class="container">
-                  <p class="text float--left">&copy; 2017 <a href="#">USNEWS</a>. All Rights Reserved.</p>
+                  <p class="text float--left">&copy; 2017 <?php  bloginfo('name'); ?> All Rights Reserved.</p>
                   <ul class="nav social float--right">
                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                      <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+
+                     <?php if ( has_nav_menu( 'media-menu' ) ): ?>
+            
+                              <?php        
+                                 
+                                      $footer_menu_one = array(
+                                       'theme_location'  => 'media-menu',                    
+                                       'container'          => 'ul',
+                                       'menu_class'      => 'media-menu',
+                                       /*'before'           => '<ul>',
+                                       'after'           => '</ul>',*/
+                                       );
+                                       wp_nav_menu($footer_menu_one);
+                                    
+                              ?>          
+                        <?php endif; ?> 
+
+
+
                   </ul>
                   <ul class="nav links float--right">
                      <li><a href="#">Home</a></li>                  
@@ -131,13 +150,14 @@
       <script src="/wp-content/themes/beaconbangla/js/resizesensor.min.js"></script> 
       <script src="/wp-content/themes/beaconbangla/js/theia-sticky-sidebar.min.js"></script> 
       <script src="/wp-content/themes/beaconbangla/js/jquery.zoom.min.js"></script> 
-      <script src="/wp-content/themes/beaconbangla/js/jquery.barrating.min.js"></script> 
+      <!-- <script src="/wp-content/themes/beaconbangla/js/jquery.barrating.min.js"></script>  -->
       <script src="/wp-content/themes/beaconbangla/js/jquery.countdown.min.js"></script> 
       <script src="/wp-content/themes/beaconbangla/js/retina.min.js"></script> 
       <script src="../../../../external.html?link=https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc"></script> 
-      <script src="/wp-content/themes/beaconbangla/js/color-switcher.min.js"></script> 
       <script src="/wp-content/themes/beaconbangla/js/main.js"></script>
-   <?php wp_footer(); ?>
+      
+<?php wp_footer(); ?>
+
    </body>
    <!-- Mirrored from themelooks.us/demo/usnews/html/home-1-boxed.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] শুক্র, 07 ডিসেম্বর 2018 11:55:29 GMT -->
 </html>

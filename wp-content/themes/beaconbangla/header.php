@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>USNews - Multipurpose News, Magazine and Blog HTML5 Template</title>
+      <title><?php if(is_front_page()|| is_home()): bloginfo('name'); else: get_the_title(); endif; ?></title>
       <meta name="author" content="ThemeLooks">
       <meta name="description" content="USNews - Multipurpose News and Magazine Template">
       <meta name="keywords" content="news, newspaper, magazine, blog, post, article, editorial, publishing, modern, responsive, html5, template">
@@ -21,7 +21,8 @@
       <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
       <?php wp_head(); ?>
    </head>
-   <body class="boxed" data-bg-img="/wp-content/themes/beaconbangla/img/bg-pattern.png">
+   
+   <body class="boxed">
       <div id="preloader">
          <div class="preloader bg--color-1--b" data-preloader="1">
             <div class="preloader--inner"></div>
@@ -216,10 +217,8 @@
                               <li class="dropdown">
                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<i class="fa flm fa-angle-right"></i></a> 
                                  <ul class="dropdown-menu">
-                                    <li><a href="blog-v1-boxed.html">Blog 1</a></li>
-                                    <li><a href="blog-v2-boxed.html">Blog 2</a></li>
-                                    <li><a href="blog-v3-boxed.html">Blog 3</a></li>
-                                    <li><a href="archives-v1-boxed.html">Archives 1</a></li>
+                                    <li><a href="#">Blog 1</a></li>                                    
+                                    <li><a href="#">Archives 1</a></li>
                                     <li><a href="archives-v2-boxed.html">Archives 2</a></li>
                                     <li><a href="archives-v3-boxed.html">Archives 3</a></li>
                                     <li><a href="tag-boxed.html">Tag</a></li>
@@ -308,21 +307,15 @@
                </div>
                <div class="news-updates--list" data-marquee="true">
                   <ul class="nav">
+
+                     <?php $posts_query = new WP_Query('posts_per_page=-1');
+                    while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
                      <li>
-                        <h3 class="h3"><a href="#">Contrary to popular belief Lorem Ipsum is not simply random text.</a></h3>
-                     </li>
-                     <li>
-                        <h3 class="h3"><a href="#">Education to popular belief Lorem Ipsum is not simply</a></h3>
-                     </li>
-                     <li>
-                        <h3 class="h3"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
-                     </li>
-                     <li>
-                        <h3 class="h3"><a href="#">Corporis repellendus perspiciatis reprehenderit.</a></h3>
-                     </li>
-                     <li>
-                        <h3 class="h3"><a href="#">Deleniti consequatur laudantium sit aspernatur?</a></h3>
-                     </li>
+                        <h3 class="h3">
+                         <a href="<?php the_permalink(); ?>" style="font-size: 1.2em;"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22">  <?php the_title(); ?> | </a>
+                        </h3>
+                     </li>             
+                <?php endwhile; wp_reset_query(); ?>
                   </ul>
                </div>
             </div>
