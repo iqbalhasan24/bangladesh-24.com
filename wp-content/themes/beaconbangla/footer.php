@@ -137,6 +137,7 @@
       <script src="../../../../external.html?link=https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc"></script> 
       <script src="/wp-content/themes/beaconbangla/js/color-switcher.min.js"></script> 
       <script src="/wp-content/themes/beaconbangla/js/main.js"></script>
+   <?php wp_footer(); ?>
    </body>
    <!-- Mirrored from themelooks.us/demo/usnews/html/home-1-boxed.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] শুক্র, 07 ডিসেম্বর 2018 11:55:29 GMT -->
 </html>

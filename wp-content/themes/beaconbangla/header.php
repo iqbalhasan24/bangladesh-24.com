@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="/wp-content/themes/beaconbangla/css/colors/theme-color-1.css" id="changeColorScheme">
       <link rel="stylesheet" href="/wp-content/themes/beaconbangla/css/custom.css">
       <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+      <?php wp_head(); ?>
    </head>
    <body class="boxed" data-bg-img="/wp-content/themes/beaconbangla/img/bg-pattern.png">
       <div id="preloader">
