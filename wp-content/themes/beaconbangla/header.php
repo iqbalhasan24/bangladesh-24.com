@@ -36,10 +36,13 @@
                   <div class="float--left float--xs-none text-xs-center">
                      <ul class="header--topbar-info nav">
                         <li style="color: #fff;">
-                           <script type="text/javascript" src="http://bangladate.appspot.com/index4.php"></script> || <?php _e(date("Y-M-d"));?>  <?php _e(date('l'));  ?>                      
+                           <!-- <script type="text/javascript" src="http://bangladate.appspot.com/index4.php"></script>  -->
+
+                           <?php $time = time(); $Bdate = BDdate($time); echo $Bdate; ?> || <?php _e(date("Y-M-d"));?>  <?php _e(date('l')); ?> || <?php echo bn_date(date('l, d M Y, H:i:s A'));?>         <?php echo date('l, d M Y, H:i:s A');?>      
                       </li>                        
                      </ul>
                   </div>
+                  
                   <div class="float--right float--xs-none text-xs-center">                     
                      <ul class="header--topbar-lang nav">
                         <li class="dropdown">
@@ -57,6 +60,8 @@
                         <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
                      </ul>
                   </div>
+
+
                </div>
             </div>
             <div class="header--mainbar">
@@ -312,7 +317,7 @@
                     while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
                      <li>
                         <h3 class="h3">
-                         <a href="<?php the_permalink(); ?>" style="font-size: 1.2em;"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" height="22">  <?php the_title(); ?> | </a>
+                         <a href="<?php the_permalink(); ?>" style="font-size: 1.2em;"> <img src="<?php _e(the_post_thumbnail_url('thumbnail')); ?>" class="img-responsive" style="float: left; width: 22px; margin-right: 5px;">  <?php the_title(); ?> | </a>
                         </h3>
                      </li>             
                 <?php endwhile; wp_reset_query(); ?>
