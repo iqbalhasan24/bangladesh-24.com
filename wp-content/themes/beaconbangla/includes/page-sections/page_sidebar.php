@@ -128,7 +128,31 @@
                               <h2 class="h4">Advertisement</h2>
                               <i class="icon fa fa-bullhorn"></i> 
                            </div>
-                           <div class="ad--widget"> <a href="#"> <img src="img/ads-img/ad-300x250-2.jpg" alt=""> </a> </div>
+                           <div class="ad--widget"> 
+	                           	<?php while ( have_posts() ) : the_post(); ?>
+		                           	<?php  	if( have_rows('parent_field') ):
+											    while ( have_rows('parent_field') ) : the_row();
+											        $first_ad = get_sub_field('first_ad');
+											        $second_ad = get_sub_field('second_ad');
+											        $third_ad = get_sub_field('third_ad');
+											        $fourth_ad = get_sub_field('fourth_ad');
+											        $fifth_ad = get_sub_field('fifth_ad');
+									?>
+													<a href="#"> 
+				                           			    <img src="img/ads-img/ad-300x250-2.jpg" alt=""> 
+						                           	</a> 
+									<?php		        
+											        
+											    endwhile;
+										else :
+									?>
+										<a href="#"> 
+	                           			    <img src="img/ads-img/ad-300x250-2.jpg" alt=""> 
+			                           	</a> 
+									<?php endif; ?>
+	                           	<?php endwhile; ?>
+                           
+                       		</div>
                         </div>
                      </div>
                   </div>
