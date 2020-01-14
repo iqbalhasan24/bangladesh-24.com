@@ -21,8 +21,7 @@
                                  <a href="#" class="btn-link">Read More<i class="fa flm fa-angle-double-right"></i></a> 
                               </div>
                               <ul class="nav">
-                                 <li> <i class="fa fa-map"></i> <span>143/C, Fake Street, Melborne, Australia</span> </li>
-                                 <li> <i class="fa fa-envelope-o"></i> <a href="../../../../external.html?link=http://themelooks.us/cdn-cgi/l/email-protection#2d48554c405d41486d48554c405d4148034e4240"><span class="__cf_email__" data-cfemail="ed88958c809d8188ad88958c809d8188c38e8280">[email&#160;protected]</span></a> </li>
+                                 <li> <i class="fa fa-envelope-o"></i> <a href="mailto:iqbalhasanms@gmail.com"> [email protected] </a> </li>
                                  <li> <i class="fa fa-phone"></i> <a href="tel:+123456789">+123 456 (789)</a> </li>
                               </ul>
                            </div>
@@ -36,7 +35,7 @@
                            </div>
                            <div class="links--widget">
                               <ul class="nav">
-                                 <li><a href="#" class="fa-angle-right">Gadgets</a></li>
+                                 <li><a href="https://www.bangladesh.gov.bd/" target="_blank" class="fa-angle-right">Gadgets</a></li>
                                  <li><a href="#" class="fa-angle-right">Shop</a></li>
                                  <li><a href="#" class="fa-angle-right">Term and Conditions</a></li>
                                  <li><a href="#" class="fa-angle-right">Forums</a></li>
@@ -116,17 +115,16 @@
                               ?>          
                         <?php endif; ?> 
 
-
-
                   </ul>
                   <ul class="nav links float--right">
-                     <li><a href="#">Home</a></li>                  
+                     <li><a href="/">Home</a></li>                  
                      <li><a href="mailto:iqbalhasanms@gmail.com">Support</a></li>
                   </ul>
                </div>
             </div>
          </footer>
       </div>
+
       <div id="stickySocial" class="sticky--right">
          <ul class="nav">
             <li> <a href="#"> <i class="fa fa-facebook"></i> <span>Follow Us On Facebook</span> </a> </li>
@@ -138,6 +136,8 @@
             <li> <a href="#"> <i class="fa fa-linkedin"></i> <span>Follow Us On LinkedIn</span> </a> </li>
          </ul>
       </div>
+
+
       <div id="backToTop"> <a href="#"><i class="fa fa-angle-double-up"></i></a> </div>
       <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
       <script src="/wp-content/themes/beaconbangla/js/jquery-3.2.1.min.js"></script> 
@@ -159,5 +159,4 @@
 <?php wp_footer(); ?>
 
    </body>
-   <!-- Mirrored from themelooks.us/demo/usnews/html/home-1-boxed.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] শুক্র, 07 ডিসেম্বর 2018 11:55:29 GMT -->
 </html>

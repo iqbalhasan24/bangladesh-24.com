@@ -89,20 +89,15 @@
                </div>
 
 
-
                <div class="row">
+
                   <div class="main--content col-md-8 col-sm-7" data-sticky-content="true">
                      <div class="sticky-content-inner">
                         <div class="row">
                            <div class="col-md-6 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
                                  <h2 class="h4">Worlds News</h2>
-                                 <div class="nav"> 
-                                    <a href="#" class="prev btn-link" data-ajax-action="load_prev_world_news_posts"> 
-                                    <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> 
-                                    <a href="#" class="next btn-link" data-ajax-action="load_next_world_news_posts"> <i class="fa fa-long-arrow-right"></i> 
-                                    </a> 
-                                 </div>
+                                
                               </div>
                               <div class="post--items post--items-2" data-ajax-content="outer">
                                  <ul class="nav row gutter--15" data-ajax-content="inner">
@@ -207,7 +202,6 @@
                            <div class="col-md-6 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
                                  <h2 class="h4">Technology</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_technology_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_technology_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                               </div>
                               <div class="post--items post--items-3" data-ajax-content="outer">
                                  <ul class="nav" data-ajax-content="inner">
@@ -303,7 +297,6 @@
                            <div class="col-md-12 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
                                  <h2 class="h4">Finance</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_finance_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_finance_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                               </div>
                               <div class="post--items post--items-2" data-ajax-content="outer">
                                  <ul class="nav row" data-ajax-content="inner">
@@ -406,7 +399,6 @@
                            <div class="col-md-6 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
                                  <h2 class="h4">Politics</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_politics_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_politics_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                               </div>
                               <div class="post--items post--items-2" data-ajax-content="outer">
                                  <ul class="nav row gutter--15" data-ajax-content="inner">
@@ -505,7 +497,6 @@
                            <div class="col-md-6 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
                                  <h2 class="h4">Sports</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_sports_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_sports_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                               </div>
                               <div class="post--items post--items-3" data-ajax-content="outer">
                                  <ul class="nav" data-ajax-content="inner">
@@ -599,243 +590,17 @@
                      </div>
                   </div>
 
-                  <div class="main--sidebar col-md-4 col-sm-5 ptop--30 pbottom--30" data-sticky-content="true">
-                     <div class="sticky-content-inner">
-                        <div class="widget">
-                           <div class="ad--widget"> <a href="#"> <img src="img/ads-img/ad-300x250-1.jpg" alt=""> </a> </div>
-                        </div>
-                        <div class="widget">
-                           <div class="widget--title">
-                              <h2 class="h4">Stay Connected</h2>
-                              <i class="icon fa fa-share-alt"></i> 
-                           </div>
-                           <div class="social--widget style--1">
-                              <ul class="nav">
-                                 <li class="facebook"> <a href="#"> <span class="icon"><i class="fa fa-facebook-f"></i></span> <span class="count">521</span> <span class="title">Likes</span> </a> </li>
-                                 <li class="twitter"> <a href="#"> <span class="icon"><i class="fa fa-twitter"></i></span> <span class="count">3297</span> <span class="title">Followers</span> </a> </li>
-                                 <li class="google-plus"> <a href="#"> <span class="icon"><i class="fa fa-google-plus"></i></span> <span class="count">596282</span> <span class="title">Followers</span> </a> </li>
-                                 <li class="rss"> <a href="#"> <span class="icon"><i class="fa fa-rss"></i></span> <span class="count">521</span> <span class="title">Subscriber</span> </a> </li>
-                                 <li class="vimeo"> <a href="#"> <span class="icon"><i class="fa fa-vimeo"></i></span> <span class="count">3297</span> <span class="title">Followers</span> </a> </li>
-                                 <li class="youtube"> <a href="#"> <span class="icon"><i class="fa fa-youtube-square"></i></span> <span class="count">596282</span> <span class="title">Subscriber</span> </a> </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="widget">
-                           <div class="widget--title">
-                              <h2 class="h4">Get Newsletter</h2>
-                              <i class="icon fa fa-envelope-open-o"></i> 
-                           </div>
-                           <div class="subscribe--widget">
-                              <div class="content">
-                                 <p>Subscribe to our newsletter to get latest news, popular news and exclusive updates.</p>
-                              </div>
-                              <form action="../../../../external.html?link=https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank" data-form="mailchimpAjax">
-                                 <div class="input-group">
-                                    <input type="email" name="EMAIL" placeholder="E-mail address" class="form-control" autocomplete="off" required> 
-                                    <div class="input-group-btn"> <button type="submit" class="btn btn-lg btn-default active"><i class="fa fa-paper-plane-o"></i></button> </div>
-                                 </div>
-                                 <div class="status"></div>
-                              </form>
-                           </div>
-                        </div>
-                        <div class="widget">
-                           <div class="widget--title">
-                              <h2 class="h4">Featured News</h2>
-                              <i class="icon fa fa-newspaper-o"></i> 
-                           </div>
-                           <div class="list--widget list--widget-1">
-                              <div class="list--widget-nav" data-ajax="tab">
-                                 <ul class="nav nav-justified">
-                                    <li> <a href="#" data-ajax-action="load_widget_hot_news">Hot News</a> </li>
-                                    <li class="active"> <a href="#" data-ajax-action="load_widget_trendy_news">Trendy News</a> </li>
-                                    <li> <a href="#" data-ajax-action="load_widget_most_watched">Most Watched</a> </li>
-                                 </ul>
-                              </div>
-                              <div class="post--items post--items-3" data-ajax-content="outer">
-                                 <ul class="nav" data-ajax-content="inner">
-                                    <li>
-                                       <div class="post--item post--layout-3">
-                                          <div class="post--img">
-                                             <a href="news-single-v1-boxed.html" class="thumb"><img src="img/widgets-img/news-widget-01.jpg" alt=""></a> 
-                                             <div class="post--info">
-                                                <ul class="nav meta">
-                                                   <li><a href="#">Ninurta</a></li>
-                                                   <li><a href="#">16 April 2017</a></li>
-                                                </ul>
-                                                <div class="title">
-                                                   <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted</a></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="post--item post--layout-3">
-                                          <div class="post--img">
-                                             <a href="news-single-v1-boxed.html" class="thumb"><img src="img/widgets-img/news-widget-02.jpg" alt=""></a> 
-                                             <div class="post--info">
-                                                <ul class="nav meta">
-                                                   <li><a href="#">Orcus</a></li>
-                                                   <li><a href="#">16 April 2017</a></li>
-                                                </ul>
-                                                <div class="title">
-                                                   <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted</a></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="post--item post--layout-3">
-                                          <div class="post--img">
-                                             <a href="news-single-v1-boxed.html" class="thumb"><img src="img/widgets-img/news-widget-03.jpg" alt=""></a> 
-                                             <div class="post--info">
-                                                <ul class="nav meta">
-                                                   <li><a href="#">Rahab</a></li>
-                                                   <li><a href="#">16 April 2017</a></li>
-                                                </ul>
-                                                <div class="title">
-                                                   <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted</a></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="post--item post--layout-3">
-                                          <div class="post--img">
-                                             <a href="news-single-v1-boxed.html" class="thumb"><img src="img/widgets-img/news-widget-04.jpg" alt=""></a> 
-                                             <div class="post--info">
-                                                <ul class="nav meta">
-                                                   <li><a href="#">Tannin</a></li>
-                                                   <li><a href="#">16 April 2017</a></li>
-                                                </ul>
-                                                <div class="title">
-                                                   <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted</a></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </li>
-                                 </ul>
-                                 <div class="preloader bg--color-0--b" data-preloader="1">
-                                    <div class="preloader--inner"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="widget">
-                           <div class="widget--title">
-                              <h2 class="h4">Advertisement</h2>
-                              <i class="icon fa fa-bullhorn"></i> 
-                           </div>
-                           <div class="ad--widget"> <a href="#"> <img src="img/ads-img/ad-300x250-2.jpg" alt=""> </a> </div>
-                        </div>
-                     </div>
-                  </div>
+                  <?php get_template_part( '/includes/front-page-parts/main_sidebar','index'); ?>
+                  <?php //get_template_part( '/includes/page-sections/main_sidebar','index'); ?>
+
+                 
+
                </div>
 
 
+               <?php get_template_part( '/includes/front-page-parts/audio_videos_sections','index'); ?>
                
-               <div class="main--content pd--30-0">
-                  <div class="post--items-title" data-ajax="tab">
-                     <h2 class="h4">Audio &amp; Videos</h2>
-                     <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_audio_video_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_audio_video_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
-                  </div>
-                  <div class="post--items post--items-4" data-ajax-content="outer">
-                     <ul class="nav row" data-ajax-content="inner">
-                        <li class="col-md-8">
-                           <div class="post--item post--layout-1 post--type-video post--title-large">
-                              <div class="post--img">
-                                 <a data-toggle="modal" data-target="#myModal" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-01.jpg" alt=""></a> <a href="#" class="cat">Wave</a> <a href="#" class="icon"><i class="fa fa-eye"></i></a> 
-                                 <div class="post--info">
-                                    <ul class="nav meta">
-                                       <li><a href="#">Succubus</a></li>
-                                       <li><a href="#">Today 03:52 pm</a></li>
-                                    </ul>
-                                    <div class="title">
-                                       <h2 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum</a></h2>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <hr class="divider hidden-md hidden-lg">
-                        </li>
-                        <li class="col-md-4">
-                           <ul class="nav">
-                              <li>
-                                 <div class="post--item post--type-audio post--layout-3">
-                                    <div class="post--img">
-                                       <a href="news-single-v1-boxed.html" class="thumb" data-toggle="modal" data-target="#myModal"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-02.jpg" alt=""></a> 
-                                       <div class="post--info">
-                                          <ul class="nav meta">
-                                             <li><a href="#">Maclaan John</a></li>
-                                             <li><a href="#">16 April 2017</a></li>
-                                          </ul>
-                                          <div class="title">
-                                             <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted by the readable</a></h3>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="post--item post--type-video post--layout-3">
-                                    <div class="post--img">
-                                       <a href="news-single-v1-boxed.html" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-03.jpg" alt=""></a> 
-                                       <div class="post--info">
-                                          <ul class="nav meta">
-                                             <li><a href="#">Maclaan John</a></li>
-                                             <li><a href="#">16 April 2017</a></li>
-                                          </ul>
-                                          <div class="title">
-                                             <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted by the readable</a></h3>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="post--item post--type-video post--layout-3">
-                                    <div class="post--img">
-                                       <a href="news-single-v1-boxed.html" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-04.jpg" alt=""></a> 
-                                       <div class="post--info">
-                                          <ul class="nav meta">
-                                             <li><a href="#">Maclaan John</a></li>
-                                             <li><a href="#">16 April 2017</a></li>
-                                          </ul>
-                                          <div class="title">
-                                             <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted by the readable</a></h3>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="post--item post--type-audio post--layout-3">
-                                    <div class="post--img">
-                                       <a href="news-single-v1-boxed.html" class="thumb"><img src="/wp-content/themes/beaconbangla/img/home-img/audio-video-05.jpg" alt=""></a> 
-                                       <div class="post--info">
-                                          <ul class="nav meta">
-                                             <li><a href="#">Maclaan John</a></li>
-                                             <li><a href="#">16 April 2017</a></li>
-                                          </ul>
-                                          <div class="title">
-                                             <h3 class="h4"><a href="news-single-v1-boxed.html" class="btn-link">Long established fact that a reader will be distracted by the readable</a></h3>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
-                     <div class="preloader bg--color-0--b" data-preloader="1">
-                        <div class="preloader--inner"></div>
-                     </div>
-                  </div>
-               </div>
-
+          
 
               <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                    Open modal
@@ -854,6 +619,8 @@
                        <!-- Modal body -->
                        <div class="modal-body">
                          <iframe width="560" height="315" src="https://www.youtube.com/embed/DxbwKtr_ups" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        
                        </div>
                        
                        <!-- Modal footer -->
@@ -875,8 +642,7 @@
                         <div class="row">
                            <div class="col-md-6 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
-                                 <h2 class="h4">Health &amp; fitness</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_health_fitness_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_health_fitness_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
+                                 <h2 class="h4">Health &amp; fitness (স্বাস্থ্য এবং ফিটনেস)</h2>
                               </div>
                               <div class="post--items post--items-3" data-ajax-content="outer">
                                  <ul class="nav" data-ajax-content="inner">
@@ -968,8 +734,7 @@
                            </div>
                            <div class="col-md-6 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
-                                 <h2 class="h4">Lifestyle</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_lifestyle_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_lifestyle_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
+                                 <h2 class="h4">Lifestyle (লাইফস্টাইল)</h2>
                               </div>
                               <div class="post--items post--items-2" data-ajax-content="outer">
                                  <ul class="nav row gutter--15" data-ajax-content="inner">
@@ -1067,8 +832,7 @@
                            </div>
                            <div class="col-md-12 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
-                                 <h2 class="h4">Foods &amp; Recipes</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_food_resturent_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_food_resturent_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
+                                 <h2 class="h4">Foods &amp; Recipes (খাবার ও রেসিপি)</h2>                                 
                               </div>
                               <div class="post--items" data-ajax-content="outer">
                                  <ul class="nav row gutter--15" data-ajax-content="inner">
@@ -1131,8 +895,7 @@
                            </div>
                            <div class="col-md-12 ptop--30 pbottom--30">
                               <div class="post--items-title" data-ajax="tab">
-                                 <h2 class="h4">Photo Gallery</h2>
-                                 <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_photo_gallery_posts"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_photo_gallery_posts"> <i class="fa fa-long-arrow-right"></i> </a> </div>
+                                 <h2 class="h4"> <a href=""> Photo Gallery (ফটো গ্যালারি) </a></h2>                                 
                               </div>
                               <div class="post--items post--items-1" data-ajax-content="outer">
                                  <ul class="nav row gutter--15" data-ajax-content="inner">
@@ -1217,7 +980,6 @@
                         <div class="widget">
                            <div class="widget--title" data-ajax="tab">
                               <h2 class="h4">Voting Poll (Checkbox)</h2>
-                              <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_poll_widget"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_poll_widget"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                            </div>
                            <div class="poll--widget" data-ajax-content="outer">
                               <ul class="nav" data-ajax-content="inner">
@@ -1250,7 +1012,6 @@
                         <div class="widget">
                            <div class="widget--title" data-ajax="tab">
                               <h2 class="h4">Voting Poll (Radio)</h2>
-                              <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_poll_widget"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_poll_widget"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                            </div>
                            <div class="poll--widget" data-ajax-content="outer">
                               <ul class="nav" data-ajax-content="inner">
@@ -1291,7 +1052,7 @@
                         <div class="widget">
                            <div class="widget--title" data-ajax="tab">
                               <h2 class="h4">Readers Opinion</h2>
-                              <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_readers_opinion_widget"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_readers_opinion_widget"> <i class="fa fa-long-arrow-right"></i> </a> </div>
+                              
                            </div>
                            <div class="list--widget list--widget-2" data-ajax-content="outer">
                               <div class="post--items post--items-3">
@@ -1354,7 +1115,6 @@
                         <div class="widget">
                            <div class="widget--title" data-ajax="tab">
                               <h2 class="h4">Editors Choice</h2>
-                              <div class="nav"> <a href="#" class="prev btn-link" data-ajax-action="load_prev_editors_choice_widget"> <i class="fa fa-long-arrow-left"></i> </a> <span class="divider">/</span> <a href="#" class="next btn-link" data-ajax-action="load_next_editors_choice_widget"> <i class="fa fa-long-arrow-right"></i> </a> </div>
                            </div>
                            <div class="list--widget list--widget-1" data-ajax-content="outer">
                               <div class="post--items post--items-3">
