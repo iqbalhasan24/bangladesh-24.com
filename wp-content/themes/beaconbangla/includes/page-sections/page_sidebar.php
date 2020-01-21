@@ -130,13 +130,30 @@
                            </div>
                            <div class="ad--widget"> 
 	                           	<?php while ( have_posts() ) : the_post(); ?>
-		                           	<?php  	if( have_rows('parent_field') ):
-											    while ( have_rows('parent_field') ) : the_row();
+
+
+
+		                           	<?php  	
+                                          $first_ad = get_field('first_ad');
+                                          $second_ad = get_field('second_ad');
+                                          $third_ad = get_field('third_ad');
+                                          $fourth_ad = get_field('fourth_ad');
+                                          $fifth_ad = get_field('fifth_ad');
+                                          echo  $first_ad.'Iqbal';
+
+
+
+                                    if( have_rows('group_5e1dd714cbdc4') ):
+
+
+
+											    while ( have_rows('group_5e1dd714cbdc4') ) : the_row();
 											        $first_ad = get_sub_field('first_ad');
 											        $second_ad = get_sub_field('second_ad');
 											        $third_ad = get_sub_field('third_ad');
 											        $fourth_ad = get_sub_field('fourth_ad');
 											        $fifth_ad = get_sub_field('fifth_ad');
+                                         echo  $first_ad.'Iqbal';
 									?>
 													<a href="#"> 
 				                           			    <img src="img/ads-img/ad-300x250-2.jpg" alt=""> 
@@ -150,7 +167,7 @@
 	                           			    <img src="img/ads-img/ad-300x250-2.jpg" alt=""> 
 			                           	</a> 
 									<?php endif; ?>
-	                           	<?php endwhile; ?>
+	                           	<?php endwhile;  ?>
                            
                        		</div>
                         </div>

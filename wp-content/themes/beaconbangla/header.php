@@ -48,7 +48,7 @@
                         <li class="dropdown">
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fm fa-language"></i>English<i class="fa flm fa-angle-down"></i></a> 
                            <ul class="dropdown-menu">
-                              <li><a href="#">Bangla</a></li>                              
+                              <li><a href="/bangla">Bangla</a></li>                              
                            </ul>
                         </li>
                      </ul>
